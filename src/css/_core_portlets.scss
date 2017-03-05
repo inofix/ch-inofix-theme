@@ -1,0 +1,169 @@
+/** 
+    _core_portlets.scss: adjust Liferay's core portlets for the inofix-theme
+
+    Created:    2017-03-05 23:20 by Christian Berndt
+    Modified:   2017-03-05 23:20 by Christian Berndt
+    Version:    0.1.0
+*/
+
+/** ----------------------------------- General settings ---- */
+.portlet {
+    
+    h2.portlet-title-text {
+        display: none; 
+    }
+        
+    > .portlet-topper {
+    
+        background-color: transparent;
+        border: none; 
+        left: auto;
+        margin-top: 4px;
+        opacity: 1;
+        z-index: 100;
+        
+        .portlet-title-default {
+            display: none;
+        }        
+    }
+    
+    .portlet-content {
+        padding: 0;
+    }
+    
+    .portlet-content-editable {
+        border: none; 
+    }
+    
+    &:hover {
+    
+        .portlet-content-editable {
+            border: none; 
+        }
+        
+        .portlet-topper {
+            transform: none;
+            -moz-transform: none;           
+        }
+    }
+}
+
+
+/** ------------------------- Maximized portlet settings ---- */
+.portlet-column-only {
+    .portlet-search {
+        margin-bottom: 70px;
+    }
+}
+
+/** -------------------------- Portlet specific settings ---- */
+.portlet-activities {
+    
+    padding-bottom: 70px; 
+    
+    .taglib-social-activities {
+        .pull-right { /* RSS-Link */
+            position: absolute; 
+            bottom: -30px; 
+            right: 0; 
+        }
+    }
+    
+    .user-name {
+        font-weight: 600;
+    }
+}
+
+.portlet-login {
+    
+    .btn {
+        font-size: 14px; /* bs .btn */
+        padding: 6px 12px; /* bs .btn */
+        width: 100%;
+    } 
+    
+    h2.portlet-title-text {
+        
+        background-color: #f5f5f5; /* bs .panel-heading */
+        border-color: #ddd; /* bs .panel-heading */
+        border-bottom: 1px solid #ddd; 
+        border-top-right-radius: 3px; /* bs .panel-heading */
+        border-top-left-radius: 3px; /* bs .panel-heading */         
+        color: #333333; /* bs .panel-heading */
+        display: block; 
+        font-size: 14px; 
+        font-weight: 600; 
+        max-width: none;
+        
+        padding: 10px 15px; /* bs .panel-heading */   
+    }
+    
+    .icon-monospaced {
+        display: none; 
+    }
+    
+    input[type="checkbox"] {
+        margin-right: 5px;
+    }
+    
+    .input-checkbox-wrapper {
+        margin-bottom: 5px;
+    }
+    
+    .portlet {
+        text-align: center;
+    }
+    
+    .portlet-content {
+        
+        border-color: #ddd; /* bs .panel-default */
+        border-radius: 4px; /* bs .panel */
+        border-style: solid; 
+        border-width: 1px 1px 1px 1px; /* bs .panel */
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); /* bs .panel */
+    
+        display: inline-block;
+        margin-bottom: 70px;
+        text-align: left; 
+        width: 570px;
+        
+        .portlet-body {
+            padding: 15px; /*  bs .panel-body */        
+        }
+    }
+    
+    .portlet-icon-back .icon-angle-left {
+        display: none; 
+    }
+}
+
+.portlet-search {
+    
+    a.icon-monospaced.portlet-icon-back {
+        display: none;
+    }
+    
+    .form-control {
+        width: 264px;
+    }
+    
+    .input-text-wrapper {
+        margin-right: 28px; 
+    }
+    
+    .lfr-ddm-field-group {
+        margin-bottom: 15px; 
+    }
+    
+    .main-content-body {
+        margin-top: 0; 
+   }
+    
+    .menu-column {
+        margin-top: 20px; 
+    }
+    
+    .panel-title {
+        font-weight: 600; 
+    }
+}
