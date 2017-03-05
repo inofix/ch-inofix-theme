@@ -1,9 +1,5 @@
 {
-    "author": "Christian Berndt <berndt@inofix.ch> (https://github.com/chrberndt)",
-    "bugs": {
-        "url": "https://github.com/inofix/ch-inofix-theme/issues"
-    },
-	"name": "inofix-theme",
+	"name": "ch-inofix-theme",
 	"version": "1.0.0",
 	"main": "package.json",
 	"keywords": [
