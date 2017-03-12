@@ -37,7 +37,7 @@
 <div class="container" id="wrapper">
     
     <section id="content">
-
+    
         <#if selectable>
             <@liferay_util["include"] page=content_include />
         <#else>
