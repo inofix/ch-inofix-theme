@@ -7,6 +7,14 @@
                     {
                         "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
                         "portletPreferences": {
+                            "articleId": "abstracts_main.xml",
+                            "groupId": "${groupId}",
+                            "portletSetupShowBorders": "false"
+                        }
+                    },
+                    {
+                        "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+                        "portletPreferences": {
                             "articleId": "abstracts_company.xml",
                             "groupId": "${groupId}",
                             "portletSetupShowBorders": "false"
