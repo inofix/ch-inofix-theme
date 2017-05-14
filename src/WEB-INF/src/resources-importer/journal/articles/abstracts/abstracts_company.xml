@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+
+<root available-locales="en_US" default-locale="en_US">
+    <dynamic-element name="headline" type="text"
+        index-type="keyword" instance-id="YlI2z322">
+        <dynamic-content language-id="en_US"><![CDATA[Swiss Made Software And System Solutions]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="abstract" type="text"
+        index-type="keyword" instance-id="zfzo">
+        <dynamic-element name="claim" instance-id="fcvv"
+            type="text_box" index-type="keyword">
+            <dynamic-content language-id="en_US"><![CDATA[Inofix ist eine "best practice" Firma. Egal ob es sich um Entwurf, Implementierung oder Betrieb komplexer Software- oder Systemlösungen handelt &mdash;  von uns dürfen Sie immer die beste verfügbare Lösung erwarten.]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="abstractLink"
+            instance-id="wcnu" type="link_to_layout" index-type="keyword">
+            <dynamic-content language-id="en_US"><![CDATA[]]>
+            </dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="abstractLabel"
+            instance-id="fcmk" type="text" index-type="keyword">
+            <dynamic-content language-id="en_US"><![CDATA[]]>
+            </dynamic-content>
+        </dynamic-element>
+        <dynamic-content language-id="en_US"><![CDATA[Immmer die beste Lösung]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="abstract" type="text"
+        index-type="keyword" instance-id="kmxv">
+        <dynamic-element name="claim" instance-id="dyoc"
+            type="text_box" index-type="keyword">
+            <dynamic-content language-id="en_US"><![CDATA[inofix produziert und betreibt hochwertige Enterprise-Lösungen vollständig auf Basis freier Software. Das schafft Vertrauen, sorgt für Investitionssicherheit und garantiert wirtschaftliche und qualitativ hochwertige Lösungen.]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="abstractLink"
+            instance-id="ybxv" type="link_to_layout" index-type="keyword">
+            <dynamic-content language-id="en_US"><![CDATA[]]>
+            </dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="abstractLabel"
+            instance-id="swog" type="text" index-type="keyword">
+            <dynamic-content language-id="en_US"><![CDATA[]]>
+            </dynamic-content>
+        </dynamic-element>
+        <dynamic-content language-id="en_US"><![CDATA[100% Freie Software]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="abstract" type="text"
+        index-type="keyword" instance-id="lcns">
+        <dynamic-element name="claim" instance-id="afpo"
+            type="text_box" index-type="keyword">
+            <dynamic-content language-id="en_US"><![CDATA[Unser Firmensitz ist Luzern und wir arbeiten mit Teams in Berlin und Wien — immer dort, wo die spannendsten Aufgaben auf uns warten.]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="abstractLink"
+            instance-id="czsr" type="link_to_layout" index-type="keyword">
+            <dynamic-content language-id="en_US"><![CDATA[]]>
+            </dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="abstractLabel"
+            instance-id="txnr" type="text" index-type="keyword">
+            <dynamic-content language-id="en_US"><![CDATA[]]>
+            </dynamic-content>
+        </dynamic-element>
+        <dynamic-content language-id="en_US"><![CDATA[Luzern, Wien, Berlin]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="LinkToPagea21n" type="link_to_layout"
+        index-type="keyword" instance-id="lybo">
+        <dynamic-content language-id="en_US"><![CDATA[]]>
+        </dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="label" type="text"
+        index-type="keyword" instance-id="ueau">
+        <dynamic-content language-id="en_US"><![CDATA[]]>
+        </dynamic-content>
+    </dynamic-element>
+</root>
