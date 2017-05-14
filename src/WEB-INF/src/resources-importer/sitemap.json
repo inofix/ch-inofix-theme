@@ -1,0 +1,51 @@
+{
+    "layoutTemplateId": "1_column",
+    "publicPages": [
+        {
+            "columns": [
+                [
+                    {
+                        "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+                        "portletPreferences": {
+                            "articleId": "abstracts_company.xml",
+                            "groupId": "${groupId}",
+                            "portletSetupShowBorders": "false"
+                        }
+                    }
+                ]
+            ],
+            "friendlyURL": "/start",
+            "name": "Start",
+            "title": "Start"
+        },
+        {
+            "columns": [
+                [
+                    {
+                        "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+                        "portletPreferences": {
+                            "articleId": "Basic Article.xml",
+                            "groupId": "${groupId}",
+                            "portletSetupShowBorders": "false"
+                        }
+                    }
+                ]
+            ],
+            "friendlyURL": "/technologies",
+            "layouts": [
+                {
+                    "friendlyURL": "/child-page-1",
+                    "name": "Child Page 1",
+                    "title": "Child Page 1"
+                },
+                {
+                    "friendlyURL": "/child-page-2",
+                    "name": "Child Page 2",
+                    "title": "Child Page 2"
+                }
+            ],
+            "name": "Technologies",
+            "title": "Technologies"
+        }
+    ]
+}
