@@ -3,7 +3,7 @@
 <root available-locales="en_US" default-locale="en_US">
     <dynamic-element name="headline" type="text"
         index-type="keyword" instance-id="YlI2z322">
-        <dynamic-content language-id="en_US"><![CDATA[Swiss Made Software And System Solutions]]></dynamic-content>
+        <dynamic-content language-id="en_US"><![CDATA[Swiss Made Software And <br/> System Solutions]]></dynamic-content>
     </dynamic-element>
     <dynamic-element name="abstract" type="text"
         index-type="keyword" instance-id="zfzo">
@@ -21,7 +21,7 @@
             <dynamic-content language-id="en_US"><![CDATA[]]>
             </dynamic-content>
         </dynamic-element>
-        <dynamic-content language-id="en_US"><![CDATA[Immmer die beste Lösung]]></dynamic-content>
+        <dynamic-content language-id="en_US"><![CDATA[Immer die beste Lösung]]></dynamic-content>
     </dynamic-element>
     <dynamic-element name="abstract" type="text"
         index-type="keyword" instance-id="kmxv">

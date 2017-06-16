@@ -2,8 +2,8 @@
     navigation.ftl: header navigation.
     
     Created:    2017-03-05 23:01 by Christian Berndt
-    Modified:   2017-03-05 23:01 by Christian Berndt
-    Version:    0.1.0
+    Modified:   2017-05-14 19:54 by Christian Berndt
+    Version:    0.1.1
 -->
 
 <#assign show_header_search = getterUtil.getBoolean(themeDisplay.getThemeSetting("show-header-search"))>
@@ -19,7 +19,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="${company_url}" title="<@liferay.language_format arguments="${company_name}" key="go-to-x" />">
+            <a class="navbar-brand" href="${site_default_url}" title="<@liferay.language_format arguments="${company_name}" key="go-to-x" />">
                 <span class="icon icon-large icon-share-sign" aria-hidden="true"></span>
                 <span class="brand-name">inofix</span>
             </a>
