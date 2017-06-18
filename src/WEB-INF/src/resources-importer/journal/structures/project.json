@@ -1,0 +1,285 @@
+{
+    "availableLanguageIds": [
+        "en_US",
+        "de_DE"
+    ],
+    "defaultLanguageId": "en_US",
+    "fields": [
+        {
+            "label": {
+                "en_US": " Keyvisual ",
+                "de_DE": " Schlüsselbild "
+            },
+            "predefinedValue": {
+                "en_US": "  ",
+                "de_DE": "  "
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": " Select an image from the document library which will be used as the keyvisual for this project description. ",
+                "de_DE": " Wähle ein Bild aus der Dokumentenbibliothek aus, das als Schlüsselbild für das Projekt benutzt werden soll. "
+            },
+            "dataType": "document-library",
+            "fieldNamespace": "ddm",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "keyvisual",
+            "readOnly": false,
+            "repeatable": false,
+            "required": true,
+            "showLabel": true,
+            "type": "ddm-documentlibrary"
+        },
+        {
+            "label": {
+                "en_US": " Client ",
+                "de_DE": " Client "
+            },
+            "predefinedValue": {
+                "en_US": "  ",
+                "de_DE": "  "
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": " Enter the client's name. This value is also used as button label for controls. ",
+                "de_DE": " Gib den Namen des Kunden ein. Dieser Wert wird auch für die Beschriftung von Bedienelementen benutzt. "
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "client",
+            "readOnly": false,
+            "repeatable": false,
+            "required": true,
+            "showLabel": true,
+            "type": "text"
+        },
+        {
+            "label": {
+                "en_US": " Headline ",
+                "de_DE": " Headline "
+            },
+            "predefinedValue": {
+                "en_US": "  ",
+                "de_DE": "  "
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": " Enter short but descriptive headline for the project description. ",
+                "de_DE": " Gib dem Projekt eine kurze beschreibende Überschrift. "
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "headline",
+            "readOnly": false,
+            "repeatable": false,
+            "required": true,
+            "showLabel": true,
+            "type": "text"
+        },
+        {
+            "label": {
+                "en_US": " Description ",
+                "de_DE": " Description "
+            },
+            "predefinedValue": {
+                "en_US": "  ",
+                "de_DE": "  "
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": " Enter a short description of the project. ",
+                "de_DE": " Verfasse eine kurze Beschreibung des Projekts. Beschränke Dich auf die relevantesten Aspekte. "
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "description",
+            "readOnly": false,
+            "repeatable": false,
+            "required": true,
+            "showLabel": true,
+            "type": "textarea"
+        },
+        {
+            "label": {
+                "en_US": " Details ",
+                "de_DE": " Detailseite "
+            },
+            "predefinedValue": {
+                "en_US": "  ",
+                "de_DE": "  "
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": " Select the page, where a more detailed description of the project can be found. ",
+                "de_DE": " Wähle die Seite aus, mit auf der es weiterführende Informationen zu diesem Projekt gibt. "
+            },
+            "dataType": "link-to-page",
+            "fieldNamespace": "ddm",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "detailLink",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "ddm-link-to-page",
+            "nestedFields": [
+                {
+                    "label": {
+                        "en_US": " Button Label ",
+                        "de_DE": " Beschriftung "
+                    },
+                    "predefinedValue": {
+                        "en_US": "  ",
+                        "de_DE": "  "
+                    },
+                    "style": {
+                        "en_US": "",
+                        "de_DE": ""
+                    },
+                    "tip": {
+                        "en_US": " Enter a short label for the link to the detail page (optional). ",
+                        "de_DE": " Gib einen kurzen Text für die Beschriftung des Links zur Detailseite ein. "
+                    },
+                    "dataType": "string",
+                    "indexType": "keyword",
+                    "localizable": true,
+                    "name": "linkLabel",
+                    "readOnly": false,
+                    "repeatable": false,
+                    "required": false,
+                    "showLabel": true,
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "label": {
+                "en_US": " Link ",
+                "de_DE": " Link "
+            },
+            "predefinedValue": {
+                "en_US": "  ",
+                "de_DE": "  "
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": " Enter the link to the project. The link must start with \"http://\" or \"https://\" ",
+                "de_DE": " Gib den Link zum Projekt an. Der Link muss mit \"http://\" oder \"https://\" beginnen. "
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "href",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "text",
+            "nestedFields": [
+                {
+                    "label": {
+                        "en_US": " Link Label ",
+                        "de_DE": " Link Beschriftung "
+                    },
+                    "predefinedValue": {
+                        "en_US": "  ",
+                        "de_DE": "  "
+                    },
+                    "style": {
+                        "en_US": "",
+                        "de_DE": ""
+                    },
+                    "tip": {
+                        "en_US": " Enter a label for this link. ",
+                        "de_DE": " Gib dem Link zum Projekt eine Beschriftung. "
+                    },
+                    "dataType": "string",
+                    "indexType": "keyword",
+                    "localizable": true,
+                    "name": "hrefLabel",
+                    "readOnly": false,
+                    "repeatable": false,
+                    "required": false,
+                    "showLabel": true,
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "label": {
+                "en_US": " Client Background Color ",
+                "de_DE": " Client Background Color "
+            },
+            "predefinedValue": {
+                "en_US": "  ",
+                "de_DE": "  "
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": " Enter the hexadecimal code of the client's default color. This value is used as the color of the button in the control bar. ",
+                "de_DE": " Enter the hexadecimal code of the client's default color. This value is used as the color of the button in the control bar. "
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "clientBackgroundColor",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "text"
+        },
+        {
+            "label": {
+                "en_US": " Client Font Color ",
+                "de_DE": " Client Font Color "
+            },
+            "predefinedValue": {
+                "en_US": "  ",
+                "de_DE": "  "
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": " Enter the hexadecimal code of the client's default font color. This value is used as the font color of the button in the control bar. ",
+                "de_DE": " Enter the hexadecimal code of the client's default font color. This value is used as the font color of the button in the control bar. "
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "clientFontColor",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "text"
+        }
+    ]
+}
