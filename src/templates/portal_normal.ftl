@@ -2,8 +2,8 @@
     portal_normal.ftl: base template of the inofix-theme.
     
     Created:    2017-03-05 23:01 by Christian Berndt
-    Modified:   2017-06-27 18:53 by Christian Berndt
-    Version:    0.1.2
+    Modified:   2017-06-27 20:51 by Christian Berndt
+    Version:    0.1.3
 -->
 
 <!DOCTYPE html>
@@ -50,6 +50,11 @@
 <#if layout.isPrivateLayout() >
     <div class="pagehead">
         <div class="container">
+        
+            <h3>
+                ${site_name}
+            </h3>
+        
             <ul aria-label="<@liferay.language key="site-pages" />" class="nav navbar-nav" role="menubar">
                 <#list nav_items as nav_item>
                     <#assign
