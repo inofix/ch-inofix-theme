@@ -27,8 +27,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.6437322"
-     inkscape:cx="437.20853"
-     inkscape:cy="8357.8596"
+     inkscape:cx="752.42014"
+     inkscape:cy="9997.8664"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -38,7 +38,7 @@
      inkscape:window-y="27"
      inkscape:window-maximized="1"
      units="px"
-     showguides="false"
+     showguides="true"
      inkscape:guide-bbox="true"
      inkscape:measure-start="0,0"
      inkscape:measure-end="0,0">
@@ -166,13 +166,6 @@
        position="224.89582,2910.4165"
        orientation="1,0"
        id="guide6662"
-       inkscape:locked="false"
-       inkscape:label=""
-       inkscape:color="rgb(0,0,255)" />
-    <sodipodi:guide
-       position="330.72915,2910.4165"
-       orientation="1,0"
-       id="guide6664"
        inkscape:locked="false"
        inkscape:label=""
        inkscape:color="rgb(0,0,255)" />
