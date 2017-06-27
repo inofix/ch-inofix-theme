@@ -2,8 +2,8 @@
     navigation.ftl: header navigation.
     
     Created:    2017-03-05 23:01 by Christian Berndt
-    Modified:   2017-06-27 13:50 by Christian Berndt
-    Version:    0.2.2
+    Modified:   2017-06-27 18:13 by Christian Berndt
+    Version:    0.2.3
 -->
 
 <#assign show_header_search = getterUtil.getBoolean(themeDisplay.getThemeSetting("show-header-search"))>
@@ -54,12 +54,14 @@
                         <a aria-labelledby="layout_${nav_item.getLayoutId()}" ${nav_item_attr_has_popup} href="${nav_item.getURL()}" ${nav_item.getTarget()} role="menuitem"><span><@liferay_theme["layout-icon"] layout=nav_item_layout /> ${nav_item.getName()}</span></a>
                     </li>                
                 </#list>
-                <#if user.hasPrivateLayouts()>
-                    <li class="my-account">
-                        <a class="btn btn-info" href="${user.getDisplayURL(theme_display, true)}">
-                            <span><@liferay.language key="my-account" /></span>
-                        </a>
-                    </li>
+                <#if theme_display.isSignedIn() >
+                    <#if user.hasPrivateLayouts()>
+                        <li class="my-account">
+                            <a class="btn btn-info" href="${user.getDisplayURL(theme_display, true)}">
+                                <span><@liferay.language key="my-account" /></span>
+                            </a>
+                        </li>
+                    </#if>
                 </#if>
             </ul>
         <#else>           
