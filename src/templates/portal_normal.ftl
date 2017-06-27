@@ -2,8 +2,8 @@
     portal_normal.ftl: base template of the inofix-theme.
     
     Created:    2017-03-05 23:01 by Christian Berndt
-    Modified:   2017-06-16 22:49 by Christian Berndt
-    Version:    0.1.1
+    Modified:   2017-06-26 21:48 by Christian Berndt
+    Version:    0.1.2
 -->
 
 <!DOCTYPE html>
@@ -40,6 +40,35 @@
         <#include "${full_templates_path}/navigation.ftl" />
     </#if>
 </header>
+
+<#if layout.isPrivateLayout() >
+    <div class="pagehead">
+        <div class="container">
+            <ul aria-label="<@liferay.language key="site-pages" />" class="nav navbar-nav" role="menubar">
+                <#list nav_items as nav_item>
+                    <#assign
+                        nav_item_attr_has_popup = ""
+                        nav_item_attr_selected = ""
+                        nav_item_css_class = ""
+                        nav_item_layout = nav_item.getLayout()
+                    />
+        
+                    <#if nav_item.isSelected()>
+                        <#assign
+                            nav_item_attr_has_popup = "aria-haspopup='true'"
+                            nav_item_attr_selected = "aria-selected='true'"
+                            nav_item_css_class = "active"
+                        />
+                    </#if>
+                    
+                    <li ${nav_item_attr_selected} class="${nav_item_css_class}" id="layout_${nav_item.getLayoutId()}" role="presentation">
+                        <a aria-labelledby="layout_${nav_item.getLayoutId()}" ${nav_item_attr_has_popup} href="${nav_item.getURL()}" ${nav_item.getTarget()} role="menuitem"><span><@liferay_theme["layout-icon"] layout=nav_item_layout /> ${nav_item.getName()}</span></a>
+                    </li>                
+                </#list>
+            </ul>        
+        </div>
+    </div>
+</#if>
     
 <div class="${wrapper_class}" id="wrapper">
     
@@ -63,6 +92,15 @@
 <footer id="footer" role="contentinfo">
     <div class="container">
         &copy; 2017 <a href="http://www.inofix.ch" target="_blank">www.inofix.ch</a>
+        
+        <div class="pull-right">
+            <#if !is_signed_in>
+                <a data-redirect="${is_login_redirect_required?string}" href="${sign_in_url}" id="sign-in" rel="nofollow">${sign_in_text}</a>
+            <#else>
+                <a href="${sign_out_url}" id="sign-out" rel="nofollow" title="<@liferay.language key="sign-out" />"><@liferay.language key="sign-out" /></a>              
+            </#if>
+<#--            <a class="btn btn-success" href="${sign_up_url}" id="sign-up" rel="nofollow"><@liferay.language key="sign-up" /></a> -->
+        </div>
     </div>
 </footer>
 
