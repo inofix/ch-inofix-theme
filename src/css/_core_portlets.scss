@@ -2,9 +2,21 @@
     _core_portlets.scss: adjust Liferay's core portlets for the inofix-theme
 
     Created:    2017-03-05 23:20 by Christian Berndt
-    Modified:   2017-03-05 23:20 by Christian Berndt
-    Version:    0.1.0
+    Modified:   2017-06-27 19:04 by Christian Berndt
+    Version:    0.1.1
 */
+
+.hide-topper {
+    
+    .portlet {
+        
+        &:hover {
+            > .portlet-topper {
+                display: none; 
+            }
+        }
+    }
+}
 
 /** ----------------------------------- General settings ---- */
 .portlet {
@@ -12,39 +24,9 @@
     h2.portlet-title-text {
         display: none; 
     }
-        
-    > .portlet-topper {
-    
-        background-color: transparent;
-        border: none; 
-        left: auto;
-        margin-top: 4px;
-        opacity: 1;
-        z-index: 100;
-        
-        .portlet-title-default {
-            display: none;
-        }        
-    }
     
     .portlet-content {
         padding: 0;
-    }
-    
-    .portlet-content-editable {
-        border: none; 
-    }
-    
-    &:hover {
-    
-        .portlet-content-editable {
-            border: none; 
-        }
-        
-        .portlet-topper {
-            transform: none;
-            -moz-transform: none;           
-        }
     }
 }
 
