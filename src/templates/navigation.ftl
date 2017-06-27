@@ -2,8 +2,8 @@
     navigation.ftl: header navigation.
     
     Created:    2017-03-05 23:01 by Christian Berndt
-    Modified:   2017-06-26 17:00 by Christian Berndt
-    Version:    0.2.1
+    Modified:   2017-06-27 13:50 by Christian Berndt
+    Version:    0.2.2
 -->
 
 <#assign show_header_search = getterUtil.getBoolean(themeDisplay.getThemeSetting("show-header-search"))>
@@ -20,19 +20,19 @@
                 <span class="icon-bar"></span>
             </button>
            
-            <a class="navbar-brand ${logo_css_class}" href="${site_default_url}" title="<@liferay.language_format arguments="${site_name}" key="go-to-x" />">
-                <img alt="${logo_description}" src="${site_logo}" />
+            <a class="navbar-brand ${logo_css_class}" href="${company_url}" title="<@liferay.language_format arguments="${site_name}" key="go-to-x" />">
+                <img alt="${logo_description}" src="${company_logo}?v.1" />
             
                 <#if show_site_name>
-                    <span class="brand-name site-name" title="<@liferay.language_format arguments="${site_name}" key="go-to-x" />">
-                        ${site_name}
+                    <span class="brand-name site-name" title="<@liferay.language_format arguments="${company_name}" key="go-to-x" />">
+                        ${company_name}
                     </span>
                 </#if>
             </a>
 
         </div>
  
-        <#if !is_signed_in>
+        <#if layout.isPublicLayout() >
             <ul aria-label="<@liferay.language key="site-pages" />" class="nav navbar-nav navbar-right" role="menubar">
                 <#list nav_items as nav_item>
                     <#assign
@@ -54,10 +54,15 @@
                         <a aria-labelledby="layout_${nav_item.getLayoutId()}" ${nav_item_attr_has_popup} href="${nav_item.getURL()}" ${nav_item.getTarget()} role="menuitem"><span><@liferay_theme["layout-icon"] layout=nav_item_layout /> ${nav_item.getName()}</span></a>
                     </li>                
                 </#list>
+                <#if user.hasPrivateLayouts()>
+                    <li class="my-account">
+                        <a class="btn btn-info" href="${user.getDisplayURL(theme_display, true)}">
+                            <span><@liferay.language key="my-account" /></span>
+                        </a>
+                    </li>
+                </#if>
             </ul>
-        </#if>
-
-        <#if is_signed_in>
+        <#else>           
             <ul aria-label="<@liferay.language key="user-dashboard" />" class="nav navbar-nav navbar-right" role="menubar">
                 <li>
                     <#if user.hasPrivateLayouts()>
@@ -68,20 +73,7 @@
                         <span class="user-name text-muted">${user.fullName}</span>                
                     </#if>
                 </li>
-                <#--
-                <a href="${sign_out_url}" id="sign-out" rel="nofollow" title="<@liferay.language key="sign-out" />">
-                    <span class="icon-signout"></span>
-                </a>
-                -->
-            </ul>
-        </#if>    
-        
-        <#--
-        <div class="nav-form search-form" role="search">
-            <@liferay.search default_preferences="${freeMarkerPortletPreferences}" />
-        </div>
-        -->
-           
-
+            </ul>            
+        </#if> 
     </div>
 </nav>
