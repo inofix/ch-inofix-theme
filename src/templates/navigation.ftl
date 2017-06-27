@@ -2,12 +2,12 @@
     navigation.ftl: header navigation.
     
     Created:    2017-03-05 23:01 by Christian Berndt
-    Modified:   2017-06-27 18:13 by Christian Berndt
-    Version:    0.2.3
+    Modified:   2017-06-27 20:50 by Christian Berndt
+    Version:    0.2.4
 -->
 
-<#assign show_header_search = getterUtil.getBoolean(themeDisplay.getThemeSetting("show-header-search"))>
 <#assign layout_url = portalUtil.getLayoutFriendlyURL(layout, theme_display) />
+<#assign show_header_search = getterUtil.getBoolean(themeDisplay.getThemeSetting("show-header-search"))>
 <#assign sign_up_url = layout_url + "?p_p_id=com_liferay_login_web_portlet_LoginPortlet&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&saveLastPath=false&_com_liferay_login_web_portlet_LoginPortlet_mvcRenderCommandName=%2Flogin%2Fcreate_account" />
 
 <nav class="${nav_css_class} navbar navbar-default" id="navigation" role="navigation">
@@ -56,8 +56,8 @@
                 </#list>
                 <#if theme_display.isSignedIn() >
                     <#if user.hasPrivateLayouts()>
-                        <li class="my-account">
-                            <a class="btn btn-info" href="${user.getDisplayURL(theme_display, true)}">
+                        <li>
+                            <a class="btn btn-info my-account" href="${user.getDisplayURL(theme_display, true)}">
                                 <span><@liferay.language key="my-account" /></span>
                             </a>
                         </li>
@@ -65,12 +65,18 @@
                 </#if>
             </ul>
         <#else>           
-            <ul aria-label="<@liferay.language key="user-dashboard" />" class="nav navbar-nav navbar-right" role="menubar">
+            <ul class="nav navbar-nav navbar-right" role="menubar">
                 <li>
-                    <#if user.hasPrivateLayouts()>
-                        <a href="${user.getDisplayURL(theme_display, true)}">
-                            <span class="user-name">${user.fullName}</span>
-                        </a>
+                    <#if user.hasPrivateLayouts() >
+                        <#if theme_display.scopeGroupId == user.groupId >
+                            <a href="${user.getDisplayURL(theme_display, true)}">
+                                <span class="user-name">${user.fullName}</span>
+                            </a>
+                        <#else>
+                            <a class="btn btn-info my-account" href="${user.getDisplayURL(theme_display, true)}">
+                                <span><@liferay.language key="my-account" /></span>
+                            </a>
+                        </#if>
                     <#else>
                         <span class="user-name text-muted">${user.fullName}</span>                
                     </#if>

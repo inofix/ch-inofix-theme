@@ -3,7 +3,7 @@
 
     Created:    2017-03-05 23:08 by Christian Berndt
     Modified:   2017-06-27 13:56 by Christian Berndt
-    Version:    0.3.1
+    Version:    0.3.2
 */
 
 /** Global settings */
@@ -27,7 +27,7 @@ $color-lightgray: #f5f5f5;
         letter-spacing: normal;
         text-transform: none;
         
-        .btn {
+        &.btn {
             color: #fff;
             margin-bottom: 14px;
             margin-left: 15px;
