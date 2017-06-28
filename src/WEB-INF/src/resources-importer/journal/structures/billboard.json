@@ -1,0 +1,121 @@
+{
+    "availableLanguageIds": [
+        "en_US",
+        "de_DE"
+    ],
+    "defaultLanguageId": "en_US",
+    "fields": [
+        {
+            "label": {
+                "en_US": "Claim",
+                "de_DE": "Claim"
+            },
+            "predefinedValue": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": "Enter the claim to be displayed on the jumbotron.",
+                "de_DE": "Enter the claim to be displayed on the jumbotron."
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "claim",
+            "readOnly": false,
+            "repeatable": false,
+            "required": true,
+            "showLabel": true,
+            "type": "text"
+        },
+        {
+            "label": {
+                "en_US": "Image",
+                "de_DE": "Bild"
+            },
+            "predefinedValue": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": "Select one or more images to be displayed on the jumbotron. ",
+                "de_DE": "Wählen Sie ein oder mehrere Bilder aus, die auf dem Jumbotron dargestellt werden sollen."
+            },
+            "dataType": "image",
+            "fieldNamespace": "ddm",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "image",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "ddm-image",
+            "nestedFields": [
+                {
+                    "label": {
+                        "en_US": "URL",
+                        "de_DE": "URL"
+                    },
+                    "predefinedValue": {
+                        "en_US": "",
+                        "de_DE": ""
+                    },
+                    "style": {
+                        "en_US": "",
+                        "de_DE": ""
+                    },
+                    "tip": {
+                        "en_US": "Enter the URL, which shall be linked with this image.",
+                        "de_DE": "Geben Sie den URL an, der mit diesem Bild verknüpft werden soll."
+                    },
+                    "dataType": "string",
+                    "indexType": "keyword",
+                    "localizable": true,
+                    "name": "url",
+                    "readOnly": false,
+                    "repeatable": false,
+                    "required": false,
+                    "showLabel": true,
+                    "type": "text"
+                },
+                {
+                    "label": {
+                        "en_US": "Link to Page",
+                        "de_DE": "Link to Page"
+                    },
+                    "predefinedValue": {
+                        "en_US": "",
+                        "de_DE": ""
+                    },
+                    "style": {
+                        "en_US": "",
+                        "de_DE": ""
+                    },
+                    "tip": {
+                        "en_US": "Select the page linked to this image.",
+                        "de_DE": "Select the page linked to this image."
+                    },
+                    "dataType": "link-to-page",
+                    "fieldNamespace": "ddm",
+                    "indexType": "keyword",
+                    "localizable": true,
+                    "name": "link",
+                    "readOnly": false,
+                    "repeatable": false,
+                    "required": false,
+                    "showLabel": true,
+                    "type": "ddm-link-to-page"
+                }
+            ]
+        }
+    ]
+}
