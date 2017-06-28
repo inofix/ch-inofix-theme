@@ -2,8 +2,8 @@
     portal_normal.ftl: base template of the inofix-theme.
     
     Created:    2017-03-05 23:01 by Christian Berndt
-    Modified:   2017-06-27 20:51 by Christian Berndt
-    Version:    0.1.3
+    Modified:   2017-06-27 22:44 by Christian Berndt
+    Version:    0.1.4
 -->
 
 <!DOCTYPE html>
@@ -16,7 +16,7 @@
 <#assign wrapper_class = "container"/>
 
 <#if full_width>
-    <#assign wrapper_class = ""/>
+    <#assign wrapper_class = "container-fluid"/>
 </#if>
 
 <#if hide_topper>
