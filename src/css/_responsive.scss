@@ -2,14 +2,57 @@
     _responsive.scss: responsiveness for the inofix-theme 
 
     Created:    2017-06-28 13:30 by Christian Berndt
-    Modified:   2017-06-28 13:30 by Christian Berndt
-    Version:    0.1.0
+    Modified:   2017-06-28 17:30 by Christian Berndt
+    Version:    0.1.1
 */
 
-@media (max-width: 767px) {
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
     .billboard {
-        .claim  {
-            padding: 40px 0;
+        .image-wrapper { 
+            
+            text-align: center;
+             
+            img {
+                width: 85%;  
+            }    
+        }
+    }    
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .billboard {
+        .image-wrapper {    
+            img {
+                margin-top: -38vh;
+                width: 100%; 
+            }    
+        }
+        
+        .text-only {
+            h1 {
+                margin-left: auto; 
+                margin-right: auto;
+                max-width: 75%;
+                padding: 40px 0;    
+            }  
+        }
+        
+        .text-wrapper {
+            text-align: left;         
         }
     }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+        
+    .billboard {
+        .text-wrapper {
+            h1 {
+                padding: 40px;    
+            }            
+        }
+    }   
 }
