@@ -1,21 +1,26 @@
 {
     "availableLanguageIds": [
-        "en_US"
+        "en_US",
+        "de_DE"
     ],
     "defaultLanguageId": "en_US",
     "fields": [
         {
             "label": {
-                "en_US": "Headline"
+                "en_US": "Headline",
+                "de_DE": "Überschrift"
             },
             "predefinedValue": {
-                "en_US": ""
+                "en_US": "",
+                "de_DE": ""
             },
             "style": {
-                "en_US": ""
+                "en_US": "",
+                "de_DE": ""
             },
             "tip": {
-                "en_US": ""
+                "en_US": "",
+                "de_DE": ""
             },
             "dataType": "string",
             "indexType": "keyword",
@@ -29,16 +34,20 @@
         },
         {
             "label": {
-                "en_US": "Abstract"
+                "en_US": "Abstract",
+                "de_DE": "Titel Abstract"
             },
             "predefinedValue": {
-                "en_US": ""
+                "en_US": "",
+                "de_DE": ""
             },
             "style": {
-                "en_US": ""
+                "en_US": "",
+                "de_DE": ""
             },
             "tip": {
-                "en_US": ""
+                "en_US": "",
+                "de_DE": ""
             },
             "dataType": "string",
             "indexType": "keyword",
@@ -52,16 +61,20 @@
             "nestedFields": [
                 {
                     "label": {
-                        "en_US": "Claim"
+                        "en_US": "Claim",
+                        "de_DE": "Claim"
                     },
                     "predefinedValue": {
-                        "en_US": ""
+                        "en_US": "",
+                        "de_DE": ""
                     },
                     "style": {
-                        "en_US": ""
+                        "en_US": "",
+                        "de_DE": ""
                     },
                     "tip": {
-                        "en_US": ""
+                        "en_US": "",
+                        "de_DE": ""
                     },
                     "dataType": "string",
                     "indexType": "keyword",
@@ -75,16 +88,20 @@
                 },
                 {
                     "label": {
-                        "en_US": "Link to Page"
+                        "en_US": "Link to Page",
+                        "de_DE": "Link to Page"
                     },
                     "predefinedValue": {
-                        "en_US": ""
+                        "en_US": "",
+                        "de_DE": ""
                     },
                     "style": {
-                        "en_US": ""
+                        "en_US": "",
+                        "de_DE": ""
                     },
                     "tip": {
-                        "en_US": ""
+                        "en_US": "",
+                        "de_DE": ""
                     },
                     "dataType": "link-to-page",
                     "fieldNamespace": "ddm",
@@ -99,16 +116,20 @@
                 },
                 {
                     "label": {
-                        "en_US": "Label"
+                        "en_US": "Label",
+                        "de_DE": "Beschriftung"
                     },
                     "predefinedValue": {
-                        "en_US": ""
+                        "en_US": "",
+                        "de_DE": ""
                     },
                     "style": {
-                        "en_US": ""
+                        "en_US": "",
+                        "de_DE": ""
                     },
                     "tip": {
-                        "en_US": ""
+                        "en_US": "",
+                        "de_DE": ""
                     },
                     "dataType": "string",
                     "indexType": "keyword",
@@ -124,16 +145,20 @@
         },
         {
             "label": {
-                "en_US": "Link to Page"
+                "en_US": "Link to Page",
+                "de_DE": "Link to Page"
             },
             "predefinedValue": {
-                "en_US": ""
+                "en_US": "",
+                "de_DE": ""
             },
             "style": {
-                "en_US": ""
+                "en_US": "",
+                "de_DE": ""
             },
             "tip": {
-                "en_US": ""
+                "en_US": "",
+                "de_DE": ""
             },
             "dataType": "link-to-page",
             "fieldNamespace": "ddm",
@@ -148,16 +173,20 @@
         },
         {
             "label": {
-                "en_US": "Label"
+                "en_US": "Label",
+                "de_DE": "Beschriftung"
             },
             "predefinedValue": {
-                "en_US": ""
+                "en_US": "",
+                "de_DE": ""
             },
             "style": {
-                "en_US": ""
+                "en_US": "",
+                "de_DE": ""
             },
             "tip": {
-                "en_US": ""
+                "en_US": "",
+                "de_DE": ""
             },
             "dataType": "string",
             "indexType": "keyword",

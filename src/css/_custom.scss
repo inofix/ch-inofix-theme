@@ -2,8 +2,8 @@
     _custom.scss: main config of the inofix-theme
 
     Created:    2017-03-05 23:20 by Christian Berndt
-    Modified:   2017-06-28 15:19 by Christian Berndt
-    Version:    0.2.2
+    Modified:   2017-06-28 18:35 by Christian Berndt
+    Version:    0.2.3
 */
 
 /* These inject tags are used for dynamically creating imports for themelet styles, you can place them where ever you like in this file. */
@@ -34,17 +34,28 @@ a {
 
 .abstracts {
     
-    padding-bottom: 60px;
+    padding-bottom: 30px;
     padding-top: 60px;
+    text-align: center;
     
-    h1 {
-        font-weight: 600; 
-        padding: 0 200px 30px;
-        text-align: center;
+    
+    .common-link {
+        margin-top: 30px;
+    }
+
+    h3 {
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        margin-bottom: 20px;
+        margin-top: 30px;
+        text-transform: uppercase;
     }
     
-    h3 {
-        font-weight: 600; 
+    p {
+        font-size: 16px;
+        line-height: 150%;
+        text-align: left;
     }
     
     &.lightgray {
