@@ -2,8 +2,8 @@
     navigation.ftl: header navigation.
     
     Created:    2017-03-05 23:01 by Christian Berndt
-    Modified:   2017-06-27 20:50 by Christian Berndt
-    Version:    0.2.4
+    Modified:   2017-06-28 12:41 by Christian Berndt
+    Version:    0.2.5
 -->
 
 <#assign layout_url = portalUtil.getLayoutFriendlyURL(layout, theme_display) />
@@ -13,7 +13,7 @@
 <nav class="${nav_css_class} navbar navbar-default" id="navigation" role="navigation">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation .site-navigation" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -33,7 +33,7 @@
         </div>
  
         <#if layout.isPublicLayout() >
-            <ul aria-label="<@liferay.language key="site-pages" />" class="nav navbar-nav navbar-right" role="menubar">
+            <ul aria-label="<@liferay.language key="site-pages" />" class="collapse nav navbar-collapse navbar-nav navbar-right site-navigation" role="menubar">
                 <#list nav_items as nav_item>
                     <#assign
                         nav_item_attr_has_popup = ""
