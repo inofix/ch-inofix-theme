@@ -2,8 +2,8 @@
     _core_portlets.scss: adjust Liferay's core portlets for the inofix-theme
 
     Created:    2017-03-05 23:20 by Christian Berndt
-    Modified:   2017-06-27 19:04 by Christian Berndt
-    Version:    0.1.1
+    Modified:   2017-06-28 12:27 by Christian Berndt
+    Version:    0.1.2
 */
 
 .hide-topper {
@@ -58,6 +58,8 @@
 
 .portlet-login {
     
+    margin-top: 30px;
+    
     .btn {
         font-size: 14px; /* bs .btn */
         padding: 6px 12px; /* bs .btn */
@@ -101,13 +103,13 @@
         border-color: #ddd; /* bs .panel-default */
         border-radius: 4px; /* bs .panel */
         border-style: solid; 
-        border-width: 1px 1px 1px 1px; /* bs .panel */
+        border-width: 1px 1px 1px 1px ! important; /* bs .panel */
         box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); /* bs .panel */
     
         display: inline-block;
         margin-bottom: 70px;
         text-align: left; 
-        width: 570px;
+        width: 370px;
         
         .portlet-body {
             padding: 15px; /*  bs .panel-body */        
