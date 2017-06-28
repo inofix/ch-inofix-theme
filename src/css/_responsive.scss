@@ -1,0 +1,15 @@
+/** 
+    _responsive.scss: responsiveness for the inofix-theme 
+
+    Created:    2017-06-28 13:30 by Christian Berndt
+    Modified:   2017-06-28 13:30 by Christian Berndt
+    Version:    0.1.0
+*/
+
+@media (max-width: 767px) {
+    .billboard {
+        .claim  {
+            padding: 40px 0;
+        }
+    }
+}
