@@ -7,6 +7,61 @@
     "fields": [
         {
             "label": {
+                "en_US": "Color Scheme",
+                "de_DE": "Farbschema"
+            },
+            "options": [
+                {
+                    "value": "darkblue",
+                    "label": {
+                        "en_US": "darkblue",
+                        "de_DE": "dunkelblau"
+                    }
+                },
+                {
+                    "value": "lightgray",
+                    "label": {
+                        "en_US": "lightgray",
+                        "de_DE": "hellgrau"
+                    }
+                },
+                {
+                    "value": "red",
+                    "label": {
+                        "en_US": "red",
+                        "de_DE": "rot"
+                    }
+                }
+            ],
+            "predefinedValue": {
+                "en_US": [
+                    ""
+                ],
+                "de_DE": [
+                    ""
+                ]
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "multiple": false,
+            "name": "colorScheme",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "select"
+        },
+        {
+            "label": {
                 "en_US": "Headline",
                 "de_DE": "Überschrift"
             },

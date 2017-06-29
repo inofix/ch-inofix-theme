@@ -2,11 +2,17 @@
     abstracts.ftl: Format the abstracts structure
     
     Created:    2017-05-14 19:03 by Christian Berndt
-    Modified:   2017-06-28 23:52 by Christian Berndt
-    Version:    1.0.4
+    Modified:   2017-06-29 00:38 by Christian Berndt
+    Version:    1.0.5
 -->
 
-<div class="abstracts">
+<#assign color_scheme = "white" />
+
+<#if colorScheme.getData()?has_content>
+    <#assign color_scheme = colorScheme.getData() />
+</#if>
+
+<div class="abstracts ${color_scheme}">
     <div class="container">
         <#if headline??>
             <#if headline.getData()?has_content>
@@ -21,7 +27,7 @@
                 
                     <#assign num_siblings = abstract.getSiblings()?size />
                     <#assign num_columns = 2 />
-                    <#assign css_class = "col-md-6" />
+                    <#assign css_class = "col-md-6 col-sm-6" />
                     
                     <#if num_siblings % 3 == 0>
                         <#assign css_class = "col-md-4" />
