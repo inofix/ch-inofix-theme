@@ -2,8 +2,8 @@
     _custom.scss: main config of the inofix-theme
 
     Created:    2017-03-05 23:20 by Christian Berndt
-    Modified:   2017-06-28 18:35 by Christian Berndt
-    Version:    0.2.3
+    Modified:   2017-06-29 21:50 by Christian Berndt
+    Version:    0.2.4
 */
 
 /* These inject tags are used for dynamically creating imports for themelet styles, you can place them where ever you like in this file. */
@@ -34,7 +34,11 @@ a {
 
 .abstracts {
     
-    padding-bottom: 30px;
+    margin-bottom: -15px;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: -15px;
+    padding-bottom: 60px;
     padding-top: 60px;
     text-align: center;
     
@@ -61,6 +65,69 @@ a {
     &.lightgray {
         background-color: #f3f5f4;
     }
+    
+    &.red {
+        background-color: red;
+        color: white;
+        font-weight: 600;
+        
+        .btn-info {
+            background-color: white;
+            border-color: white;
+            color: red;
+            
+            &:hover {
+                background-color: darken(white, 5%);          
+                color: darken(red, 5%);          
+            }
+        }
+    }
+}
+
+.billboard {
+    
+    margin-left: -15px;
+    margin-right: -15px;
+    min-height: 50vh;
+    
+    .caption {
+        margin-top: 11vh;
+        text-align: center;
+    }
+    
+    .claim {
+   
+        padding: 40px 0;
+    
+        h1 {
+            color: #fff;
+            font-size: 36px; 
+            font-weight: 600; 
+            line-height: 130%;
+            margin-top: 0; 
+            margin-bottom: 0; 
+        }   
+    }
+    
+    .image-wrapper {
+    
+        background-color: #4d4d4d;
+        
+        img {
+            margin-bottom: -10vh;
+        }
+   
+    }
+    
+    .text-only {    
+        text-align: center;
+    }
+    
+    .text-wrapper {
+        background-color: #4d4d4d;
+        text-align: center;         
+    }
+
 }
 
 body {
@@ -90,7 +157,6 @@ body {
     background: #fff;
     border-top: 1px solid $color-lightgray;
     color: #333;
-    margin-top: 70px;
     
     a {
         color: #333;
@@ -102,7 +168,7 @@ body {
     }
     
     .container {
-        padding: 15px 15px 20px;
+        padding: 20px 15px;
     }
 }
 
@@ -204,52 +270,6 @@ label {
     .portlet-content {
         border-width: 0; 
     }
-}
-
-.billboard {
-    
-    margin-left: -15px;
-    margin-right: -15px;
-    min-height: 50vh;
-    
-    .caption {
-        margin-top: 11vh;
-        text-align: center;
-    }
-    
-    .claim {
-   
-        padding: 40px 0;
-    
-        h1 {
-            color: #fff;
-            font-size: 36px; 
-            font-weight: 600; 
-            line-height: 130%;
-            margin-top: 0; 
-            margin-bottom: 0; 
-        }   
-    }
-    
-    .image-wrapper {
-    
-        background-color: #4d4d4d;
-        
-        img {
-            margin-bottom: -10vh;
-        }
-   
-    }
-    
-    .text-only {    
-        text-align: center;
-    }
-    
-    .text-wrapper {
-        background-color: #4d4d4d;
-        text-align: center;         
-    }
-
 }
 
 .signed-in {

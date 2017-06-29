@@ -2,12 +2,13 @@
     _responsive.scss: responsiveness for the inofix-theme 
 
     Created:    2017-06-28 13:30 by Christian Berndt
-    Modified:   2017-06-28 17:30 by Christian Berndt
-    Version:    0.1.1
+    Modified:   2017-06-29 00:25 by Christian Berndt
+    Version:    0.1.2
 */
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+
     .billboard {
         .image-wrapper { 
             
@@ -21,7 +22,8 @@
 }
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
+ 
     .billboard {
         .image-wrapper {    
             img {
@@ -41,6 +43,16 @@
         
         .text-wrapper {
             text-align: left;         
+        }
+    }
+    
+    #navigation {
+    
+        .my-account {
+    
+            &.btn {
+                margin-left: 15px;
+            }
         }
     }
 }
