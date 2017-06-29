@@ -2,8 +2,8 @@
     abstracts.ftl: Format the abstracts structure
     
     Created:    2017-05-14 19:03 by Christian Berndt
-    Modified:   2017-06-29 00:38 by Christian Berndt
-    Version:    1.0.5
+    Modified:   2017-06-29 21:55 by Christian Berndt
+    Version:    1.0.6
 -->
 
 <#assign color_scheme = "white" />
@@ -27,11 +27,11 @@
                 
                     <#assign num_siblings = abstract.getSiblings()?size />
                     <#assign num_columns = 2 />
-                    <#assign css_class = "col-md-6 col-sm-6" />
+                    <#assign css_class = "col-md-4 col-md-offset-1 col-sm-4 col-sm-offset-1" />
                     
                     <#if num_siblings % 3 == 0>
                         <#assign css_class = "col-md-4" />
-                        <#assign num_columns = 3 />                       
+                        <#assign num_columns = 3 />
                     <#elseif num_siblings % 4 == 0 >
                         <#assign css_class = "col-md-3" />                    
                         <#assign num_columns = 4 />                       
@@ -44,6 +44,14 @@
                         <#if idx gt 0 && idx % num_columns == 0>
                             <#assign new_row = "</div><div class=\"row\">" />
                             ${new_row}
+                        </#if>
+
+                        <#if num_columns == 2>
+                            <#if (idx + 1) % 2 == 0>
+                                <#assign css_class = "col-md-4 col-md-offset-2 col-sm-4 col-sm-offset-2" />
+                            <#else>
+                                <#assign css_class = "col-md-4 col-md-offset-1 col-sm-4 col-sm-offset-1" />
+                            </#if>
                         </#if>
                     
                         <div class="${css_class}">
