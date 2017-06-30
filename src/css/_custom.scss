@@ -2,8 +2,8 @@
     _custom.scss: main config of the inofix-theme
 
     Created:    2017-03-05 23:20 by Christian Berndt
-    Modified:   2017-06-29 21:50 by Christian Berndt
-    Version:    0.2.5
+    Modified:   2017-06-30 16:42 by Christian Berndt
+    Version:    0.2.6
 */
 
 /* These inject tags are used for dynamically creating imports for themelet styles, you can place them where ever you like in this file. */
@@ -21,9 +21,6 @@
 /** Global settings */
 $color-lightgray: #f3f5f4;
 
-.alert {
-    padding: 10px 15px;   
-}
 
 a {
     &:active,
@@ -81,6 +78,16 @@ a {
                 color: darken(red, 5%);          
             }
         }
+    }
+}
+
+.alert {
+    padding: 10px 15px;   
+}
+
+.alert-dismissable {
+    .close {
+        right: 0; 
     }
 }
 
