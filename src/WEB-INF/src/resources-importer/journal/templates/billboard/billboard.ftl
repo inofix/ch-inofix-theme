@@ -2,8 +2,8 @@
     billboard.ftl: Format the billboard structure
     
     Created:    2017-06-27 22:23 by Christian Berndt
-    Modified:   2017-06-28 15:13 by Christian Berndt
-    Version:    1.0.1
+    Modified:   2017-06-29 22:26 by Christian Berndt
+    Version:    1.0.2
 -->
 
 <#assign css_class = "col-md-12 text-only" />
@@ -37,7 +37,7 @@
         </div>
         
         <#if image.getAttribute("alt")?has_content>    
-            <div>
+            <div class="caption-wrapper">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 col-md-offset-6">
