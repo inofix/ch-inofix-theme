@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<root available-locales="en_US" default-locale="en_US">
+    <dynamic-element name="claim" type="text"
+        index-type="keyword">
+        <dynamic-content language-id="en_US"><![CDATA[Wir unterstützen Sie in allen Phasen mit Rat und Tat auf dem Weg zur besten Lösung]]></dynamic-content>
+    </dynamic-element>
+</root>
