@@ -2,8 +2,8 @@
     _responsive.scss: responsiveness for the inofix-theme 
 
     Created:    2017-06-28 13:30 by Christian Berndt
-    Modified:   2017-07-02 16:20 by Christian Berndt
-    Version:    0.1.4
+    Modified:   2017-07-02 21:47 by Christian Berndt
+    Version:    0.1.5
 */
 
 /* Small devices (tablets, 768px and up) */
@@ -26,6 +26,7 @@
         }    
     }
     
+    .portlet-contact-manager,
     .portlet-timetracker {
          
         .collapse-basic-search {
@@ -81,6 +82,7 @@
         }
     }
     
+    .portlet-contact-manager,
     .portlet-timetracker {
     
         .btn-bottom-right {
