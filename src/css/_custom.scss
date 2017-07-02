@@ -2,8 +2,8 @@
     _custom.scss: main config of the inofix-theme
 
     Created:    2017-03-05 23:20 by Christian Berndt
-    Modified:   2017-07-02 15:22 by Christian Berndt
-    Version:    0.2.7
+    Modified:   2017-07-02 16:20 by Christian Berndt
+    Version:    0.2.8
 */
 
 /* These inject tags are used for dynamically creating imports for themelet styles, you can place them where ever you like in this file. */
@@ -285,6 +285,12 @@ label {
 }
 
 .portlet-timetracker {
+     
+    .btn-bottom-right {
+        top: 10px;
+        position: absolute;
+        right: 15px;
+    }
     
     .card-horizontal {
     
@@ -292,6 +298,12 @@ label {
         
         .panel-body {
             padding: 0; 
+        }
+    }
+    
+    .collapse-basic-search {
+        .basic-search {
+            right: 47px;
         }
     }
 }
