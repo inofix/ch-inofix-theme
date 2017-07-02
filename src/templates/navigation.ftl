@@ -2,8 +2,8 @@
     navigation.ftl: header navigation.
     
     Created:    2017-03-05 23:01 by Christian Berndt
-    Modified:   2017-07-02 15:23 by Christian Berndt
-    Version:    0.2.6
+    Modified:   2017-07-02 15:31 by Christian Berndt
+    Version:    0.2.7
 -->
 
 <nav class="${nav_css_class} navbar navbar-default" id="navigation" role="navigation">
@@ -53,7 +53,7 @@
                 <#if theme_display.isSignedIn() >
                     <#if user.hasPrivateLayouts()>
                         <li>
-                            <a class="btn btn-info my-account" href="${user.getDisplayURL(theme_display, true)}">
+                            <a class="btn btn-info btn-my-account" href="${user.getDisplayURL(theme_display, true)}">
                                 <span><@liferay.language key="my-account" /></span>
                             </a>
                         </li>

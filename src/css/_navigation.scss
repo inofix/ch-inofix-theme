@@ -2,8 +2,8 @@
     _navigation.scss: inofix theme's navigation 
 
     Created:    2017-03-05 23:08 by Christian Berndt
-    Modified:   2017-07-02 15:22 by Christian Berndt
-    Version:    0.3.6
+    Modified:   2017-07-02 15:30 by Christian Berndt
+    Version:    0.3.7
 */
 
 /** Global settings */
@@ -18,31 +18,31 @@ $color-lightgray: #f5f5f5;
     margin-bottom: 0;
     text-align: center;
     
+    .btn-my-account {
+    
+        letter-spacing: normal;
+        text-transform: none;
+        
+        &.btn {
+            color: #fff;
+            margin-bottom: 14px;
+            margin-top: 14px;
+            padding-top: 12px; 
+            padding-bottom: 12px;
+            
+            &:hover {
+                background-color: #31b0d5;
+            }
+        }
+    }
+    
     #layout_1 {
         display: none; 
     }
     
     .my-account {
     
-        display: none; 
-    
-        .btn-my-account {
-        
-            letter-spacing: normal;
-            text-transform: none;
-            
-            &.btn {
-                color: #fff;
-                margin-bottom: 14px;
-                margin-top: 14px;
-                padding-top: 12px; 
-                padding-bottom: 12px;
-                
-                &:hover {
-                    background-color: #31b0d5;
-                }
-            }
-        }    
+        display: none;   
     }
     
     .navbar-brand {
