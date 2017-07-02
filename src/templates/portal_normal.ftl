@@ -2,8 +2,8 @@
     portal_normal.ftl: base template of the inofix-theme.
     
     Created:    2017-03-05 23:01 by Christian Berndt
-    Modified:   2017-06-27 22:44 by Christian Berndt
-    Version:    0.1.4
+    Modified:   2017-07-02 14:38 by Christian Berndt
+    Version:    0.1.5
 -->
 
 <!DOCTYPE html>
@@ -55,7 +55,7 @@
                 ${site_name}
             </h3>
         
-            <ul aria-label="<@liferay.language key="site-pages" />" class="nav navbar-nav" role="menubar">
+            <ul aria-label="<@liferay.language key="site-pages" />" class="collapse navbar-collapse nav navbar-nav site-navigation" role="menubar">
                 <#list nav_items as nav_item>
                     <#assign
                         nav_item_attr_has_popup = ""

@@ -2,18 +2,14 @@
     navigation.ftl: header navigation.
     
     Created:    2017-03-05 23:01 by Christian Berndt
-    Modified:   2017-06-28 12:41 by Christian Berndt
-    Version:    0.2.5
+    Modified:   2017-07-02 15:23 by Christian Berndt
+    Version:    0.2.6
 -->
-
-<#assign layout_url = portalUtil.getLayoutFriendlyURL(layout, theme_display) />
-<#assign show_header_search = getterUtil.getBoolean(themeDisplay.getThemeSetting("show-header-search"))>
-<#assign sign_up_url = layout_url + "?p_p_id=com_liferay_login_web_portlet_LoginPortlet&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&saveLastPath=false&_com_liferay_login_web_portlet_LoginPortlet_mvcRenderCommandName=%2Flogin%2Fcreate_account" />
 
 <nav class="${nav_css_class} navbar navbar-default" id="navigation" role="navigation">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation .site-navigation" aria-expanded="false">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".site-navigation" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -65,7 +61,7 @@
                 </#if>
             </ul>
         <#else>           
-            <ul class="nav navbar-nav navbar-right" role="menubar">
+            <ul class="my-account nav navbar-nav navbar-right" role="menubar">
                 <li>
                     <#if user.hasPrivateLayouts() >
                         <#if theme_display.scopeGroupId == user.groupId >
@@ -73,7 +69,7 @@
                                 <span class="user-name">${user.fullName}</span>
                             </a>
                         <#else>
-                            <a class="btn btn-info my-account" href="${user.getDisplayURL(theme_display, true)}">
+                            <a class="btn btn-info btn-my-account" href="${user.getDisplayURL(theme_display, true)}">
                                 <span><@liferay.language key="my-account" /></span>
                             </a>
                         </#if>
