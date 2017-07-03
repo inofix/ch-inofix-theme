@@ -2,8 +2,8 @@
     portal_normal.ftl: base template of the inofix-theme.
     
     Created:    2017-03-05 23:01 by Christian Berndt
-    Modified:   2017-07-02 14:38 by Christian Berndt
-    Version:    0.1.5
+    Modified:   2017-07-03 19:29 by Christian Berndt
+    Version:    0.1.6
 -->
 
 <!DOCTYPE html>
@@ -11,16 +11,11 @@
 <#include init />
 
 <#assign full_width = getterUtil.getBoolean(themeDisplay.getThemeSetting("full-width"), false)>
-<#assign hide_topper = getterUtil.getBoolean(themeDisplay.getThemeSetting("hide-topper"), false)>
 
 <#assign wrapper_class = "container"/>
 
 <#if full_width>
     <#assign wrapper_class = "container-fluid"/>
-</#if>
-
-<#if hide_topper>
-    <#assign root_css_class = root_css_class + " hide-topper"/>
 </#if>
 
 <html class="${root_css_class}" dir="<@liferay.language key="lang.dir" />" lang="${w3c_language_id}">
