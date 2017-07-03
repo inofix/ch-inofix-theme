@@ -9,7 +9,6 @@
         <template-extension>ftl</template-extension>
         <settings>
             <setting configurable="true" key="full-width" type="checkbox" value="false" />
-            <setting configurable="true" key="hide-topper" type="checkbox" value="false" />
         </settings>     
         <portlet-decorator id="barebone" name="Barebone">
             <portlet-decorator-css-class>portlet-barebone</portlet-decorator-css-class>
