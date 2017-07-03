@@ -116,6 +116,33 @@
             "nestedFields": [
                 {
                     "label": {
+                        "en_US": "Icon Class",
+                        "de_DE": "Icon Class"
+                    },
+                    "predefinedValue": {
+                        "en_US": "",
+                        "de_DE": ""
+                    },
+                    "style": {
+                        "en_US": "",
+                        "de_DE": ""
+                    },
+                    "tip": {
+                        "en_US": "",
+                        "de_DE": ""
+                    },
+                    "dataType": "string",
+                    "indexType": "keyword",
+                    "localizable": true,
+                    "name": "iconClass",
+                    "readOnly": false,
+                    "repeatable": false,
+                    "required": false,
+                    "showLabel": true,
+                    "type": "text"
+                },
+                {
+                    "label": {
                         "en_US": "Claim",
                         "de_DE": "Claim"
                     },

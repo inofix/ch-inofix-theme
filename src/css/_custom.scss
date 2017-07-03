@@ -2,8 +2,8 @@
     _custom.scss: main config of the inofix-theme
 
     Created:    2017-03-05 23:20 by Christian Berndt
-    Modified:   2017-07-03 19:23 by Christian Berndt
-    Version:    0.3.2
+    Modified:   2017-07-03 20:08 by Christian Berndt
+    Version:    0.3.3
 */
 
 /* These inject tags are used for dynamically creating imports for themelet styles, you can place them where ever you like in this file. */
@@ -33,36 +33,72 @@ a {
     margin-bottom: -15px;
     margin-left: -15px;
     margin-right: -15px;
-    margin-top: -15px;
-    padding-bottom: 60px;
+    margin-top: -10px;
+    padding-bottom: 70px;
     padding-top: 60px;
     text-align: center;
     
+    .btn-lg {
+        padding: 10px 20px;
+    }
     
     .common-link {
         margin-top: 30px;
+    }
+    
+    h1 {
+        margin-bottom: 30px;
     }
 
     h3 {
         font-size: 18px;
         font-weight: 600;
         letter-spacing: 0.1em;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         margin-top: 30px;
         text-transform: uppercase;
+    }
+    
+    .icon-wrapper {
+    
+        background-color: #ccc;
+        border-radius: 50%;
+        display: inline-block;
+        margin-bottom: 10px; 
+        margin-top: 20px;
+
+        .icon {
+            display: table-cell;
+            font-size: 50px;
+            height: 100px;
+            vertical-align: middle; 
+            width: 100px;
+        }
     }
     
     p {
         font-size: 16px;
         line-height: 150%;
+        margin-bottom: 30px;
         text-align: left;
     }
     
     &.lightgray {
+    
         background-color: $color-lightgray;
+       
+        .icon-wrapper {
+            background-color: #4d4d4d;
+        }
+        
+        .icon {
+            color: white; 
+        }
+        
     }
     
     &.red {
+    
         background-color: red;
         color: white;
         font-weight: 600;
@@ -76,6 +112,14 @@ a {
                 background-color: darken(white, 5%);          
                 color: darken(red, 5%);          
             }
+        }
+        
+        .icon-wrapper {
+            background-color: white;
+        }
+        
+        .icon {
+            color: darken(red, 5%);          
         }
     }
 }
@@ -102,6 +146,7 @@ a {
         
         .caption {
             margin-top: 11vh;
+            padding-bottom: 5px;
             text-align: center;
         }
     }

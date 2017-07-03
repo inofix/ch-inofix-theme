@@ -2,8 +2,8 @@
     abstracts.ftl: Format the abstracts structure
     
     Created:    2017-05-14 19:03 by Christian Berndt
-    Modified:   2017-06-29 21:55 by Christian Berndt
-    Version:    1.0.6
+    Modified:   2017-07-03 19:42 by Christian Berndt
+    Version:    1.0.7
 -->
 
 <#assign color_scheme = "white" />
@@ -55,9 +55,12 @@
                         </#if>
                     
                         <div class="${css_class}">
-                            <#--
-                            <img src="" alt="TODO: alt" class="img-circle">
-                            -->
+                        
+                            <#if cur_abstract.iconClass?? && cur_abstract.iconClass.getData()?has_content>
+                                <div class="icon-wrapper">
+                                    <span class="icon ${cur_abstract.iconClass.getData()}"></span>
+                                </div>
+                            </#if>
                             <#if cur_abstract.getData()?has_content>
                                 <h3>${cur_abstract.getData()}</h3>
                             </#if>
@@ -75,7 +78,7 @@
         <#if link??>
             <div class="row">
                 <div class="common-link">
-                    <a class="btn btn-info" href="${link.getFriendlyUrl()}">
+                    <a class="btn btn-lg btn-info" href="${link.getFriendlyUrl()}">
                         ${label.getData()}
                     </a>
                 </div>
