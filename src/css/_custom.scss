@@ -2,8 +2,8 @@
     _custom.scss: main config of the inofix-theme
 
     Created:    2017-03-05 23:20 by Christian Berndt
-    Modified:   2017-07-04 18:05 by Christian Berndt
-    Version:    0.3.4
+    Modified:   2017-07-05 17:25 by Christian Berndt
+    Version:    0.3.5
 */
 
 /* These inject tags are used for dynamically creating imports for themelet styles, you can place them where ever you like in this file. */
@@ -16,110 +16,17 @@
 
 @import "core_portlets";
 @import "navigation";
+@import "templates";
 
 
 /** Global settings */
-$color-darkgray: #4d4d4d;
-$color-lightgray: #f3f5f4;
+$color-darkgray: #333;
+$color-lightgray: #f2f2f2;
 
 a {
     &:active,
     &:focus {
         outline-color: transparent;
-    }
-}
-
-.abstracts {
-    
-    margin-left: -15px;
-    margin-right: -15px;
-    padding-bottom: 70px;
-    padding-top: 60px;
-    text-align: center;
-    
-    .btn-lg {
-        padding: 10px 20px;
-    }
-    
-    .common-link {
-        margin-top: 30px;
-    }
-    
-    h1 {
-        margin-bottom: 30px;
-    }
-
-    h3 {
-        font-size: 18px;
-        font-weight: 600;
-        letter-spacing: 0.1em;
-        margin-bottom: 30px;
-        margin-top: 30px;
-        text-transform: uppercase;
-    }
-    
-    .icon-wrapper {
-    
-        background-color: #ccc;
-        border-radius: 50%;
-        display: inline-block;
-        margin-bottom: 10px; 
-        margin-top: 20px;
-
-        .icon {
-            display: table-cell;
-            font-size: 50px;
-            height: 100px;
-            vertical-align: middle; 
-            width: 100px;
-        }
-    }
-    
-    p {
-        font-size: 16px;
-        line-height: 150%;
-        margin-bottom: 30px;
-        text-align: left;
-    }
-    
-    &.lightgray {
-    
-        background-color: $color-lightgray;
-       
-        .icon-wrapper {
-            background-color: $color-darkgray;
-        }
-        
-        .icon {
-            color: white; 
-        }
-        
-    }
-    
-    &.red {
-    
-        background-color: red;
-        color: white;
-        font-weight: 600;
-        
-        .btn-info {
-            background-color: white;
-            border-color: white;
-            color: red;
-            
-            &:hover {
-                background-color: darken(white, 5%);          
-                color: darken(red, 5%);          
-            }
-        }
-        
-        .icon-wrapper {
-            background-color: white;
-        }
-        
-        .icon {
-            color: darken(red, 5%);          
-        }
     }
 }
 
@@ -135,67 +42,6 @@ a {
 
 .below-billboard {
     margin-top: -60px;
-}
-
-.billboard {
-    
-    margin-bottom: 60px;
-    margin-left: -15px;
-    margin-right: -15px;
-     
-    .caption-wrapper {
-    
-        background-color: $color-lightgray;
-        
-        .caption {
-            margin-top: 11vh;
-            padding-bottom: 5px;
-            text-align: center;
-        }
-    }
-    
-    .claim {
-   
-        left: 15px;
-        position: absolute;
-        right: 15px;
-        top: 50%;
-        transform: translateY(-50%);
-    
-        h1 {
-            color: #fff;
-            font-size: 36px; 
-            font-weight: 600; 
-            line-height: 130%;
-            margin-top: 0; 
-            margin-bottom: 0; 
-        }   
-    }
-    
-    .image-wrapper {
-    
-        background-color: $color-darkgray;
-        
-        img {
-            margin-bottom: -10vh;
-        }
-   
-    }
-    
-    .text-only {    
-        min-height: 50vh;
-        text-align: center;
-        position: relative;     
-    }
-    
-    .text-wrapper {
-        background-color: $color-darkgray;
-        text-align: center;  
-        
-        .col-md-6 {
-            min-height: 50vh;     
-        }    
-    }
 }
 
 body {
@@ -443,64 +289,6 @@ strong {
     }
 }
 
-.teaser {
-    
-    font-size: 16px;
-    line-height: 150%;
-    margin-left: -15px;
-    margin-right: -15px;
-    text-align: center;
-    
-    .col-md-6 {
-        min-height: 50vh; 
-        position: relative; 
-    }
-    
-    h2 {
-       line-height: 125%;
-        margin-bottom: 20px;
-    }
-    
-    h3 {
-        font-size: 16px; 
-        text-transform: uppercase;
-    }
-    
-    .icon-wrapper {
-    
-        margin-bottom: 40px;
-    
-        .icon {
-            font-size: 100px;
-        }
-    }
-    
-    .image-wrapper {
-        left: 0; 
-        position: absolute;
-        right: 0; 
-        top: 50%;
-        transform: translateY(-50%);
-    }
-              
-    .text-wrapper {
-        margin: 0 auto;
-        padding: 20px 0 30px;
-        text-align: left; 
-    }
-    
-    &.lightgray {
-    
-        background-color: $color-lightgray;
-        color: $color-darkgray;
-        
-        .right {
-            background-color: white;       
-        }
-    }
-
-}
-
 #wrapper {
     
     margin-top: 0 !important;
@@ -519,7 +307,6 @@ body {
         display: none;
     }
 }
- 
  
 @import "responsive";
  

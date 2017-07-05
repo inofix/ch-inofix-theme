@@ -2,8 +2,8 @@
     _responsive.scss: responsiveness for the inofix-theme 
 
     Created:    2017-06-28 13:30 by Christian Berndt
-    Modified:   2017-07-05 09:44 by Christian Berndt
-    Version:    0.1.6
+    Modified:   2017-07-05 20:06 by Christian Berndt
+    Version:    0.1.7
 */
 
 /* Small devices (tablets, 768px and up) */
@@ -101,8 +101,20 @@
     }
     
     .teaser {
+    
         .text-wrapper {
             max-width: 320px;
+        }
+            
+        &.teaser-left {
+        
+            .left {
+                float: right;
+            }
+            
+            .right {
+                float: right;
+            }
         }
     }  
 }
