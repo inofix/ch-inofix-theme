@@ -7,6 +7,109 @@
     "fields": [
         {
             "label": {
+                "en_US": "Color Scheme",
+                "de_DE": "Farbschema"
+            },
+            "options": [
+                {
+                    "value": "blue",
+                    "label": {
+                        "en_US": "blue",
+                        "de_DE": "blau"
+                    }
+                },
+                {
+                    "value": "darkblue",
+                    "label": {
+                        "en_US": "darkblue",
+                        "de_DE": "dunkelblau"
+                    }
+                },
+                {
+                    "value": "darkgray",
+                    "label": {
+                        "en_US": "darkgray",
+                        "de_DE": "dunkelgrau"
+                    }
+                },
+                {
+                    "value": "gray",
+                    "label": {
+                        "en_US": "gray",
+                        "de_DE": "grau"
+                    }
+                },
+                {
+                    "value": "lightgray",
+                    "label": {
+                        "en_US": "lightgray",
+                        "de_DE": "hellgrau"
+                    }
+                },
+                {
+                    "value": "red",
+                    "label": {
+                        "en_US": "red",
+                        "de_DE": "rot"
+                    }
+                }
+            ],
+            "predefinedValue": {
+                "en_US": [
+                    ""
+                ],
+                "de_DE": [
+                    ""
+                ]
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "multiple": false,
+            "name": "colorScheme",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "select"
+        },
+        {
+            "label": {
+                "en_US": "Icon",
+                "de_DE": "Icon"
+            },
+            "predefinedValue": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": "The CSS-Class of the Fontawesome icon.",
+                "de_DE": "Die CSS-Klasse des Fontaweseome Icon."
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "iconClass",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "text"
+        },
+        {
+            "label": {
                 "en_US": "Headline",
                 "de_DE": "Überschrift"
             },
@@ -26,6 +129,60 @@
             "indexType": "keyword",
             "localizable": true,
             "name": "headline",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "text"
+        },
+        {
+            "label": {
+                "en_US": "Subheadline",
+                "de_DE": "Untertitel"
+            },
+            "predefinedValue": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "subHeadline",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "text"
+        },
+        {
+            "label": {
+                "en_US": "Claim",
+                "de_DE": "Claim"
+            },
+            "predefinedValue": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "claim",
             "readOnly": false,
             "repeatable": false,
             "required": false,
@@ -59,6 +216,33 @@
             "required": false,
             "showLabel": true,
             "type": "ddm-text-html"
+        },
+        {
+            "label": {
+                "en_US": "Teaser left",
+                "de_DE": "Anreisser links"
+            },
+            "predefinedValue": {
+                "en_US": false,
+                "de_DE": "false"
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "dataType": "boolean",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "teaserLeft",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "checkbox"
         },
         {
             "label": {
