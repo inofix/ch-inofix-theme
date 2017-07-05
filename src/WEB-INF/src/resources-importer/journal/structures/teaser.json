@@ -1,0 +1,92 @@
+{
+    "availableLanguageIds": [
+        "en_US",
+        "de_DE"
+    ],
+    "defaultLanguageId": "en_US",
+    "fields": [
+        {
+            "label": {
+                "en_US": "Headline",
+                "de_DE": "Überschrift"
+            },
+            "predefinedValue": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "headline",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "text"
+        },
+        {
+            "label": {
+                "en_US": "Teaser",
+                "de_DE": "Anreisser"
+            },
+            "predefinedValue": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "dataType": "html",
+            "fieldNamespace": "ddm",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "content",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "ddm-text-html"
+        },
+        {
+            "label": {
+                "en_US": "Link to Page",
+                "de_DE": "Link zur Seite"
+            },
+            "predefinedValue": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "dataType": "link-to-page",
+            "fieldNamespace": "ddm",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "link",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "ddm-link-to-page"
+        }
+    ]
+}
