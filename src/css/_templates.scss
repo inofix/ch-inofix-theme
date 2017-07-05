@@ -2,13 +2,11 @@
     _templates.scss: css config of inofix templates
 
     Created:    2017-07-05 17:26 by Christian Berndt
-    Modified:   2017-07-05 17:26 by Christian Berndt
-    Version:    1.0.0
+    Modified:   2017-07-05 23:36 by Christian Berndt
+    Version:    1.0.1
 */
 
-/** Global settings */
-$color-darkgray: #333;
-$color-lightgray: #f2f2f2;
+@import "variables";
 
 .abstracts {
     
