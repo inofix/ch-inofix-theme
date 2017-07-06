@@ -2,13 +2,11 @@
     _templates.scss: css config of inofix templates
 
     Created:    2017-07-05 17:26 by Christian Berndt
-    Modified:   2017-07-05 17:26 by Christian Berndt
-    Version:    1.0.0
+    Modified:   2017-07-06 20:54 by Christian Berndt
+    Version:    1.0.2
 */
 
-/** Global settings */
-$color-darkgray: #333;
-$color-lightgray: #f2f2f2;
+@import "variables";
 
 .abstracts {
     
@@ -86,11 +84,11 @@ $color-lightgray: #f2f2f2;
         .btn-info {
             background-color: white;
             border-color: white;
-            color: red;
+            color: lighten($color-darkgray, 5%);          
             
             &:hover {
-                background-color: darken(white, 5%);          
-                color: darken(red, 5%);          
+                color: darken($color-darkgray, 5%);   
+                background-color: darken(white, 2.5%);                          
             }
         }
         
@@ -99,7 +97,11 @@ $color-lightgray: #f2f2f2;
         }
         
         .icon {
-            color: darken(red, 5%);          
+            color: lighten($color-darkgray, 5%); 
+            
+            &.icon-ok {
+                color: lighten(green, 20%);
+            }         
         }
     }
 }
@@ -163,6 +165,53 @@ $color-lightgray: #f2f2f2;
         .col-md-6 {
             min-height: 50vh;     
         }    
+    }
+}
+
+.logos {
+    
+    background-color: $color-lightgray;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    text-align: center;
+    
+    h1 {
+        margin-bottom: 30px;
+    }
+    
+    h4 {
+        margin-bottom: 20px;
+    }
+
+    .logo {
+    
+        filter: grayscale(100%);
+        max-height: 170px;
+        max-width: 320px ! important;
+        opacity: 1;
+        padding: 30px;
+        vertical-align: middle;
+        
+        &:hover {
+            opacity: 1;
+            -webkit-filter: grayscale(0%);
+            -webkit-transition: .3s ease-in-out;
+            filter: url("data:image/svg+xml;utf8,<svgxmlns='http://www.w3.org/2000/svg'><filterid='grayscale'><feColorMatrixtype='matrix'values='0.33330.33330.3333000.33330.33330.3333000.33330.33330.33330000010'/></filter></svg>#grayscale");
+            filter: grayscale(0%);
+            -moz-transition: .3s ease-in-out;
+            -o-filter: grayscale(0%);
+            -o-transition: .3s ease-in-out;
+        }
+    }
+    
+    &.smaller-logos {
+        .logo {
+            max-height: 70px;
+            max-width: 170px;
+            padding: 20px;
+        }
     }
 }
 
