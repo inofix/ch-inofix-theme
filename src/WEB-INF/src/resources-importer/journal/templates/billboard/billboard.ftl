@@ -2,18 +2,24 @@
     billboard.ftl: Format the billboard structure
     
     Created:    2017-06-27 22:23 by Christian Berndt
-    Modified:   2017-07-02 22:31 by Christian Berndt
-    Version:    1.0.3
+    Modified:   2017-07-06 22:47 by Christian Berndt
+    Version:    1.0.4
 -->
 
+<#assign color_scheme = "darkgray" />
 <#assign css_class = "col-md-12 text-only" />
+<#assign css_class = "col-md-6" />
 <#assign has_images = image?? && image.getData()?? && image.getData() != ""/>
+
+<#if colorScheme?? && colorScheme.getData()?has_content>
+    <#assign color_scheme = colorScheme.getData() />
+</#if>
 
 <#if has_images>
     <#assign css_class = "col-md-6" />
 </#if>
 
-<div class="billboard">
+<div class="billboard ${color_scheme}">
     <div class="text-wrapper">
         <div class="container">
             <div class="row">

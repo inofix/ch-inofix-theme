@@ -2,8 +2,8 @@
     _templates.scss: css config of inofix templates
 
     Created:    2017-07-05 17:26 by Christian Berndt
-    Modified:   2017-07-06 20:54 by Christian Berndt
-    Version:    1.0.2
+    Modified:   2017-07-06 22:56 by Christian Berndt
+    Version:    1.0.3
 */
 
 @import "variables";
@@ -109,7 +109,8 @@
 
 .billboard {
     
-    margin-bottom: 60px;
+    background-color: $color-gray;
+    
     margin-left: -15px;
     margin-right: -15px;
      
@@ -143,8 +144,6 @@
     }
     
     .image-wrapper {
-    
-        background-color: $color-darkgray;
         
         img {
             margin-bottom: -10vh;
@@ -159,12 +158,39 @@
     }
     
     .text-wrapper {
-        background-color: $color-darkgray;
+    
         text-align: center;  
         
         .col-md-6 {
             min-height: 50vh;     
         }    
+    }
+    
+    &.blue {
+        background-color: $color-blue;
+    }
+    
+    &.darkblue {
+        background-color: $color-darkblue;
+    }
+    
+    &.darkgray {
+        background-color: $color-darkgray;
+    }
+    
+    &.gray {
+        background-color: $color-gray;
+        color: #1a1a1a;
+        
+        .claim {
+            h1 {
+                color: #1a1a1a;            
+            }
+        }
+    }
+    
+    &.red {
+        background-color: red;
     }
 }
 

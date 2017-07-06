@@ -2,8 +2,8 @@
     _responsive.scss: responsiveness for the inofix-theme 
 
     Created:    2017-06-28 13:30 by Christian Berndt
-    Modified:   2017-07-06 20:54 by Christian Berndt
-    Version:    0.1.8
+    Modified:   2017-07-06 23:06 by Christian Berndt
+    Version:    0.1.9
 */
 
 /* Small devices (tablets, 768px and up) */
@@ -131,7 +131,7 @@
     .billboard {
         .text-wrapper {
             h1 {
-                padding: 40px;    
+                padding: 40px 30px;    
             }            
         }
     }
