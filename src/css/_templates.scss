@@ -2,8 +2,8 @@
     _templates.scss: css config of inofix templates
 
     Created:    2017-07-05 17:26 by Christian Berndt
-    Modified:   2017-07-07 18:28 by Christian Berndt
-    Version:    1.0.5
+    Modified:   2017-07-07 19:40 by Christian Berndt
+    Version:    1.0.6
 */
 
 @import "variables";
@@ -66,7 +66,7 @@
         background-color: $color-lightgray;
        
         .icon-wrapper {
-            background-color: $color-darkgray;
+            background-color: lighten($color-darkgray, 10%);
         }
         
         .icon {
@@ -350,6 +350,17 @@
         }
     }
     
+    &.gray {
+    
+        background-color: $color-gray;
+        color: $color-darkgray;
+        
+        .right {
+            background-color: white;                    
+            color: $color-darkgray;
+        }
+    }
+    
     &.lightgray {
     
         background-color: $color-lightgray;
@@ -369,5 +380,56 @@
             background-color: white;                    
             color: $color-darkgray;
         }
+    }
+}
+
+.testimonials {
+    
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-bottom: 70px;
+    padding-top: 50px;
+    text-align: center;
+    
+    blockquote {
+        border-left-width: 10px;
+/*         float: left; */
+/*         padding: 10px 0 10px 35px; */
+        text-align: left;        
+    }
+    
+    h1 {
+        margin-bottom: 30px;
+    }
+
+    .icon-wrapper {
+    
+        background-color: #ccc;
+        border-radius: 50%;
+        display: inline-block;
+        margin-bottom: 15px;
+        margin-top: 10px;
+
+        .icon {
+            display: table-cell;
+            font-size: 50px;
+            height: 100px;
+            vertical-align: middle; 
+            width: 100px;
+        }
+    }
+    
+    &.lightgray {
+    
+        background-color: $color-lightgray;
+       
+        .icon-wrapper {
+            background-color: $color-gray;
+        }
+        
+        .icon {
+            color: white; 
+        }
+        
     }
 }
