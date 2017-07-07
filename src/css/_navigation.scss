@@ -2,8 +2,8 @@
     _navigation.scss: inofix theme's navigation 
 
     Created:    2017-03-05 23:08 by Christian Berndt
-    Modified:   2017-07-05 23:38 by Christian Berndt
-    Version:    0.3.8
+    Modified:   2017-07-07 16:12 by Christian Berndt
+    Version:    0.3.9
 */
 
 @import "variables";
@@ -69,6 +69,10 @@
         text-transform: uppercase; 
     
         > li {
+        
+            margin-left: -15px;
+            margin-right: -15px;
+            border-bottom: 1px solid $color-lightgray;
                 
             > a {
                 padding-bottom: 28px;
