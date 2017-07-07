@@ -7,6 +7,82 @@
     "fields": [
         {
             "label": {
+                "en_US": "Color Scheme",
+                "de_DE": "Farbschema"
+            },
+            "options": [
+                {
+                    "value": "blue",
+                    "label": {
+                        "en_US": "blue",
+                        "de_DE": "blau"
+                    }
+                },
+                {
+                    "value": "darkblue",
+                    "label": {
+                        "en_US": "darkblue",
+                        "de_DE": "dunkelblau"
+                    }
+                },
+                {
+                    "value": "darkgray",
+                    "label": {
+                        "en_US": "darkgray",
+                        "de_DE": "dunkelgrau"
+                    }
+                },
+                {
+                    "value": "gray",
+                    "label": {
+                        "en_US": "gray",
+                        "de_DE": "grau"
+                    }
+                },
+                {
+                    "value": "lightgray",
+                    "label": {
+                        "en_US": "lightgray",
+                        "de_DE": "hellgrau"
+                    }
+                },
+                {
+                    "value": "red",
+                    "label": {
+                        "en_US": "red",
+                        "de_DE": "rot"
+                    }
+                }
+            ],
+            "predefinedValue": {
+                "en_US": [
+                    ""
+                ],
+                "de_DE": [
+                    ""
+                ]
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "multiple": false,
+            "name": "colorScheme",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "select"
+        },
+        {
+            "label": {
                 "en_US": "Claim",
                 "de_DE": "Claim"
             },
@@ -31,6 +107,33 @@
             "required": true,
             "showLabel": true,
             "type": "text"
+        },
+        {
+            "label": {
+                "en_US": "Format blowing",
+                "de_DE": "Formatsprengend"
+            },
+            "predefinedValue": {
+                "en_US": false,
+                "de_DE": "false"
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "dataType": "boolean",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "formatBlowing",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "checkbox"
         },
         {
             "label": {

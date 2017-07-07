@@ -2,8 +2,8 @@
     _templates.scss: css config of inofix templates
 
     Created:    2017-07-05 17:26 by Christian Berndt
-    Modified:   2017-07-06 20:54 by Christian Berndt
-    Version:    1.0.2
+    Modified:   2017-07-07 00:42 by Christian Berndt
+    Version:    1.0.4
 */
 
 @import "variables";
@@ -13,7 +13,7 @@
     margin-left: -15px;
     margin-right: -15px;
     padding-bottom: 70px;
-    padding-top: 60px;
+    padding-top: 50px;
     text-align: center;
     
     .btn-lg {
@@ -106,24 +106,18 @@
     }
 }
 
-
 .billboard {
     
-    margin-bottom: 60px;
+    background-color: $color-gray;
+    
     margin-left: -15px;
     margin-right: -15px;
-     
-    .caption-wrapper {
-    
-        background-color: $color-lightgray;
         
-        .caption {
-            margin-top: 11vh;
-            padding-bottom: 5px;
-            text-align: center;
-        }
+    .caption {
+        padding: 10px 0;
+        text-align: center; 
     }
-    
+     
     .claim {
    
         left: 15px;
@@ -137,34 +131,77 @@
             font-size: 36px; 
             font-weight: 600; 
             line-height: 130%;
-            margin-top: 0; 
             margin-bottom: 0; 
+            margin-top: 0;
         }   
     }
     
-    .image-wrapper {
-    
-        background-color: $color-darkgray;
+    .col-md-6 {
+        position: relative;
         
-        img {
-            margin-bottom: -10vh;
+        &.first {
+            min-height: 300px;
         }
-   
-    }
+    }    
     
     .text-only {    
-        min-height: 50vh;
         text-align: center;
-        position: relative;     
     }
     
-    .text-wrapper {
+    &.blue {
+        background-color: $color-blue;
+    }
+    
+    &.darkblue {
+        background-color: $color-darkblue;
+    }
+    
+    &.darkgray {
+    
         background-color: $color-darkgray;
-        text-align: center;  
         
-        .col-md-6 {
-            min-height: 50vh;     
-        }    
+        .caption {
+            color: $color-darkgray;
+        }
+    }
+      
+    &.format-blowing {
+    
+        .keyvisual {
+                    
+            .image-wrapper {
+            
+                background-position: 0px 0px;
+                background-image: linear-gradient(to bottom, 
+                    $color-darkgray 0px,     
+                    $color-darkgray 50%,  
+                    $color-lightgray 50%,   
+                    $color-lightgray 100% 
+                );   
+                
+                margin-bottom: -1px;
+                margin-left: -15px; 
+                margin-right: -15px;
+                padding-left: 15px; 
+                padding-right: 15px;        
+            }
+            
+        }
+    }
+    
+    &.gray {
+        background-color: $color-gray;
+        color: $color-darkgray;
+        
+        .claim {
+            h1 {
+                color: $color-darkgray;            
+            }
+        }
+    }
+    
+    &.red {
+        background-color: red;
     }
 }
 
@@ -181,7 +218,13 @@
         margin-bottom: 30px;
     }
     
+    h2 {
+        line-height: 130%;
+        margin-bottom: 30px;
+    }
+    
     h4 {
+        line-height: 130%;
         margin-bottom: 20px;
     }
 
@@ -225,7 +268,7 @@
     text-align: center;
     
     .col-md-6 {
-        min-height: 50vh; 
+        min-height: 350px; 
         position: relative; 
     }
     
@@ -263,6 +306,28 @@
         text-align: left; 
     }
     
+    &.blue {
+    
+        background-color: $color-blue;
+        color: white;
+        
+        .right {
+            background-color: white;                    
+            color: $color-darkgray;
+        }
+    }
+    
+    &.darkblue {
+    
+        background-color: $color-darkblue;
+        color: white;
+        
+        .right {
+            background-color: white;                    
+            color: $color-darkgray;
+        }
+    }
+    
     &.darkgray {
     
         background-color: $color-darkgray;
@@ -271,17 +336,6 @@
         .right {
             background-color: white;                    
             color: $color-darkgray;
-        }
-        
-        &.teaser-left {
-            .left {
-                background-color: white;                    
-                color: $color-darkgray;
-            }
-            .right {
-                background-color: $color-darkgray;
-                color: white;
-            }
         }
     }
     
@@ -292,15 +346,6 @@
         
         .right {
             background-color: white;       
-        }
-        
-        &.teaser-left {
-            .left {
-                background-color: white;                    
-            }
-            .right {
-                background-color: $color-lightgray;
-            }
         }
     }
     
