@@ -2,9 +2,29 @@
     _responsive.scss: responsiveness for the inofix-theme 
 
     Created:    2017-06-28 13:30 by Christian Berndt
-    Modified:   2017-07-07 20:53 by Christian Berndt
-    Version:    0.2.2
+    Modified:   2017-07-08 14:30 by Christian Berndt
+    Version:    0.2.3
 */
+
+@mixin keyvisual($billboard-color) {
+    
+    background-position: 0px 0px;
+    background-image: linear-gradient(to bottom, 
+        $billboard-color 0px,     
+        $billboard-color 300px,  
+        $color-lightgray 300px,   
+        $color-lightgray 100% 
+    ); 
+    
+    .keyvisual {
+
+        .image-wrapper {
+        
+            background-image: none; 
+
+        }            
+    }
+}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -141,7 +161,57 @@
                     top: 120px;
                     z-index: 50;
                 }
-            }     
+            }
+            
+            &.blue {
+            
+                @include keyvisual($color-blue);            
+    
+            }
+            
+            &.darkblue {
+            
+                @include keyvisual($color-darkblue);            
+    
+            }
+            
+            &.gray {
+            
+                @include keyvisual($color-gray);            
+    
+            }
+            
+            &.lightgray {
+            
+                @include keyvisual($color-lightgray);            
+    
+            }
+            
+            &.red {
+            
+                @include keyvisual(red);            
+    
+            }
+            
+/*             &.darkblue { */
+            
+/*                 background-position: 0px 0px; */
+/*                 background-image: linear-gradient(to bottom,  */
+/*                     $color-darkblue 0px,      */
+/*                     $color-darkblue 300px,   */
+/*                     $color-lightgray 300px,    */
+/*                     $color-lightgray 100%  */
+/*                 );  */
+                
+/*                 .keyvisual { */
+    
+/*                     .image-wrapper { */
+                    
+/*                         background-image: none;  */
+
+/*                     }             */
+/*                 } */
+/*             }     */
         }
     }
     
