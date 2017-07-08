@@ -28,7 +28,7 @@
             "name": "headline",
             "readOnly": false,
             "repeatable": false,
-            "required": true,
+            "required": false,
             "showLabel": true,
             "type": "text"
         },
@@ -80,6 +80,60 @@
             "indexType": "keyword",
             "localizable": true,
             "name": "smallerLogos",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "checkbox"
+        },
+        {
+            "label": {
+                "en_US": "Smaller headline",
+                "de_DE": "Kleinere Überschrift"
+            },
+            "predefinedValue": {
+                "en_US": false,
+                "de_DE": "false"
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "dataType": "boolean",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "smallerHeadline",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "checkbox"
+        },
+        {
+            "label": {
+                "en_US": "Display as gallery",
+                "de_DE": "Als Galerie darstellen"
+            },
+            "predefinedValue": {
+                "en_US": false,
+                "de_DE": "false"
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "dataType": "boolean",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "isGallery",
             "readOnly": false,
             "repeatable": false,
             "required": false,

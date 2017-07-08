@@ -2,8 +2,8 @@
     teaser.ftl: Format the teaser structure
     
     Created:    2017-07-02 23:29 by Christian Berndt
-    Modified:   2017-07-05 16:57 by Christian Berndt
-    Version:    1.0.1
+    Modified:   2017-07-08 15:43 by Christian Berndt
+    Version:    1.0.2
 -->
 
 <#assign color_scheme = "lightgray" />
@@ -35,7 +35,7 @@
             </div>
         </#if>
         <#if headline?? && headline.getData()?has_content>
-            <h2>${headline.getData()}</h2>
+            <h1>${headline.getData()}</h1>
         </#if>
     </div>
 </#macro>
