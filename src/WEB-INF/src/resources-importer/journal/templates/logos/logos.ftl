@@ -2,8 +2,8 @@
     logos.ftl: Format the logos structure
     
     Created:    2017-07-05 23:13 by Christian Berndt
-    Modified:   2017-07-07 00:45 by Christian Berndt
-    Version:    1.0.1
+    Modified:   2017-07-08 13:15 by Christian Berndt
+    Version:    1.0.2
 -->
 
 <#assign css_class = "" />
@@ -27,7 +27,11 @@
             </#if>
         </#if>
         <#if subHeadline?? && subHeadline.getData()?has_content>
-            <h4>${subHeadline.getData()}</h4>
+            <#if smaller_logos>
+                <p>${subHeadline.getData()}</p>
+            <#else>
+                <h4>${subHeadline.getData()}</h4>
+            </#if>        
         </#if>
         <div class="row">
             <#if logo.getSiblings()?has_content>
