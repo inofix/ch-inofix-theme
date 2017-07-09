@@ -2,14 +2,18 @@
     logos.ftl: Format the logos structure
     
     Created:    2017-07-05 23:13 by Christian Berndt
-    Modified:   2017-07-08 17:46 by Christian Berndt
-    Version:    1.0.3
+    Modified:   2017-07-08 17:50 by Christian Berndt
+    Version:    1.0.4
 -->
 
 <#assign css_class = "" />
+<#assign is_gallery = false />
 <#assign smaller_headline = false />
 <#assign smaller_logos = false />
 
+<#if isGallery?? && isGallery.getData()?has_content >
+    <#assign is_gallery = getterUtil.getBoolean(isGallery.getData()) />   
+</#if>
 <#if smallerHeadline?? && smallerHeadline.getData()?has_content >
     <#assign smaller_headline = getterUtil.getBoolean(smallerHeadline.getData()) />   
 </#if>
@@ -39,13 +43,26 @@
         </#if>
         <div class="row">
             <#if logo.getSiblings()?has_content>
-                <div class="logos-bar">
+                <#if is_gallery>
                     <#list logo.getSiblings() as cur_logo>
                         <#if cur_logo.getData()?? && cur_logo.getData() != "">
-                            <img alt="${cur_logo.getAttribute("alt")}" class="logo" src="${cur_logo.getData()}" />
+                            <div class="col-sm-3 col-md-2">
+                                <div class="logo-wrapper">
+                                    <img alt="${cur_logo.getAttribute("alt")}" class="logo" src="${cur_logo.getData()}" />
+                                </div>
+                                <#-- <p class="description"></p> -->
+                            </div>
                         </#if>
-                    </#list>
-                </div>
+                    </#list>  
+                <#else>
+                    <div class="logos-bar">
+                        <#list logo.getSiblings() as cur_logo>
+                            <#if cur_logo.getData()?? && cur_logo.getData() != "">
+                                <img alt="${cur_logo.getAttribute("alt")}" class="logo" src="${cur_logo.getData()}" />
+                            </#if>
+                        </#list>
+                    </div>
+                </#if>
             </#if>
         </div>
     </div>
