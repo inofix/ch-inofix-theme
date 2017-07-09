@@ -2,13 +2,13 @@
     abstracts.ftl: Format the abstracts structure
     
     Created:    2017-05-14 19:03 by Christian Berndt
-    Modified:   2017-07-07 20:58 by Christian Berndt
-    Version:    1.0.8
+    Modified:   2017-07-09 19:17 by Christian Berndt
+    Version:    1.0.9
 -->
 
 <#assign color_scheme = "white" />
 
-<#if colorScheme.getData()?has_content>
+<#if colorScheme?? && colorScheme.getData()?has_content>
     <#assign color_scheme = colorScheme.getData() />
 </#if>
 
