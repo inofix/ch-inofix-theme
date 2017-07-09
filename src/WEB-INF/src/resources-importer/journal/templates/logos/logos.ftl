@@ -2,15 +2,19 @@
     logos.ftl: Format the logos structure
     
     Created:    2017-07-05 23:13 by Christian Berndt
-    Modified:   2017-07-08 17:50 by Christian Berndt
-    Version:    1.0.4
+    Modified:   2017-07-09 19:32 by Christian Berndt
+    Version:    1.0.5
 -->
 
+<#assign color_scheme = "white" />
 <#assign css_class = "" />
 <#assign is_gallery = false />
 <#assign smaller_headline = false />
 <#assign smaller_logos = false />
 
+<#if colorScheme?? && colorScheme.getData()?has_content>
+    <#assign color_scheme = colorScheme.getData() />
+</#if>
 <#if isGallery?? && isGallery.getData()?has_content >
     <#assign is_gallery = getterUtil.getBoolean(isGallery.getData()) />   
 </#if>
@@ -25,7 +29,7 @@
     <#assign css_class = "smaller-logos" />
 </#if>
 
-<div class="logos ${css_class}">
+<div class="logos ${css_class} ${color_scheme}">
     <div class="container">
         <#if headline?? && headline.getData()?has_content>
             <#if smaller_headline>
