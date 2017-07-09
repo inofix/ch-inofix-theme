@@ -10,35 +10,7 @@
                 "en_US": "Color Scheme",
                 "de_DE": "Farbschema"
             },
-            "options": [
-                {
-                    "value": "blue",
-                    "label": {
-                        "en_US": "blue",
-                        "de_DE": "blau"
-                    }
-                },            
-                {
-                    "value": "darkblue",
-                    "label": {
-                        "en_US": "darkblue",
-                        "de_DE": "dunkelblau"
-                    }
-                },
-                {
-                    "value": "darkgray",
-                    "label": {
-                        "en_US": "darkgray",
-                        "de_DE": "dunkelgrau"
-                    }
-                }, 
-                {
-                    "value": "gray",
-                    "label": {
-                        "en_US": "gray",
-                        "de_DE": "grau"
-                    }
-                },                                
+            "options": [                                
                 {
                     "value": "lightgray",
                     "label": {
@@ -51,6 +23,13 @@
                     "label": {
                         "en_US": "red",
                         "de_DE": "rot"
+                    }
+                },
+                {
+                    "value": "white",
+                    "label": {
+                        "en_US": "white",
+                        "de_DE": "weiß"
                     }
                 }
             ],

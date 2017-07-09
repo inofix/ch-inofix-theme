@@ -11,9 +11,9 @@
     background-position: 0px 0px;
     background-image: linear-gradient(to bottom, 
         $billboard-color 0px,     
-        $billboard-color 300px,  
-        $color-lightgray 300px,   
-        $color-lightgray 100% 
+        $billboard-color 400px,  
+        $color-white 400px,   
+        $color-white 100% 
     ); 
     
     .keyvisual {
@@ -38,6 +38,12 @@
     }
 
     .billboard {
+    
+        .col-md-6 {
+            &.first {
+                min-height: 300px;
+            }
+        }
         
         .container {
             width: 100%;
@@ -130,6 +136,12 @@
 @media (min-width: 992px) {
  
     .billboard {
+    
+        .col-md-6 {
+            &.first {
+                min-height: 400px;
+            }
+        }
         
         .container {
             width: 970px;
@@ -141,8 +153,8 @@
             background-image: linear-gradient(to bottom, 
                 $color-darkgray 0px,     
                 $color-darkgray 300px,  
-                $color-lightgray 300px,   
-                $color-lightgray 100% 
+                $color-white 300px,   
+                $color-white 100% 
             ); 
         
             padding-bottom: 60px;
@@ -166,7 +178,7 @@
                 .last {
                     position: absolute; 
                     right: 0; 
-                    top: 120px;
+                    top: 220px;
                     z-index: 50;
                 }
             }
@@ -200,35 +212,16 @@
                 @include keyvisual(red);            
     
             }
-            
-/*             &.darkblue { */
-            
-/*                 background-position: 0px 0px; */
-/*                 background-image: linear-gradient(to bottom,  */
-/*                     $color-darkblue 0px,      */
-/*                     $color-darkblue 300px,   */
-/*                     $color-lightgray 300px,    */
-/*                     $color-lightgray 100%  */
-/*                 );  */
-                
-/*                 .keyvisual { */
-    
-/*                     .image-wrapper { */
-                    
-/*                         background-image: none;  */
-
-/*                     }             */
-/*                 } */
-/*             }     */
         }
     }
     
     .logos {
+    
         h4 {
             line-height: 130%;
             margin-left: auto; 
             margin-right: auto;
-            max-width: 600px;
+            max-width: 800px;
         }
         
         .logos-bar {
@@ -296,7 +289,7 @@
             .row {
                  
                 .last {
-                    top: 100px;
+                    top: 200px;
                 }
             } 
         }
