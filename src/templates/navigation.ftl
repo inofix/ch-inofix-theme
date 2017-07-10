@@ -2,9 +2,19 @@
     navigation.ftl: header navigation.
     
     Created:    2017-03-05 23:01 by Christian Berndt
-    Modified:   2017-07-02 15:31 by Christian Berndt
-    Version:    0.2.7
+    Modified:   2017-07-10 17:37 by Christian Berndt
+    Version:    0.2.8
 -->
+
+<#assign home_url = ""/>
+
+<#if themeDisplay.getThemeSetting("home-url")?? && themeDisplay.getThemeSetting("home-url")?has_content>
+    <#assign home_url = themeDisplay.getThemeSetting("home-url")/>
+</#if>
+
+<#if !home_url?has_content>
+    <#assign home_url = company_url />
+</#if>
 
 <nav class="${nav_css_class} navbar navbar-default" id="navigation" role="navigation">
     <div class="container">
@@ -16,7 +26,7 @@
                 <span class="icon-bar"></span>
             </button>
            
-            <a class="navbar-brand ${logo_css_class}" href="${company_url}" title="<@liferay.language_format arguments="${site_name}" key="go-to-x" />">
+            <a class="navbar-brand ${logo_css_class}" href="${home_url}" title="<@liferay.language_format arguments="${site_name}" key="go-to-x" />">
                 <img alt="${logo_description}" src="${company_logo}?v.1" />
             
                 <#if show_site_name>

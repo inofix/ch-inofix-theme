@@ -9,7 +9,8 @@
         <template-extension>ftl</template-extension>
         <settings>
             <setting configurable="true" key="full-width" type="checkbox" value="false" />
-        </settings>     
+            <setting configurable="true" key="home-url" type="text" value="" />
+        </settings>          
         <portlet-decorator id="barebone" name="Barebone">
             <portlet-decorator-css-class>portlet-barebone</portlet-decorator-css-class>
         </portlet-decorator>
