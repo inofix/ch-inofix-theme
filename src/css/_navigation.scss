@@ -2,8 +2,8 @@
     _navigation.scss: inofix theme's navigation 
 
     Created:    2017-03-05 23:08 by Christian Berndt
-    Modified:   2017-07-07 20:53 by Christian Berndt
-    Version:    0.4.0
+    Modified:   2017-07-10 16:59 by Christian Berndt
+    Version:    0.4.1
 */
 
 @import "variables";
@@ -33,10 +33,6 @@
                 background-color: #31b0d5;
             }
         }
-    }
-    
-    #layout_1 {
-        display: none; 
     }
     
     .my-account {
@@ -85,6 +81,10 @@
                     background: transparent;
                     color: $color-black;
                 }
+            }
+            
+            &:nth-child(1) {
+                display: none;
             }
         }
     }
