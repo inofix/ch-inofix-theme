@@ -2,8 +2,8 @@
     abstracts.ftl: Format the abstracts structure
     
     Created:    2017-05-14 19:03 by Christian Berndt
-    Modified:   2017-07-09 19:17 by Christian Berndt
-    Version:    1.0.9
+    Modified:   2017-07-10 18:41 by Christian Berndt
+    Version:    1.1.0
 -->
 
 <#assign color_scheme = "white" />
@@ -78,8 +78,15 @@
         <#if link?? && link.getData()?has_content>
             <div class="row">
                 <div class="common-link">
+                
+                    <#assign button_label = languageUtil.get(locale, "learn-more") />
+                    
+                    <#if label?? && label.getData()?has_content>
+                        <#assign button_label = label.getData() />                        
+                    </#if>
+
                     <a class="btn btn-lg btn-info" href="${link.getFriendlyUrl()}">
-                        ${label.getData()}
+                        ${button_label}
                     </a>
                 </div>
             </div>
