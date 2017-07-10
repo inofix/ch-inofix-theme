@@ -2,8 +2,8 @@
     _core_portlets.scss: adjust Liferay's core portlets for the inofix-theme
 
     Created:    2017-03-05 23:20 by Christian Berndt
-    Modified:   2017-07-04 18:39  by Christian Berndt
-    Version:    0.1.9
+    Modified:   2017-07-10 18:07  by Christian Berndt
+    Version:    0.2.0
 */
 
 .controls-hidden {
@@ -202,3 +202,13 @@
         font-weight: 600; 
     }
 }
+
+#portlet_status {
+
+    padding: 0 0 70px;
+    
+    a {
+        font-size: 36px; /** bs3 h1 */
+    }
+}
+
