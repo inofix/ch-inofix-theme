@@ -89,6 +89,33 @@
         },
         {
             "label": {
+                "en_US": "Subheadline",
+                "de_DE": "Untertitel"
+            },
+            "predefinedValue": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": "Enter a subheadline for this set of abstracts.",
+                "de_DE": "Ein Untertitel für die folgenden Zusammenfassungen."
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "subHeadline",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "text"
+        },
+        {
+            "label": {
                 "en_US": "Abstract",
                 "de_DE": "Titel Abstract"
             },

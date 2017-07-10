@@ -83,7 +83,7 @@
         {
             "label": {
                 "en_US": "Subheadline",
-                "de_DE": "Subheadline"
+                "de_DE": "Untertitel"
             },
             "predefinedValue": {
                 "en_US": "",
@@ -94,8 +94,8 @@
                 "de_DE": ""
             },
             "tip": {
-                "en_US": "",
-                "de_DE": ""
+                "en_US": "Enter a subheadline for this set of logos.",
+                "de_DE": "Ein Untertitel für die ausgewählten Logos."
             },
             "dataType": "string",
             "indexType": "keyword",
