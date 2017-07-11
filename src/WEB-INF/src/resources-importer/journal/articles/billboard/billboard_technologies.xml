@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<root available-locales="de_DE" default-locale="de_DE">
+    <dynamic-element name="colorScheme" type="list" index-type="keyword" instance-id="trwm">
+        <dynamic-content language-id="de_DE"><![CDATA[red]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="claim" type="text" index-type="keyword" instance-id="zzss">
+        <dynamic-content language-id="de_DE"><![CDATA[INOFIX Luzern betreibt und produziert seine Lösungen zu 100% mit freier Software]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="formatBlowing" type="boolean" index-type="keyword" instance-id="ixgn">
+        <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="image" type="image" index-type="keyword" instance-id="fcmo">
+        <dynamic-element name="url" instance-id="zjsr" type="text" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="link" instance-id="rfic" type="link_to_layout" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-content language-id="de_DE"></dynamic-content>
+    </dynamic-element>
+</root>

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<root available-locales="de_DE" default-locale="de_DE">
+    <dynamic-element name="colorScheme" type="list" index-type="keyword" instance-id="pcdq">
+        <dynamic-content language-id="de_DE"><![CDATA[gray]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="iconClass" type="text" index-type="keyword" instance-id="xewq">
+        <dynamic-content language-id="de_DE"><![CDATA[icon-comments]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="headline" type="text" index-type="keyword" instance-id="iqak">
+        <dynamic-content language-id="de_DE"><![CDATA[Beratung]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="subHeadline" type="text" index-type="keyword" instance-id="pibm">
+        <dynamic-content language-id="de_DE"><![CDATA[Strategie und Technik]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="claim" type="text" index-type="keyword" instance-id="moul">
+        <dynamic-content language-id="de_DE"><![CDATA[Technologie ganzheitlich betrachtet]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="content" type="text_area" index-type="keyword" instance-id="qctq">
+        <dynamic-content language-id="de_DE"><![CDATA[<p>INOFIX Luzern verf&uuml;gt &uuml;ber langj&auml;hrige Erfahrung in der Planung und Umsetzung Liferay basierter L&ouml;sungen. Unser Beratungsspektrum reicht von der Strategieberatung f&uuml;r die digitale Transformation bis zum systematischen Performance-Auditing f&uuml;r bestehende Installationen.</p>]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="teaserLeft" type="boolean" index-type="keyword" instance-id="mfjz">
+        <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="link" type="link_to_layout" index-type="keyword" instance-id="gpsw">
+        <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+    </dynamic-element>
+</root>

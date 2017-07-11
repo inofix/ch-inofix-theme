@@ -1,8 +1,31 @@
 <?xml version="1.0"?>
 
-<root available-locales="en_US" default-locale="en_US">
-    <dynamic-element name="claim" type="text"
-        index-type="keyword">
-        <dynamic-content language-id="en_US"><![CDATA[Lernen Sie am konkreten Beispiel, wie unsere Portallösungen zum Geschäftserfolg beitragen]]></dynamic-content>
+<root available-locales="de_DE" default-locale="de_DE">
+    <dynamic-element name="colorScheme" type="list" index-type="keyword" instance-id="kswt">
+        <dynamic-content language-id="de_DE"><![CDATA[gray]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="claim" type="text" index-type="keyword" instance-id="cowr">
+        <dynamic-content language-id="de_DE"><![CDATA[Lernen Sie am Beispiel konkreter Projekte, wie unsere Liferay-Portale zum Erfolg unserer Kunden beitragen]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="formatBlowing" type="boolean" index-type="keyword" instance-id="fbpz">
+        <dynamic-content language-id="de_DE"><![CDATA[true]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="image" type="image" index-type="keyword" instance-id="fpdv">
+        <dynamic-element name="url" instance-id="hxdh" type="text" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[http://www.flussbad-berlin.de]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="link" instance-id="dlge" type="link_to_layout" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-content language-id="de_DE" alt="www.flussbad-berlin.de" name="flussbad_responsive.png" title="flussbad_responsive.png" type="document"><![CDATA[[$FILE=flussbad_responsive.png$]]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="image" type="image" index-type="keyword" instance-id="bqzc">
+        <dynamic-element name="url" instance-id="opfl" type="text" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[http://www.dainst.org]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="link" instance-id="xcjf" type="link_to_layout" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-content language-id="de_DE" alt="www.dainst.org" name="dai_responsive.png" title="dai_responsive.png" type="document"><![CDATA[[$FILE=dai_responsive.png$]]]></dynamic-content>
     </dynamic-element>
 </root>

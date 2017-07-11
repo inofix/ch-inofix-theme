@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+
+<root available-locales="de_DE" default-locale="de_DE">
+    <dynamic-element name="colorScheme" type="list" index-type="keyword" instance-id="jwna">
+        <dynamic-content language-id="de_DE"><![CDATA[lightgray]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="headline" type="text" index-type="keyword" instance-id="jsck">
+        <dynamic-content language-id="de_DE"><![CDATA[Beste Technologien für beste Ergebnisse]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="subHeadline" type="text" index-type="keyword" instance-id="bbro">
+        <dynamic-content language-id="de_DE"><![CDATA[Wir setzen für unsere Lösungen konsequent auf freie Technologien und offene Standards.]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="smallerLogos" type="boolean" index-type="keyword" instance-id="vtna">
+        <dynamic-content language-id="de_DE"><![CDATA[true]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="smallerHeadline" type="boolean" index-type="keyword" instance-id="rwpb">
+        <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="isGallery" type="boolean" index-type="keyword" instance-id="plbr">
+        <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="logo" type="image" index-type="keyword" instance-id="csak">
+        <dynamic-element name="url" instance-id="txdm" type="text" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="link" instance-id="vvha" type="link_to_layout" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-content language-id="de_DE" alt="" name="logo_liferay.png" title="logo_liferay.png" type="document"><![CDATA[[$FILE=flussbad_responsive.png$]]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="logo" type="image" index-type="keyword" instance-id="casd">
+        <dynamic-element name="url" instance-id="uaxc" type="text" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="link" instance-id="ypyz" type="link_to_layout" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-content language-id="de_DE" alt="" name="logo_debian.png" title="logo_debian.png" type="document"><![CDATA[[$FILE=flussbad_responsive.png$]]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="logo" type="image" index-type="keyword" instance-id="dzgf">
+        <dynamic-element name="url" instance-id="mzsk" type="text" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="link" instance-id="keay" type="link_to_layout" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-content language-id="de_DE" alt="" name="logo_tomcat.png" title="logo_tomcat.png" type="document"><![CDATA[[$FILE=flussbad_responsive.png$]]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="logo" type="image" index-type="keyword" instance-id="uild">
+        <dynamic-element name="url" instance-id="snqz" type="text" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="link" instance-id="wudo" type="link_to_layout" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-content language-id="de_DE" alt="" name="logo_gradle.png" title="logo_gradle.png" type="document"><![CDATA[[$FILE=flussbad_responsive.png$]]]></dynamic-content>
+    </dynamic-element>
+</root>
