@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+
+<root available-locales="de_DE" default-locale="de_DE">
+    <dynamic-element name="colorScheme" type="list" index-type="keyword" instance-id="caju">
+        <dynamic-content language-id="de_DE"><![CDATA[red]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="headline" type="text" index-type="keyword" instance-id="lvas">
+        <dynamic-content language-id="de_DE"><![CDATA[Unsere Produkte]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="abstract" type="text" index-type="keyword" instance-id="ourr">
+        <dynamic-element name="iconClass" instance-id="szvv" type="text" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[icon-lightbulb]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="claim" instance-id="drqr" type="text_box" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[Unsere Produkte werden mit besonderem Augenmerk auf einfache Handhabung und zuverlässige Verfügbarkeit entwickelt]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="abstractLink" instance-id="oktt" type="link_to_layout" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="abstractLabel" instance-id="nhfz" type="text" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-content language-id="de_DE"><![CDATA[Mit Umsicht entworfen]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="abstract" type="text" index-type="keyword" instance-id="vndq">
+        <dynamic-element name="iconClass" instance-id="rmme" type="text" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[icon-github-alt]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="claim" instance-id="hpiy" type="text_box" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[Alle Produkte sind freie Software mit zuverlässigem Enterprise Support]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="abstractLink" instance-id="zdfa" type="link_to_layout" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="abstractLabel" instance-id="blkc" type="text" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-content language-id="de_DE"><![CDATA[100% freie Software]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="abstract" type="text" index-type="keyword" instance-id="pahe">
+        <dynamic-element name="iconClass" instance-id="wmld" type="text" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[icon-ok]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="claim" instance-id="gpve" type="text_box" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[Alle Produkte werden kontinuierlich getestet und weiterentwickelt.]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="abstractLink" instance-id="oxrp" type="link_to_layout" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="abstractLabel" instance-id="xlme" type="text" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-content language-id="de_DE"><![CDATA[Sorgfältig getestet]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="link" type="link_to_layout" index-type="keyword" instance-id="vlxb">
+        <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="label" type="text" index-type="keyword" instance-id="fniz">
+        <dynamic-content language-id="de_DE"><![CDATA[Mehr erfahren]]></dynamic-content>
+    </dynamic-element>
+</root>

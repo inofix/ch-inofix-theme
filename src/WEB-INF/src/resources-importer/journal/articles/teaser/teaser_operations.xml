@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<root available-locales="en_US,de_DE" default-locale="de_DE">
+    <dynamic-element name="colorScheme" type="list" index-type="keyword" instance-id="lmps">
+        <dynamic-content language-id="en_US"><![CDATA[darkgray]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[darkgray]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="iconClass" type="text" index-type="keyword" instance-id="kcex">
+        <dynamic-content language-id="en_US"><![CDATA[icon-cogs]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[icon-cogs]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="headline" type="text" index-type="keyword" instance-id="nwue">
+        <dynamic-content language-id="en_US"><![CDATA[Operations]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[Betrieb]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="subHeadline" type="text" index-type="keyword" instance-id="yelg">
+        <dynamic-content language-id="en_US"><![CDATA[Fully automated, continously monitored]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[Vollautomatisch, laufend kontrolliert]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="claim" type="text" index-type="keyword" instance-id="iptd">
+        <dynamic-content language-id="en_US"><![CDATA[Fully automated setup and deploy]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[Vollautomatisches Setup, Deployment und Backup]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="content" type="text_area" index-type="keyword" instance-id="viqm">
+        <dynamic-content language-id="en_US"><![CDATA[<p>Die konsequente Automatisierung aller relevanten administrativen Aufgaben erlaubt es uns, gro&szlig;e und komplexe Installationen zuverl&auml;ssig und mit geringem Aufwand zu betreiben. Das ist gut f&uuml;r die Nerven und gut f&uuml;rs Budget.</p>]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[<p>Die konsequente Automatisierung aller relevanten administrativen Aufgaben erlaubt es uns, gro&szlig;e und komplexe Installationen zuverl&auml;ssig und mit geringem Aufwand zu betreiben. Das ist gut f&uuml;r die Nerven und gut f&uuml;rs Budget.</p>]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="teaserLeft" type="boolean" index-type="keyword" instance-id="nfbq">
+        <dynamic-content language-id="en_US"><![CDATA[]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="link" type="link_to_layout" index-type="keyword" instance-id="qgzc">
+        <dynamic-content language-id="en_US"><![CDATA[]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+    </dynamic-element>
+</root>

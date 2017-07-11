@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+
+<root available-locales="de_DE" default-locale="de_DE">
+    <dynamic-element name="colorScheme" type="list" index-type="keyword" instance-id="uigl">
+        <dynamic-content language-id="de_DE"><![CDATA[white]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="headline" type="text" index-type="keyword" instance-id="nphf">
+        <dynamic-content language-id="de_DE"><![CDATA[Unsere Leistungen]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="abstract" type="text" index-type="keyword" instance-id="gkxv">
+        <dynamic-element name="iconClass" instance-id="bkak" type="text" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[icon-comments]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="claim" instance-id="xtax" type="text_box" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[Wir planen gemeinsam mit Ihnen Ihr neues Kunden-, Mitarbeiter- oder Unternehmensportal und unterstützen Sie bei der Optimierung bereits bestehender Lösungen.]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="abstractLink" instance-id="odkj" type="link_to_layout" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="abstractLabel" instance-id="nvnt" type="text" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-content language-id="de_DE"><![CDATA[Beratung]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="abstract" type="text" index-type="keyword" instance-id="ujte">
+        <dynamic-element name="iconClass" instance-id="daxr" type="text" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[icon-code]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="claim" instance-id="ngru" type="text_box" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[Wir realisieren hochwertige Java Enterprise Lösungen auf Basis der Liferay Portal Plattform. Wir setzen konsequent auf freie Software, offene Standards und agile Entwicklungsmethoden.]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="abstractLink" instance-id="cmdn" type="link_to_layout" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="abstractLabel" instance-id="tkyl" type="text" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-content language-id="de_DE"><![CDATA[Realisierung]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="abstract" type="text" index-type="keyword" instance-id="zlcm">
+        <dynamic-element name="iconClass" instance-id="dupe" type="text" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[icon-cogs]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="claim" instance-id="tdni" type="text_box" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[Wir sind auch nach dem Abschluss eines Projekts für Sie da. Wir betreiben Ihr Enterpriseportal gemeinsam mit Ihnen oder komplett für Sie und sorgen dafür, dass alle Komponenten immer auf aktuellem Stand sind.]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="abstractLink" instance-id="lddw" type="link_to_layout" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="abstractLabel" instance-id="jkby" type="text" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-content language-id="de_DE"><![CDATA[Betrieb]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="link" type="link_to_layout" index-type="keyword" instance-id="kckj">
+        <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="label" type="text" index-type="keyword" instance-id="wuei">
+        <dynamic-content language-id="de_DE"><![CDATA[Mehr erfahren]]></dynamic-content>
+    </dynamic-element>
+</root>

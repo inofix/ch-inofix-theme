@@ -1,5 +1,6 @@
 {
     "layoutTemplateId": "1_column",
+    "themeId": "chinofixtheme_WAR_chinofixtheme",
     "publicPages": [
         {
             "columns": [
@@ -10,7 +11,28 @@
                             "articleId": "billboard_company.xml",
                             "groupId": "${groupId}"
                         }
-                    }
+                    },
+                    {
+                        "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+                        "portletPreferences": {
+                            "articleId": "abstracts_services.xml",
+                            "groupId": "${groupId}"
+                        }
+                    },
+                    {
+                        "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+                        "portletPreferences": {
+                            "articleId": "abstracts_products.xml",
+                            "groupId": "${groupId}"
+                        }
+                    },
+                    {
+                        "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+                        "portletPreferences": {
+                            "articleId": "logos_clients.xml",
+                            "groupId": "${groupId}"
+                        }
+                    }                                    
                 ]
             ],
             "friendlyURL": "/start",
@@ -26,7 +48,35 @@
                             "articleId": "billboard_services.xml",
                             "groupId": "${groupId}",
                         }
-                    }
+                    },
+                    {
+                        "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+                        "portletPreferences": {
+                            "articleId": "teaser_consulting.xml",
+                            "groupId": "${groupId}"
+                        }
+                    },
+                    {
+                        "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+                        "portletPreferences": {
+                            "articleId": "teaser_development.xml",
+                            "groupId": "${groupId}"
+                        }
+                    },
+                    {
+                        "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+                        "portletPreferences": {
+                            "articleId": "teaser_operations.xml",
+                            "groupId": "${groupId}"
+                        }
+                    },
+                    {
+                        "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+                        "portletPreferences": {
+                            "articleId": "logos_technologies.xml",
+                            "groupId": "${groupId}"
+                        }
+                    }                    
                 ]
             ],
             "friendlyURL": "/services",
@@ -51,15 +101,22 @@
                     {
                         "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
                         "portletPreferences": {
-                            "articleId": "billboard_products.xml",
+                            "articleId": "billboard_projects.xml",
                             "groupId": "${groupId}"
                         }
-                    }
+                    },
+                    {
+                        "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+                        "portletPreferences": {
+                            "articleId": "teaser_consulting.xml",
+                            "groupId": "${groupId}"
+                        }
+                    }                
                 ]
             ],
-            "friendlyURL": "/products",
-            "name": "Products",
-            "title": "Products"
+            "friendlyURL": "/projects",
+            "name": "Projects",
+            "title": "Projects"
         },
         {
             "columns": [
@@ -67,15 +124,15 @@
                     {
                         "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
                         "portletPreferences": {
-                            "articleId": "billboard_projects.xml",
+                            "articleId": "billboard_technologies.xml",
                             "groupId": "${groupId}"
                         }
                     }
                 ]
             ],
-            "friendlyURL": "/projects",
-            "name": "Projects",
-            "title": "Projects"
+            "friendlyURL": "/technologies",
+            "name": "Technologies",
+            "title": "Technologies"
         }
     ]
 }

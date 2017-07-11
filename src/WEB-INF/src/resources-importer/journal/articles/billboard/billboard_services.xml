@@ -1,8 +1,22 @@
 <?xml version="1.0"?>
 
-<root available-locales="en_US" default-locale="en_US">
-    <dynamic-element name="claim" type="text"
-        index-type="keyword">
-        <dynamic-content language-id="en_US"><![CDATA[Wir unterstützen Sie in allen Phasen mit Rat und Tat auf dem Weg zur besten Lösung]]></dynamic-content>
+<root available-locales="de_DE" default-locale="de_DE">
+    <dynamic-element name="colorScheme" type="list" index-type="keyword" instance-id="lggm">
+        <dynamic-content language-id="de_DE"><![CDATA[darkblue]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="claim" type="text" index-type="keyword" instance-id="amex">
+        <dynamic-content language-id="de_DE"><![CDATA[Wir begleiten Sie vom Entwurf über die Entwicklung bis zum Betrieb der fertigen Plattform]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="formatBlowing" type="boolean" index-type="keyword" instance-id="gfwv">
+        <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="image" type="image" index-type="keyword" instance-id="bmwr">
+        <dynamic-element name="url" instance-id="zvug" type="text" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="link" instance-id="mgzj" type="link_to_layout" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-content language-id="de_DE"></dynamic-content>
     </dynamic-element>
 </root>

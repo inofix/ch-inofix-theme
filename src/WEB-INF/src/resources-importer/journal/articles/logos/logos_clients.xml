@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+
+<root available-locales="de_DE" default-locale="de_DE">
+    <dynamic-element name="colorScheme" type="list" index-type="keyword" instance-id="zsoi">
+        <dynamic-content language-id="de_DE"><![CDATA[lightgray]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="headline" type="text" index-type="keyword" instance-id="mxqv">
+        <dynamic-content language-id="de_DE"><![CDATA[Kunden vertrauen uns]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="subHeadline" type="text" index-type="keyword" instance-id="umvy">
+        <dynamic-content language-id="de_DE"><![CDATA[Namhafte Institutionen vertrauen bei Entwicklung und Betrieb ihrer Portallösung auf INOFIX Luzern.]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="smallerLogos" type="boolean" index-type="keyword" instance-id="ypfq">
+        <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="smallerHeadline" type="boolean" index-type="keyword" instance-id="wswk">
+        <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="isGallery" type="boolean" index-type="keyword" instance-id="afmq">
+        <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="logo" type="image" index-type="keyword" instance-id="brhg">
+        <dynamic-element name="url" instance-id="emde" type="text" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[http://www.flussbad-berlin.de]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="link" instance-id="nqev" type="link_to_layout" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-content language-id="de_DE" alt="Flussbad Berlin e.V." name="logo_flussbad.png" title="logo_flussbad.png" type="document"><![CDATA[[$FILE=flussbad_responsive.png$]]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="logo" type="image" index-type="keyword" instance-id="tocn">
+        <dynamic-element name="url" instance-id="hrts" type="text" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[https://www.dainst.org]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="link" instance-id="uwbl" type="link_to_layout" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-content language-id="de_DE" alt="Deutsches Archäologisches Institut" name="logo_dai.png" title="logo_dai.png" type="document"><![CDATA[[$FILE=flussbad_responsive.png$]]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="logo" type="image" index-type="keyword" instance-id="sedw">
+        <dynamic-element name="url" instance-id="eenq" type="text" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[http://www.berliner-antike-kolleg.org]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="link" instance-id="gmxj" type="link_to_layout" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-content language-id="de_DE" alt="Berliner Antike-Kolleg" name="logo_bak.png" title="logo_bak.png" type="document"><![CDATA[[$FILE=flussbad_responsive.png$]]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="logo" type="image" index-type="keyword" instance-id="dxgy">
+        <dynamic-element name="url" instance-id="bpdm" type="text" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="link" instance-id="hvpz" type="link_to_layout" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-content language-id="de_DE" alt="" name="topoi_logo.png" title="topoi_logo.png" type="document"><![CDATA[[$FILE=flussbad_responsive.png$]]]></dynamic-content>
+    </dynamic-element>
+</root>
