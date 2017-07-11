@@ -2,8 +2,8 @@
     billboard.ftl: Format the billboard structure
     
     Created:    2017-06-27 22:23 by Christian Berndt
-    Modified:   2017-07-11 16:43 by Christian Berndt
-    Version:    1.0.6
+    Modified:   2017-07-11 23:06 by Christian Berndt
+    Version:    1.0.7
 -->
 
 <#assign color_scheme = "darkgray" />
@@ -39,7 +39,7 @@
                     <div class="keyvisual">
                         <#if image.getSiblings()?size gt 1>
                             <div class="image-wrapper">
-                                <div class="carousel slide" id="carousel-billboard" data-interval="10000" data-ride="carousel">
+                                <div class="carousel slide" id="carousel-billboard" data-interval="6000" data-ride="carousel">
                                     <ol class="carousel-indicators"> 
                                         <#list image.getSiblings() as cur_image>
                                             <#assign idx = cur_image?index />
