@@ -2,15 +2,11 @@
     navigation.ftl: header navigation.
     
     Created:    2017-03-05 23:01 by Christian Berndt
-    Modified:   2017-07-10 17:37 by Christian Berndt
-    Version:    0.2.8
+    Modified:   2017-07-11 16:12 by Christian Berndt
+    Version:    0.2.9
 -->
 
-<#assign home_url = ""/>
-
-<#if themeDisplay.getThemeSetting("home-url")?? && themeDisplay.getThemeSetting("home-url")?has_content>
-    <#assign home_url = themeDisplay.getThemeSetting("home-url")/>
-</#if>
+<#assign home_url = htmlUtil.escape(theme_display.getURLHome()) />
 
 <#if !home_url?has_content>
     <#assign home_url = company_url />
