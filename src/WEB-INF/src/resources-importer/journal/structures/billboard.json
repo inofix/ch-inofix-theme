@@ -158,7 +158,7 @@
             "localizable": true,
             "name": "image",
             "readOnly": false,
-            "repeatable": false,
+            "repeatable": true,
             "required": false,
             "showLabel": true,
             "type": "ddm-image",
