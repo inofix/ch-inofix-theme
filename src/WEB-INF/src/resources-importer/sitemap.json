@@ -1,6 +1,52 @@
 {
     "layoutTemplateId": "1_column",
     "themeId": "chinofixtheme_WAR_chinofixtheme",
+    "privatePages": [
+        {
+            "columns": [
+                [
+                    {
+                        "portletId": "com_liferay_social_activities_web_portlet_SocialActivitiesPortlet"
+                    }
+                ],
+                [
+                    {
+                        "portletId": "com_liferay_directory_web_portlet_MySitesDirectoryPortlet"
+                    }
+                ]
+            ],
+            "friendlyURL": "/welcome",
+            "layoutTemplateId": "2_columns_i",
+            "name": "Welcome",
+            "title": "Welcome"
+        },      
+        {
+            "columns": [
+                [
+                    {
+                        "portletId": "com_liferay_wiki_web_portlet_WikiPortlet"
+                    }
+                ]
+            ],
+            "friendlyURL": "/wiki",
+            "layoutTemplateId": "1_column",
+            "name": "Wiki",
+            "title": "Wiki"
+        },
+        {
+            "columns": [
+                [
+                    {
+                        "portletId": "com_liferay_calendar_web_portlet_CalendarPortlet"
+                    }
+                ]
+            ],
+            "friendlyURL": "/calendar",
+            "layoutTemplateId": "1_column",
+            "name": "Calendar",
+            "title": "Calendar"
+        }
+    ],
     "publicPages": [
         {
             "columns": [
