@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<root available-locales="de_DE" default-locale="de_DE">
+    <dynamic-element name="colorScheme" type="list" index-type="keyword" instance-id="mhlj">
+        <dynamic-content language-id="de_DE"><![CDATA[darkblue]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="iconClass" type="text" index-type="keyword" instance-id="fikx">
+        <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="headline" type="text" index-type="keyword" instance-id="cqcj">
+        <dynamic-content language-id="de_DE"><![CDATA[Deutsches <br/> Archäologisches <br/> Institut]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="subHeadline" type="text" index-type="keyword" instance-id="mgij">
+        <dynamic-content language-id="de_DE"><![CDATA[Verteiltes Informationsmanagement]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="claim" type="text" index-type="keyword" instance-id="jjsy">
+        <dynamic-content language-id="de_DE"><![CDATA[50 Abteilungen an 18 Standorten]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="content" type="text_area" index-type="keyword" instance-id="misi">
+        <dynamic-content language-id="de_DE"><![CDATA[<p>Das Deutsche Arch&auml;ologische Institut nutzt ein Liferay-Portal, um standort&uuml;bergreifend den gemeinsamen Online-Auftritt zu verwalten.</p>]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="teaserLeft" type="boolean" index-type="keyword" instance-id="hfzk">
+        <dynamic-content language-id="de_DE"><![CDATA[true]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="link" type="link_to_layout" index-type="keyword" instance-id="jnyw">
+        <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+    </dynamic-element>
+</root>

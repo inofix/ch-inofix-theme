@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+
+<root available-locales="de_DE" default-locale="de_DE">
+    <dynamic-element name="colorScheme" type="list" index-type="keyword" instance-id="pzyg">
+        <dynamic-content language-id="de_DE"><![CDATA[white]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="headline" type="text" index-type="keyword" instance-id="hiew">
+        <dynamic-content language-id="de_DE"><![CDATA[Ausgewählte Fallstudien]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="subHeadline" type="text" index-type="keyword" instance-id="jmvl">
+        <dynamic-content language-id="de_DE"><![CDATA[Ob Mitarbeiterportal, Enterprise-Web-Content-Management oder Verwaltung von Mess- und Sensordaten - hier finden Sie Beispiele für die unterschiedlichsten Anwendungsszenarien.]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="abstract" type="text" index-type="keyword" instance-id="mbuv">
+        <dynamic-element name="iconClass" instance-id="srxj" type="text" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="claim" instance-id="dowx" type="text_box" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="abstractLink" instance-id="vomb" type="link_to_layout" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="abstractLabel" instance-id="vhpr" type="text" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="link" type="link_to_layout" index-type="keyword" instance-id="rwkb">
+        <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="label" type="text" index-type="keyword" instance-id="puxf">
+        <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+    </dynamic-element>
+</root>

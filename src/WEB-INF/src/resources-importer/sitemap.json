@@ -154,10 +154,24 @@
                     {
                         "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
                         "portletPreferences": {
-                            "articleId": "teaser_consulting.xml",
+                            "articleId": "abstracts_projects.xml",
                             "groupId": "${groupId}"
                         }
-                    }                
+                    },
+                    {
+                        "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+                        "portletPreferences": {
+                            "articleId": "teaser_flussbad.xml",
+                            "groupId": "${groupId}"
+                        }
+                    },
+                    {
+                        "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+                        "portletPreferences": {
+                            "articleId": "teaser_dai.xml",
+                            "groupId": "${groupId}"
+                        }
+                    }              
                 ]
             ],
             "friendlyURL": "/projects",
