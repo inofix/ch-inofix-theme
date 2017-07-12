@@ -2,8 +2,8 @@
     _responsive.scss: responsiveness for the inofix-theme 
 
     Created:    2017-06-28 13:30 by Christian Berndt
-    Modified:   2017-07-12 16:55 by Christian Berndt
-    Version:    0.2.5
+    Modified:   2017-07-12 18:09 by Christian Berndt
+    Version:    0.2.6
 */
 
 @mixin keyvisual($billboard-color) {
@@ -268,11 +268,7 @@
             
         &.teaser-left {
         
-            .left {
-                float: right;
-            }
-            
-            .right {
+            .col-md-6 {
                 float: right;
             }
         }
