@@ -2,8 +2,8 @@
     _navigation.scss: inofix theme's navigation 
 
     Created:    2017-03-05 23:08 by Christian Berndt
-    Modified:   2017-07-10 16:59 by Christian Berndt
-    Version:    0.4.1
+    Modified:   2017-07-12 16:51 by Christian Berndt
+    Version:    0.4.3
 */
 
 @import "variables";
@@ -22,21 +22,22 @@
         letter-spacing: normal;
         text-transform: none;
         
-        &.btn {
-            color: #fff;
-            margin-bottom: 14px;
-            margin-top: 14px;
-            padding-top: 12px; 
-            padding-bottom: 12px;
-            
-            &:hover {
-                background-color: #31b0d5;
-            }
+        color: #fff;
+        margin-bottom: 14px;
+        margin-top: 14px;
+        padding-top: 12px !important; 
+        padding-bottom: 12px !important;
+        
+        &:hover {
+            background-color: #31b0d5;
         }
     }
     
-    .my-account {
+    .icon-home {
+        font-size: 24px;
+    }
     
+    .my-account {  
         display: none;   
     }
     
@@ -62,6 +63,7 @@
     .navbar-nav {
     
         letter-spacing: 0.15em;
+        margin: 0;
         text-transform: uppercase; 
     
         > li {

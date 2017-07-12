@@ -2,8 +2,8 @@
     _responsive.scss: responsiveness for the inofix-theme 
 
     Created:    2017-06-28 13:30 by Christian Berndt
-    Modified:   2017-07-08 19:48 by Christian Berndt
-    Version:    0.2.4
+    Modified:   2017-07-12 16:55 by Christian Berndt
+    Version:    0.2.5
 */
 
 @mixin keyvisual($billboard-color) {
@@ -96,9 +96,10 @@
     
     #navigation {
     
-        .my-account {
-            display: inline-block;
-        }  
+        .btn-my-account {
+            padding: 5px 10px ! important;
+            margin-top: 20px;  
+        }
         
         .navbar-nav {
         
@@ -232,7 +233,12 @@
     #navigation {
     
         .btn-my-account {
+        
+            margin-bottom: 14px;
             margin-left: 15px;
+            margin-top: 14px;
+            padding-top: 12px !important; 
+            padding-bottom: 12px !important;            
         }
     }
     

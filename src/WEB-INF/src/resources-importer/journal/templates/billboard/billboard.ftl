@@ -2,8 +2,8 @@
     billboard.ftl: Format the billboard structure
     
     Created:    2017-06-27 22:23 by Christian Berndt
-    Modified:   2017-07-11 23:06 by Christian Berndt
-    Version:    1.0.7
+    Modified:   2017-07-12 00:21 by Christian Berndt
+    Version:    1.0.8
 -->
 
 <#assign color_scheme = "darkgray" />
@@ -39,17 +39,7 @@
                     <div class="keyvisual">
                         <#if image.getSiblings()?size gt 1>
                             <div class="image-wrapper">
-                                <div class="carousel slide" id="carousel-billboard" data-interval="6000" data-ride="carousel">
-                                    <ol class="carousel-indicators"> 
-                                        <#list image.getSiblings() as cur_image>
-                                            <#assign idx = cur_image?index />
-                                            <#assign initial = "active" />
-                                            <#if idx gt 0>
-                                                <#assign initial = "" /> 
-                                            </#if>                                            
-                                            <li data-target="#carousel-billboard" data-slide-to="${idx}" class="${initial}"></li>
-                                        </#list>
-                                    </ol> 
+                                <div class="carousel slide carousel-fade" id="carousel-billboard" data-interval="6000" data-ride="carousel">
                                     <div class="carousel-inner" role="listbox"> 
                                         <#list image.getSiblings() as cur_image> 
                                             <#assign idx = cur_image?index />
@@ -60,7 +50,7 @@
                                             <div class="item ${initial}"> 
                                                 <img alt="${cur_image.getAttribute("alt")}" src="${cur_image.getData()}"> 
                                                 <#if image.getAttribute("alt")?has_content>
-                                                    <div class="caption">${image.getAttribute("alt")}</div>
+                                                    <div class="caption">${cur_image.getAttribute("alt")}</div>
                                                 </#if>
                                             </div>
                                         </#list>
