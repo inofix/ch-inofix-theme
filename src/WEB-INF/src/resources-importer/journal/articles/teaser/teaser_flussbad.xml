@@ -10,19 +10,22 @@
     <dynamic-element name="headline" type="text" index-type="keyword" instance-id="qxsc">
         <dynamic-content language-id="de_DE"><![CDATA[Flussbad Berlin e.V.]]></dynamic-content>
     </dynamic-element>
+    <dynamic-element name="backgroundImage" type="image" index-type="keyword" instance-id="enho">
+        <dynamic-content language-id="de_DE" alt="www.flussbad-berlin.de" name="hans_wilhelm.jpg" title="hans_wilhelm.jpg" type="document"><![CDATA[[$FILE=hans_wilhelm.jpg$]]]></dynamic-content>
+    </dynamic-element>
     <dynamic-element name="subHeadline" type="text" index-type="keyword" instance-id="srex">
         <dynamic-content language-id="de_DE"><![CDATA[Wissens- und Informationsmanagement]]></dynamic-content>
     </dynamic-element>
     <dynamic-element name="claim" type="text" index-type="keyword" instance-id="mytg">
-        <dynamic-content language-id="de_DE"><![CDATA[Mit Liferay alles an einem Ort]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[Eine Lösung für vielfältige Anforderungen]]></dynamic-content>
     </dynamic-element>
     <dynamic-element name="content" type="text_area" index-type="keyword" instance-id="mjed">
-        <dynamic-content language-id="de_DE"><![CDATA[<p>Flussbad Berlin e.V. nutzt eine Liferay-basierte L&ouml;sung als Intranet f&uuml;r die Gesch&auml;ftsstelle des Vereins und f&uuml;r die Au&szlig;endarstellung des Projekts.</p>]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[<p>Flussbad Berlin e.V. nutzt sein Liferay-Portal nicht nur&nbsp;als Intranet f&uuml;r die Gesch&auml;ftsstelle des Vereins und die Au&szlig;endarstellung des Projekts, sondern auch f&uuml;r die Verwaltung und Aufbereitung projektrelevanter Mess- und Sensordaten.</p>]]></dynamic-content>
     </dynamic-element>
     <dynamic-element name="teaserLeft" type="boolean" index-type="keyword" instance-id="sqht">
         <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
     </dynamic-element>
     <dynamic-element name="link" type="link_to_layout" index-type="keyword" instance-id="pqbl">
-        <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[2]]></dynamic-content>
     </dynamic-element>
 </root>

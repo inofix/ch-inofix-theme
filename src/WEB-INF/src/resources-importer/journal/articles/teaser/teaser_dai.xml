@@ -10,6 +10,9 @@
     <dynamic-element name="headline" type="text" index-type="keyword" instance-id="cqcj">
         <dynamic-content language-id="de_DE"><![CDATA[Deutsches <br/> Archäologisches <br/> Institut]]></dynamic-content>
     </dynamic-element>
+    <dynamic-element name="backgroundImage" type="image" index-type="keyword" instance-id="enho">
+        <dynamic-content language-id="de_DE" alt="www.dainst.org" name="dai_map.png" title="dai_map.png" type="document"><![CDATA[[$FILE=dai_map.png$]]]></dynamic-content>
+    </dynamic-element>
     <dynamic-element name="subHeadline" type="text" index-type="keyword" instance-id="mgij">
         <dynamic-content language-id="de_DE"><![CDATA[Verteiltes Informationsmanagement]]></dynamic-content>
     </dynamic-element>
