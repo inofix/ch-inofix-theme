@@ -45,6 +45,44 @@
             "layoutTemplateId": "1_column",
             "name": "Calendar",
             "title": "Calendar"
+        },
+        {
+            "columns": [
+                [
+                    {
+                        "portletId": "com_liferay_calendar_web_portlet_CalendarPortlet"
+                    }
+                ]
+            ],
+            "friendlyURL": "/contacts",
+            "layoutTemplateId": "1_column",
+            "name": "Contacts",
+            "title": "Contacts"
+        },
+        {
+            "columns": [
+                [
+                    {
+                        "portletId": "com_liferay_calendar_web_portlet_CalendarPortlet"
+                    }
+                ]
+            ],
+            "friendlyURL": "/tasks",
+            "layouts": [
+                {
+                    "friendlyURL": "/tasks/personal",
+                    "name": "Personal Tasks",
+                    "title": "Personal Tasks"
+                },
+                {
+                    "friendlyURL": "/tasks/group",
+                    "name": "Group Tasks",
+                    "title": "Group Tasks"
+                }
+            ],
+            "layoutTemplateId": "1_column",
+            "name": "Tasks",
+            "title": "Tasks"
         }
     ],
     "publicPages": [
