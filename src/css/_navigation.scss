@@ -2,8 +2,8 @@
     _navigation.scss: inofix theme's navigation 
 
     Created:    2017-03-05 23:08 by Christian Berndt
-    Modified:   2017-07-12 16:51 by Christian Berndt
-    Version:    0.4.3
+    Modified:   2017-07-13 13:32 by Christian Berndt
+    Version:    0.4.4
 */
 
 @import "variables";
@@ -33,6 +33,45 @@
         }
     }
     
+    .dropdown {
+    
+        a {
+            display: inline-block;
+            
+            &:nth-child(1) {
+                padding-right: 0; 
+            }
+            
+            &:nth-child(2) {
+                margin-left: -7px;
+                padding-left: 7px; 
+            }
+        }
+        
+        .dropdown-menu {
+        
+            left: 0 !important; 
+            right: auto !important; 
+            
+            li > a {
+                margin-right: 0; 
+                padding: 5px 20px;
+                
+                &:hover {
+                    background-color: $color-lightgray;
+                    color: black;
+                }
+            }
+        }
+        
+        &.active.open, 
+        &.open {
+            > a {
+                background-color: $color-lightgray;
+            }
+        }
+    }
+    
     .icon-home {
         font-size: 24px;
     }
@@ -44,7 +83,8 @@
     .navbar-brand {
     
         color: #333;   
-        padding-top: 15px;    
+        padding-top: 12px; 
+        padding-bottom: 12px;
     
         .brand-name {
             font-size: 18px;
