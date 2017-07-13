@@ -2,8 +2,8 @@
     navigation.ftl: header navigation.
     
     Created:    2017-03-05 23:01 by Christian Berndt
-    Modified:   2017-07-13 16:29 by Christian Berndt
-    Version:    0.3.2
+    Modified:   2017-07-13 17:20 by Christian Berndt
+    Version:    0.3.3
 -->
 
 <#assign home_url = htmlUtil.escape(theme_display.getURLHome()) />
@@ -105,10 +105,12 @@
                     </#if>
                 </#if>
             </ul>
-        <#else>           
-            <ul class="my-account nav navbar-nav navbar-right" role="menubar">
+        <#else>
+                                              
+            <ul class="collapse my-account nav navbar-collapse navbar-nav navbar-right" role="menubar">
                 <li>
-                    <#if user.hasPrivateLayouts() >
+                    <#if user.hasPrivateLayouts()>
+                                               
                         <#if theme_display.scopeGroupId == user.groupId >
                             <a href="${user.getDisplayURL(theme_display, true)}">
                                 <span class="user-name">${user.fullName}</span>
