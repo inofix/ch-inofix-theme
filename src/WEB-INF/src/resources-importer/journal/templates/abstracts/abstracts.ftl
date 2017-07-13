@@ -2,8 +2,8 @@
     abstracts.ftl: Format the abstracts structure
     
     Created:    2017-05-14 19:03 by Christian Berndt
-    Modified:   2017-07-10 19:06 by Christian Berndt
-    Version:    1.1.1
+    Modified:   2017-07-13 23:29 by Christian Berndt
+    Version:    1.1.2
 -->
 
 <#assign color_scheme = "white" />
@@ -19,7 +19,7 @@
         </#if>
 
         <#if subHeadline?? && subHeadline.getData()?has_content>
-            <h4>${subHeadline.getData()}</h4>
+            <h3>${subHeadline.getData()}</h3>
         </#if>
         
         <#if abstract?? && abstract.getSiblings()?has_content>
@@ -55,7 +55,7 @@
                         </#if>
                     </#if>
                 
-                    <div class="${css_class}">
+                    <div class="abstract ${css_class}">
                     
                         <#if cur_abstract.iconClass?? && cur_abstract.iconClass.getData()?has_content>
                             <div class="icon-wrapper">
