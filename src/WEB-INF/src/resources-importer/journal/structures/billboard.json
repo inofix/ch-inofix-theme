@@ -149,8 +149,8 @@
                 "de_DE": ""
             },
             "tip": {
-                "en_US": "Select one or more images to be displayed on the jumbotron. ",
-                "de_DE": "Wählen Sie ein oder mehrere Bilder aus, die auf dem Jumbotron dargestellt werden sollen."
+                "en_US": "Select one or more images to be displayed on the billboard. ",
+                "de_DE": "Wählen Sie ein oder mehrere Bilder aus, die auf der Großfläche dargestellt werden sollen."
             },
             "dataType": "image",
             "fieldNamespace": "ddm",

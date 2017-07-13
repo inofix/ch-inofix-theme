@@ -137,6 +137,34 @@
         },
         {
             "label": {
+                "en_US": "Background Image",
+                "de_DE": "Hintergrundbild"
+            },
+            "predefinedValue": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": "Select a background image to be displayed for this teaser.",
+                "de_DE": "Wählen Sie ein Hintergrundbild aus, das für diesen Anreisser verwendet werden soll."
+            },
+            "dataType": "image",
+            "fieldNamespace": "ddm",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "backgroundImage",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "ddm-image"
+        },
+        {
+            "label": {
                 "en_US": "Subheadline",
                 "de_DE": "Untertitel"
             },
