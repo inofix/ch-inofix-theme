@@ -2,8 +2,8 @@
     navigation.ftl: header navigation.
     
     Created:    2017-03-05 23:01 by Christian Berndt
-    Modified:   2017-07-13 12:28 by Christian Berndt
-    Version:    0.3.1
+    Modified:   2017-07-13 16:29 by Christian Berndt
+    Version:    0.3.2
 -->
 
 <#assign home_url = htmlUtil.escape(theme_display.getURLHome()) />
@@ -40,7 +40,6 @@
                     <#assign
                         data_toggle = ""
                         has_children = false 
-                        idx = nav_item?index
                         nav_item_attr_has_popup = ""
                         nav_item_attr_selected = ""
                         nav_item_css_class = ""
@@ -72,9 +71,6 @@
                             <a aria-labelledby="layout_${nav_item.getLayoutId()}" class="${nav_link_css_class}" ${nav_item_attr_has_popup} ${data_toggle} href="${nav_item.getURL()}" ${nav_item.getTarget()} role="menuitem">
                                 <span class="caret"></span>
                             </a>
-                        </#if>
-                        
-                        <#if nav_item.hasChildren()>
                             <ul class="dropdown-menu" role="menu">
                                 <#list nav_item.getChildren() as nav_child>
                                     <#assign
