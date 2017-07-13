@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<root available-locales="de_DE" default-locale="de_DE">
+    <dynamic-element name="headline" type="text" index-type="keyword" instance-id="nzvq">
+        <dynamic-content language-id="de_DE"><![CDATA[Das sagen unsere Kunden]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="quote" type="text_box" index-type="keyword" instance-id="bhhl">
+        <dynamic-element name="author" instance-id="wpgi" type="text" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[Undine Lieberwirth]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="position" instance-id="iidk" type="text" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[Excellence Cluster Topoi, GIS and Databases]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="portrait" instance-id="kekr" type="image" index-type="keyword">
+            <dynamic-content language-id="de_DE"></dynamic-content>
+        </dynamic-element>
+        <dynamic-content language-id="de_DE"><![CDATA[Das von INOFIX Luzern geplante und gelieferte Liferay Portal, ermöglicht es den Wissenschaftlern des Exzellenzclusters TOPOI, Daten und Dokumente über Instituionsgrenzen hinweg auszutauschen und gemeinsam zu bearbeiten.]]></dynamic-content>
+    </dynamic-element>
+</root>
