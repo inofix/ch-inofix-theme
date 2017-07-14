@@ -2,8 +2,8 @@
     teaser.ftl: Format the teaser structure
     
     Created:    2017-07-02 23:29 by Christian Berndt
-    Modified:   2017-07-12 17:32 by Christian Berndt
-    Version:    1.0.3
+    Modified:   2017-07-14 16:30 by Christian Berndt
+    Version:    1.0.4
 -->
 
 <#assign background_style = ""/>
@@ -46,7 +46,12 @@
                         <h1>${headline.getData()}</h1>
                     </#if>
                 </div>
-                </div> 
+                <#if background_style?has_content>
+                    <#if backgroundImage.getAttribute("alt")?has_content>
+                        <div class="caption">${backgroundImage.getAttribute("alt")}</div>
+                    </#if>
+                </#if>
+            </div> 
             <div class="col-md-6">
                 <div class="text-wrapper">
                     <#if subHeadline?? && subHeadline.getData()?has_content>
