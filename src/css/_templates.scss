@@ -2,8 +2,8 @@
     _templates.scss: css config of inofix templates
 
     Created:    2017-07-05 17:26 by Christian Berndt
-    Modified:   2017-07-13 23:27 by Christian Berndt
-    Version:    1.1.5
+    Modified:   2017-07-14 16:13 by Christian Berndt
+    Version:    1.1.6
 */
 
 @import "variables";
@@ -95,9 +95,6 @@
 h3 {
     line-height: 130%;
     margin-bottom: 20px;
-    margin-left: auto; 
-    margin-right: auto;
-    max-width: 800px;
 }
 
 .abstracts {
@@ -134,6 +131,9 @@ h3 {
     h3 {
         margin-top: 40px;
         margin-bottom: 30px;
+        margin-left: auto; 
+        margin-right: auto;
+        max-width: 800px;
     }
     
     .icon-wrapper {
