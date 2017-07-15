@@ -2,8 +2,8 @@
     portal_normal.ftl: base template of the inofix-theme.
     
     Created:    2017-03-05 23:01 by Christian Berndt
-    Modified:   2017-07-13 23:40 by Christian Berndt
-    Version:    0.2.0
+    Modified:   2017-07-15 15:43 by Christian Berndt
+    Version:    0.2.1
 -->
 
 <!DOCTYPE html>
@@ -24,8 +24,11 @@
     <title>${the_title} - ${company_name}</title>
 
     <meta content="initial-scale=1.0, width=device-width" name="viewport" />
-
+    
     <@liferay_util["include"] page=top_head_include />
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i&amp;subset=latin-ext" rel="stylesheet"> 
+
 </head>
 
 <body class="${css_class}">
