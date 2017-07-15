@@ -2,8 +2,8 @@
     _templates.scss: css config of inofix templates
 
     Created:    2017-07-05 17:26 by Christian Berndt
-    Modified:   2017-07-14 23:04 by Christian Berndt
-    Version:    1.1.8
+    Modified:   2017-07-15 14:59 by Christian Berndt
+    Version:    1.1.9
 */
 
 @import "variables";
@@ -530,13 +530,8 @@ h3 {
             }
         }
         
-        .image-wrapper {
-        
+        .image-wrapper {        
             z-index: 11;
-        
-            h1 {
-                font-weight: 600;
-            }
         }
     }
     

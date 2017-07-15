@@ -166,7 +166,17 @@
             .btn {
                 margin-top: 10px;
             }
-        }  
+        } 
+        
+        &.background-image {
+            
+            .image-wrapper {
+                        
+                h1 {
+                    font-weight: 600;
+                }
+            }
+        } 
     }
 }
 
