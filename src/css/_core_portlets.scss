@@ -2,8 +2,8 @@
     _core_portlets.scss: adjust Liferay's core portlets for the inofix-theme
 
     Created:    2017-03-05 23:20 by Christian Berndt
-    Modified:   2017-07-10 18:07  by Christian Berndt
-    Version:    0.2.0
+    Modified:   2017-07-15 15:13  by Christian Berndt
+    Version:    0.2.1
 */
 
 .controls-hidden {
@@ -160,7 +160,7 @@
         display: inline-block;
         margin-bottom: 70px;
         text-align: left; 
-        width: 370px;
+        width: 320px;
         
         .portlet-body {
             padding: 15px; /*  bs .panel-body */        
