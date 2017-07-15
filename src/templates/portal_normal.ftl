@@ -2,8 +2,8 @@
     portal_normal.ftl: base template of the inofix-theme.
     
     Created:    2017-03-05 23:01 by Christian Berndt
-    Modified:   2017-07-15 17:54 by Christian Berndt
-    Version:    0.2.2
+    Modified:   2017-07-15 19:33 by Christian Berndt
+    Version:    1.0.0
 -->
 
 <!DOCTYPE html>
@@ -12,9 +12,14 @@
 
 <#assign full_width = getterUtil.getBoolean(themeDisplay.getThemeSetting("full-width"), false) />
 <#assign icons_article_id = "" />
+<#assign root_layout_uuid = "" />
 
 <#if themeDisplay.getThemeSetting("icons-article-id")??>
     <#assign icons_article_id = themeDisplay.getThemeSetting("icons-article-id") />
+</#if>
+
+<#if themeDisplay.getThemeSetting("root-layout-uuid")??>
+    <#assign root_layout_uuid = themeDisplay.getThemeSetting("root-layout-uuid") />
 </#if>
 
 <#assign wrapper_class = "container"/>
@@ -169,6 +174,19 @@
                 </div>
             </div>
             <div class="col-sm-4">
+            
+                <#if root_layout_uuid?has_content>
+                                    
+                    <#assign VOID = freeMarkerPortletPreferences.setValue("portletSetupPortletDecoratorId", "barebone") />
+                    <#assign VOID = freeMarkerPortletPreferences.setValue("rootLayoutType", "select") />
+                    <#assign VOID = freeMarkerPortletPreferences.setValue("rootLayoutUuid", root_layout_uuid) />
+                    
+                    <@liferay.navigation_menu default_preferences=freeMarkerPortletPreferences?string />
+
+                    <#assign VOID = freeMarkerPortletPreferences.reset() />
+                        
+                </#if>
+            
                 <#if !is_signed_in>
                     <a data-redirect="${is_login_redirect_required?string}" href="${sign_in_url}" id="sign-in" rel="nofollow">${sign_in_text}</a>
                 <#else>

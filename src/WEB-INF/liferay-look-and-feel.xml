@@ -10,6 +10,7 @@
         <settings>
             <setting configurable="true" key="full-width" type="checkbox" value="false" />
             <setting configurable="true" key="icons-article-id" value="" />
+            <setting configurable="true" key="root-layout-uuid" value="" />
         </settings>          
         <portlet-decorator id="barebone" name="Barebone">
             <portlet-decorator-css-class>portlet-barebone</portlet-decorator-css-class>
