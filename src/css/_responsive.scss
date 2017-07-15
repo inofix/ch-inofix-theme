@@ -2,8 +2,8 @@
     _responsive.scss: responsiveness for the inofix-theme 
 
     Created:    2017-06-28 13:30 by Christian Berndt
-    Modified:   2017-07-15 22:32 by Christian Berndt
-    Version:    0.3.4
+    Modified:   2017-07-15 22:46 by Christian Berndt
+    Version:    0.3.5
 */
 
 @mixin keyvisual($billboard-color) {
@@ -92,8 +92,8 @@
         
         .portlet-navigation {
                 
-            margin-left: -22.5px; 
-            margin-right: -22.5px;
+            margin-left: -30px; 
+            margin-right: -30px;
             text-align: left;
         }
     }
