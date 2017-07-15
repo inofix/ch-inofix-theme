@@ -2,15 +2,20 @@
     portal_normal.ftl: base template of the inofix-theme.
     
     Created:    2017-03-05 23:01 by Christian Berndt
-    Modified:   2017-07-15 15:43 by Christian Berndt
-    Version:    0.2.1
+    Modified:   2017-07-15 17:54 by Christian Berndt
+    Version:    0.2.2
 -->
 
 <!DOCTYPE html>
 
 <#include init />
 
-<#assign full_width = getterUtil.getBoolean(themeDisplay.getThemeSetting("full-width"), false)>
+<#assign full_width = getterUtil.getBoolean(themeDisplay.getThemeSetting("full-width"), false) />
+<#assign icons_article_id = "" />
+
+<#if themeDisplay.getThemeSetting("icons-article-id")??>
+    <#assign icons_article_id = themeDisplay.getThemeSetting("icons-article-id") />
+</#if>
 
 <#assign wrapper_class = "container"/>
 
@@ -143,16 +148,23 @@
             </div>
             <div class="col-sm-4">
                 <div class="center-block">
-                
-                    <#assign default_preferences = "" />
-                
-                    <#--
-                    <@liferay_portlet["runtime"]
-                        defaultPreferences=default_preferences
-                        portletProviderAction=portletProviderAction.VIEW
-                        portletProviderClassName="com.liferay.portal.kernel.servlet.taglib.ui.LanguageEntry"
-                    />
-                    -->
+                                    
+                    <#assign VOID = freeMarkerPortletPreferences.setValue("portletSetupPortletDecoratorId", "barebone") />
+                    <#assign group_id = htmlUtil.escape(theme_display.getScopeGroupId()?string) />
+                    <#assign VOID = freeMarkerPortletPreferences.setValue("groupId", '${group_id}') />
+                    <#assign VOID = freeMarkerPortletPreferences.setValue("articleId", "${icons_article_id}") />
+                    
+                    <#if icons_article_id?has_content>
+                                        
+                        <@liferay_portlet["runtime"]
+                            defaultPreferences="${freeMarkerPortletPreferences}"
+                            portletProviderAction=portletProviderAction.VIEW
+                            instanceId="FOOTER_ICONS"
+                            portletName="com_liferay_journal_content_web_portlet_JournalContentPortlet" />
+
+                        <#assign VOID = freeMarkerPortletPreferences.reset() />
+                        
+                    </#if>
 
                 </div>
             </div>
