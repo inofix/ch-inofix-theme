@@ -151,10 +151,6 @@
     }
     
     .teaser {
-    
-        .col-md-6 {
-            min-height: 400px;
-        }
         
         .text-wrapper {
             left: 50%;
@@ -308,6 +304,10 @@
     }
     
     .teaser {
+    
+        .col-md-6 {
+            min-height: 450px;
+        }
     
         .text-wrapper {
             width: 400px; 
