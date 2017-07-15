@@ -2,8 +2,8 @@
     portal_normal.ftl: base template of the inofix-theme.
     
     Created:    2017-03-05 23:01 by Christian Berndt
-    Modified:   2017-07-15 19:33 by Christian Berndt
-    Version:    1.0.0
+    Modified:   2017-07-15 22:32 by Christian Berndt
+    Version:    1.0.1
 -->
 
 <!DOCTYPE html>
@@ -148,6 +148,24 @@
 <footer id="footer" role="contentinfo">
     <div class="container">
         <div class="row">
+        
+            <div class="col-sm-12">
+                <#if root_layout_uuid?has_content>
+                                    
+                    <#assign VOID = freeMarkerPortletPreferences.setValue("portletSetupPortletDecoratorId", "barebone") />
+                    <#assign VOID = freeMarkerPortletPreferences.setValue("rootLayoutType", "select") />
+                    <#assign VOID = freeMarkerPortletPreferences.setValue("rootLayoutUuid", root_layout_uuid) />
+                    
+                    <@liferay.navigation_menu default_preferences=freeMarkerPortletPreferences?string />
+
+                    <#assign VOID = freeMarkerPortletPreferences.reset() />
+                        
+                </#if>
+            </div>
+        </div>
+        
+        <div class="row">
+        
             <div class="col-sm-4">
                 &copy; 2017 <a href="http://www.inofix.ch" target="_blank">www.inofix.ch</a>
             </div>
@@ -174,18 +192,6 @@
                 </div>
             </div>
             <div class="col-sm-4">
-            
-                <#if root_layout_uuid?has_content>
-                                    
-                    <#assign VOID = freeMarkerPortletPreferences.setValue("portletSetupPortletDecoratorId", "barebone") />
-                    <#assign VOID = freeMarkerPortletPreferences.setValue("rootLayoutType", "select") />
-                    <#assign VOID = freeMarkerPortletPreferences.setValue("rootLayoutUuid", root_layout_uuid) />
-                    
-                    <@liferay.navigation_menu default_preferences=freeMarkerPortletPreferences?string />
-
-                    <#assign VOID = freeMarkerPortletPreferences.reset() />
-                        
-                </#if>
             
                 <#if !is_signed_in>
                     <a data-redirect="${is_login_redirect_required?string}" href="${sign_in_url}" id="sign-in" rel="nofollow">${sign_in_text}</a>
