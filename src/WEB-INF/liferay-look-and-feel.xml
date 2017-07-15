@@ -9,6 +9,7 @@
         <template-extension>ftl</template-extension>
         <settings>
             <setting configurable="true" key="full-width" type="checkbox" value="false" />
+            <setting configurable="true" key="icons-article-id" value="" />
         </settings>          
         <portlet-decorator id="barebone" name="Barebone">
             <portlet-decorator-css-class>portlet-barebone</portlet-decorator-css-class>
