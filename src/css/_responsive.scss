@@ -39,6 +39,13 @@
 
     .billboard {
     
+        .claim {
+            h1 {
+                font-size: 36px;           
+                font-weight: 600; 
+            }
+        }
+    
         .col-md-6 {
             &.first {
                 min-height: 300px;
@@ -80,6 +87,10 @@
                 text-align: right; 
             }
         }
+    }
+        
+    h1 {
+        font-size: 36px; 
     }
     
     .logos {
