@@ -2,8 +2,8 @@
     _templates.scss: css config of inofix templates
 
     Created:    2017-07-05 17:26 by Christian Berndt
-    Modified:   2017-07-14 23:04 by Christian Berndt
-    Version:    1.1.8
+    Modified:   2017-07-15 17:45 by Christian Berndt
+    Version:    1.2.0
 */
 
 @import "variables";
@@ -91,6 +91,11 @@
               transform: translate3d(0, 0, 0);
     }
 }
+
+h1 {
+    font-size: 30px; 
+    line-height: 125%;    
+}
     
 h3 {
     line-height: 130%;
@@ -154,7 +159,7 @@ h3 {
     }
     
     p {
-        font-size: 16px;
+        font-size: 18px;
         line-height: 150%;
         margin-bottom: 30px;
         text-align: left;
@@ -253,9 +258,7 @@ h3 {
     
         h1 {
             color: #fff;
-            font-size: 36px; 
-/*             font-weight: 600;  */
-            line-height: 130%;
+            font-weight: 600; 
             margin-bottom: 0; 
             margin-top: 0;
         }   
@@ -451,7 +454,7 @@ h3 {
 
 .teaser {
     
-    font-size: 16px;
+    font-size: 18px;
     line-height: 150%;
     margin-left: -15px;
     margin-right: -15px;
@@ -467,7 +470,7 @@ h3 {
     }
     
     .col-md-6 {
-        min-height: 350px; 
+        min-height: 400px; 
         position: relative; 
     }
     
@@ -496,6 +499,10 @@ h3 {
         right: 0; 
         top: 50%;
         transform: translateY(-50%);
+        
+        h1 {
+            font-weight: 600; 
+        }
     }
     
     .text-wrapper {
@@ -530,13 +537,8 @@ h3 {
             }
         }
         
-        .image-wrapper {
-        
+        .image-wrapper {        
             z-index: 11;
-        
-            h1 {
-                font-weight: 600;
-            }
         }
     }
     
