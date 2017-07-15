@@ -2,8 +2,8 @@
     portal_normal.ftl: base template of the inofix-theme.
     
     Created:    2017-03-05 23:01 by Christian Berndt
-    Modified:   2017-07-13 16:30 by Christian Berndt
-    Version:    0.1.9
+    Modified:   2017-07-13 23:40 by Christian Berndt
+    Version:    0.2.0
 -->
 
 <!DOCTYPE html>
@@ -134,14 +134,32 @@
 
 <footer id="footer" role="contentinfo">
     <div class="container">
-        &copy; 2017 <a href="http://www.inofix.ch" target="_blank">www.inofix.ch</a>
-        
-        <div class="pull-right">
-            <#if !is_signed_in>
-                <a data-redirect="${is_login_redirect_required?string}" href="${sign_in_url}" id="sign-in" rel="nofollow">${sign_in_text}</a>
-            <#else>
-                <a href="${sign_out_url}" id="sign-out" rel="nofollow" title="<@liferay.language key="sign-out" />"><@liferay.language key="sign-out" /></a>              
-            </#if>
+        <div class="row">
+            <div class="col-sm-4">
+                &copy; 2017 <a href="http://www.inofix.ch" target="_blank">www.inofix.ch</a>
+            </div>
+            <div class="col-sm-4">
+                <div class="center-block">
+                
+                    <#assign default_preferences = "" />
+                
+                    <#--
+                    <@liferay_portlet["runtime"]
+                        defaultPreferences=default_preferences
+                        portletProviderAction=portletProviderAction.VIEW
+                        portletProviderClassName="com.liferay.portal.kernel.servlet.taglib.ui.LanguageEntry"
+                    />
+                    -->
+
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <#if !is_signed_in>
+                    <a data-redirect="${is_login_redirect_required?string}" href="${sign_in_url}" id="sign-in" rel="nofollow">${sign_in_text}</a>
+                <#else>
+                    <a href="${sign_out_url}" id="sign-out" rel="nofollow" title="<@liferay.language key="sign-out" />"><@liferay.language key="sign-out" /></a>              
+                </#if>
+            </div>
         </div>
     </div>
 </footer>
