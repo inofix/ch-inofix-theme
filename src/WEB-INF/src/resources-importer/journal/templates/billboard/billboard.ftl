@@ -2,8 +2,8 @@
     billboard.ftl: Format the billboard structure
     
     Created:    2017-06-27 22:23 by Christian Berndt
-    Modified:   2017-07-12 00:21 by Christian Berndt
-    Version:    1.0.8
+    Modified:   2017-07-16 13:12 by Christian Berndt
+    Version:    1.0.9
 -->
 
 <#assign color_scheme = "darkgray" />
@@ -39,7 +39,7 @@
                     <div class="keyvisual">
                         <#if image.getSiblings()?size gt 1>
                             <div class="image-wrapper">
-                                <div class="carousel slide carousel-fade" id="carousel-billboard" data-interval="6000" data-ride="carousel">
+                                <div class="carousel slide carousel-fade" id="carousel-billboard">
                                     <div class="carousel-inner" role="listbox"> 
                                         <#list image.getSiblings() as cur_image> 
                                             <#assign idx = cur_image?index />
@@ -71,3 +71,15 @@
         </div>
     </div>
 </div>
+
+<script>
+
+    // init billboard carousel
+    $('#carousel-billboard').carousel({})
+
+    Liferay.on('endNavigate', function() {
+        // re-init after senna navigation event
+        $('#carousel-billboard').carousel({})
+    });
+
+</script>
