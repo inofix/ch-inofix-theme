@@ -218,6 +218,33 @@
             "nestedFields": [
                 {
                     "label": {
+                        "en_US": "Copyright",
+                        "de_DE": "Copyright"
+                    },
+                    "predefinedValue": {
+                        "en_US": "",
+                        "de_DE": ""
+                    },
+                    "style": {
+                        "en_US": "",
+                        "de_DE": ""
+                    },
+                    "tip": {
+                        "en_US": "Enter the copyright info for this logo.",
+                        "de_DE": "Mit diesem Logo verknüpfte Copyright-Informationen."
+                    },
+                    "dataType": "string",
+                    "indexType": "keyword",
+                    "localizable": true,
+                    "name": "copyright",
+                    "readOnly": false,
+                    "repeatable": false,
+                    "required": false,
+                    "showLabel": true,
+                    "type": "text"
+                },
+                {
+                    "label": {
                         "en_US": "URL",
                         "de_DE": "URL"
                     },
@@ -231,7 +258,7 @@
                     },
                     "tip": {
                         "en_US": "Enter the URL, which shall be linked with this logo.",
-                        "de_DE": "Enter the URL, which shall be linked with this logo."
+                        "de_DE": "Geben Sie den URL an, der mit diesem Logo verknüpft ist."
                     },
                     "dataType": "string",
                     "indexType": "keyword",
