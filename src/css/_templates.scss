@@ -2,8 +2,8 @@
     _templates.scss: css config of inofix templates
 
     Created:    2017-07-05 17:26 by Christian Berndt
-    Modified:   2017-07-15 17:45 by Christian Berndt
-    Version:    1.2.0
+    Modified:   2017-07-18 15:48 by Christian Berndt
+    Version:    1.2.1
 */
 
 @import "variables";
@@ -238,6 +238,7 @@ h3 {
     }
     
     .carousel {
+    
         .item {
             img {
                 margin: 0 auto; 
@@ -246,16 +247,10 @@ h3 {
     }
      
     .claim {
-   
-        left: 15px;
-        margin-right: auto;
-        margin-left: auto;
-        max-width: 600px;
-        position: absolute;
-        right: 15px;
-        top: 50%;
-        transform: translateY(-50%);
     
+        margin: auto; 
+        max-width: 600px;
+        
         h1 {
             color: #fff;
             font-weight: 600; 
@@ -265,19 +260,32 @@ h3 {
     }
     
     .col-md-6 {
+    
         position: relative;
         
-        &.first {
-            min-height: 300px;
+        &:nth-child(1) {
+            padding: 30px 15px 15px; 
         }
+        
+        &:nth-child(2) {
+            padding: 15px 15px 30px; 
+        }    
     }
     
     .keyvisual {
-        text-align: center; 
-    }
     
-    .text-only {    
-        text-align: center;
+        margin: auto; 
+        text-align: center; 
+        
+        .caption {
+            display: none;
+        }
+    }
+         
+    .text-only {
+        &.col-md-6 {
+            padding: 60px 15px;
+        }
     }
     
     &.blue {
@@ -301,7 +309,18 @@ h3 {
     
         @include keyvisual($color-darkgray);
         
+        .col-md-6 {
+            &:nth-child(2) {
+                padding: 0 15px;; 
+            }
+        }
+        
         .keyvisual {
+        
+            .caption {
+                display: block; 
+            }
+        
             img {
                 max-width: 100%;               
             } 

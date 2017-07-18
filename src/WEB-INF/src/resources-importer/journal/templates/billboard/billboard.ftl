@@ -2,8 +2,8 @@
     billboard.ftl: Format the billboard structure
     
     Created:    2017-06-27 22:23 by Christian Berndt
-    Modified:   2017-07-16 13:12 by Christian Berndt
-    Version:    1.0.9
+    Modified:   2017-07-18 17:46 by Christian Berndt
+    Version:    1.1.0
 -->
 
 <#assign color_scheme = "darkgray" />
@@ -29,13 +29,13 @@
 <div class="billboard ${color_scheme}">
     <div class="container">
         <div class="row">
-            <div class="${css_class} first">
+            <div class="${css_class}">
                 <div class="claim">
                     <h1>${claim.getData()}</h1>
                 </div>
             </div>
             <#if has_images>
-                <div class="col-md-6 last">
+                <div class="col-md-6">
                     <div class="keyvisual">
                         <#if image.getSiblings()?size gt 1>
                             <div class="image-wrapper">
