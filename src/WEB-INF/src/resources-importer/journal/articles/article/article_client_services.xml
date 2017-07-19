@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+
+<root available-locales="de_DE" default-locale="de_DE">
+    <dynamic-element name="headline" type="text" index-type="keyword" instance-id="hCyCFhJf">
+        <dynamic-content language-id="de_DE"><![CDATA[Kundendienste]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="summary" type="text_box" index-type="keyword" instance-id="TNepkFCA">
+        <dynamic-content language-id="de_DE"><![CDATA[Benötigen Sie Hilfe bei der Konfiguration Ihres E-Mail Programms? Möchten Sie Ihre E-Mails über den Browser abfragen? Suchen Sie den Einstieg in unser Kundenportal? Dann sind Sie hier richtig.]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="showToc" type="boolean" index-type="keyword" instance-id="5URSyQX6">
+        <dynamic-content language-id="de_DE"><![CDATA[true]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="section" type="text" index-type="keyword" instance-id="ims49Yd5">
+        <dynamic-element name="content" instance-id="3EKt8zZh" type="text_area" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[<p>Als Kunde von inofix haben Sie die Möglichkeit, alle Dokumente, Leistungsnachweise und&nbsp;Rechnungen in Ihrem persönlichen Kundenbereich einzusehen und abzurufen.&nbsp;</p>
+
+<p>Um zu Ihrem persönlichen Kundenbereich zu gelangen, melden Sie sich bitte unter</p>
+
+<p><a href="https://portal.inofix.net" target="_blank">https://portal.inofix.net</a></p>
+
+<p>am Kundenportal an.</p>]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="imageAboveTheText" instance-id="SMb3EFHs" type="boolean" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="image" instance-id="eVDo7moP" type="document_library" index-type="keyword">
+            <dynamic-element name="caption" instance-id="W4XWLSUg" type="text_box" index-type="keyword">
+                <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+            </dynamic-element>
+            <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-content language-id="de_DE"><![CDATA[Einstieg ins Kundenportal]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="section" type="text" index-type="keyword" instance-id="2oyUMrtN">
+        <dynamic-element name="content" instance-id="bNBMDEWu" type="text_area" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[<p>Um Ihre E-Mails mit dem Browser abzufragen, wechseln Sie bitte nach</p>
+
+<p><a href="https://webmail.inofix.net" target="_blank">https://webmail.inofix.net</a></p>
+
+<p>Die bevorzugte Sprache kann unter "Options &gt; Display Preferences &gt; Language" eingestellt werden.</p>
+
+<p>Vor dem ersten Versand muss (einmalig) zwingend die gewünschte e-Mailadresse unter "Persönliche Informationen" ("Personal Information") eingetragen werden.</p>]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="imageAboveTheText" instance-id="Qmx9OTaz" type="boolean" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="image" instance-id="uxssoEci" type="document_library" index-type="keyword">
+            <dynamic-element name="caption" instance-id="6x0mgrbu" type="text_box" index-type="keyword">
+                <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+            </dynamic-element>
+            <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-content language-id="de_DE"><![CDATA[E-Mail mit dem Browser abfragen]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="section" type="text" index-type="keyword" instance-id="GnyFXNZc">
+        <dynamic-element name="content" instance-id="VMkQfaPg" type="text_area" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[<p>Selbstverständlich können Sie Ihre E-Mails auch mit einem speziellen E-Mail (bspw. Thunderbird oder Outlook) &nbsp;abfragen.</p>
+
+<h3>Konfiguration des Postausgangs-Server</h3>
+
+<h4>SMTP</h4>
+
+<p>mail.inofix.net&nbsp;</p>
+
+<p>(wahlweise Port 25 mit TLS/SSL oder Port 465 für SMTPS)</p>
+
+<h3>Konfiguration des Posteingangs-Server (IMAP oder POP3)</h3>
+
+<h4>IMAP</h4>
+
+<p>mail.inofix.net&nbsp;</p>
+
+<p>(wahlweise Port 143 mit TLS/SSL oder Port 993 für IMAPS)</p>
+
+<h4>POP3</h4>
+
+<p>mail.inofix.net&nbsp;</p>
+
+<p>(wahlweise Port 110 mit TLS/SSL oder Port 995 für POP3S)</p>]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="imageAboveTheText" instance-id="72BNJw81" type="boolean" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="image" instance-id="oxfic8b3" type="document_library" index-type="keyword">
+            <dynamic-element name="caption" instance-id="CO9uq0rW" type="text_box" index-type="keyword">
+                <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+            </dynamic-element>
+            <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-content language-id="de_DE"><![CDATA[E-Mail Programm konfigurieren]]></dynamic-content>
+    </dynamic-element>
+</root>

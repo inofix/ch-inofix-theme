@@ -2,8 +2,8 @@
     _templates.scss: css config of inofix templates
 
     Created:    2017-07-05 17:26 by Christian Berndt
-    Modified:   2017-07-18 15:48 by Christian Berndt
-    Version:    1.2.1
+    Modified:   2017-07-19 12:18 by Christian Berndt
+    Version:    1.2.2
 */
 
 @import "variables";
@@ -222,6 +222,16 @@ h3 {
             color: white; 
         }
         
+    }
+}
+
+.article {
+    
+    font-size: 16px;
+    margin-bottom: 70px;
+    
+    .toc {
+        display: none; 
     }
 }
 
