@@ -2,8 +2,8 @@
     portal_normal.ftl: base template of the inofix-theme.
     
     Created:    2017-03-05 23:01 by Christian Berndt
-    Modified:   2017-07-15 22:32 by Christian Berndt
-    Version:    1.0.1
+    Modified:   2017-07-20 18:46 by Christian Berndt
+    Version:    1.0.2
 -->
 
 <!DOCTYPE html>
@@ -12,6 +12,7 @@
 
 <#assign full_width = getterUtil.getBoolean(themeDisplay.getThemeSetting("full-width"), false) />
 <#assign icons_article_id = "" />
+<#assign is_impersonated = themeDisplay.isImpersonated() />
 <#assign root_layout_uuid = "" />
 
 <#if themeDisplay.getThemeSetting("icons-article-id")??>
@@ -50,18 +51,19 @@
 <@liferay.control_menu />
 
 <header id="banner" role="banner">
-    <#if has_navigation && is_setup_complete>
+    <#if (has_navigation && is_setup_complete) || 
+         (is_impersonated && has_navigation) >
+         
         <#include "${full_templates_path}/navigation.ftl" />
+        
     </#if>
 </header>
 
 <#if layout.isPrivateLayout() >
     <div class="pagehead">
         <div class="container">
-        
-            <h3>
-                ${site_name}
-            </h3>
+            
+            <h3>${site_name}</h3>
         
             <ul aria-label="<@liferay.language key="site-pages" />" class="collapse navbar-collapse nav navbar-nav site-navigation" role="menubar">
                 <#list nav_items as nav_item>
@@ -195,8 +197,8 @@
             
                 <#if !is_signed_in>
                     <a data-redirect="${is_login_redirect_required?string}" href="${sign_in_url}" id="sign-in" rel="nofollow">${sign_in_text}</a>
-                <#else>
-                    <a href="${sign_out_url}" id="sign-out" rel="nofollow" title="<@liferay.language key="sign-out" />"><@liferay.language key="sign-out" /></a>              
+                <#elseif sign_out_url??> <#-- sign_out_url is not available in impersonate mode -->
+                    <a href="${sign_out_url}" id="sign-out" rel="nofollow" title="<@liferay.language key="sign-out" />"><@liferay.language key="sign-out" /></a>
                 </#if>
             </div>
         </div>
