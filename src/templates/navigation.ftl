@@ -106,7 +106,7 @@
                 </#if>
             </ul>
         <#else>
-                                              
+            
             <ul class="collapse my-account nav navbar-collapse navbar-nav navbar-right" role="menubar">
                 <li>
                     <#if user.hasPrivateLayouts()>
@@ -124,7 +124,7 @@
                         <span class="user-name text-muted">${user.fullName}</span>                
                     </#if>
                 </li>
-            </ul>            
+            </ul>
         </#if> 
     </div>
 </nav>
