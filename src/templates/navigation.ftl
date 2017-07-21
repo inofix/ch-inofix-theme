@@ -2,14 +2,20 @@
     navigation.ftl: header navigation.
     
     Created:    2017-03-05 23:01 by Christian Berndt
-    Modified:   2017-07-13 17:20 by Christian Berndt
-    Version:    0.3.3
+    Modified:   2017-07-21 12:03 by Christian Berndt
+    Version:    0.3.4
 -->
 
 <#assign home_url = htmlUtil.escape(theme_display.getURLHome()) />
+<#assign is_impersonated = themeDisplay.isImpersonated() />
 
 <#if !home_url?has_content>
     <#assign home_url = company_url />
+</#if>
+
+<#if is_impersonated>
+    <#assign do_as_user_id = paramUtil.getString(request, "doAsUserId") />
+    <#assign home_url = httpUtil.addParameter(home_url, "doAsUserId", do_as_user_id) />
 </#if>
 
 <nav class="${nav_css_class} navbar navbar-default" id="navigation" role="navigation">
