@@ -2,8 +2,8 @@
     logos.ftl: Format the logos structure
     
     Created:    2017-07-05 23:13 by Christian Berndt
-    Modified:   2017-07-09 19:32 by Christian Berndt
-    Version:    1.0.5
+    Modified:   2017-07-21 18:17 by Christian Berndt
+    Version:    1.0.6
 -->
 
 <#assign color_scheme = "white" />
@@ -52,7 +52,9 @@
                         <#if cur_logo.getData()?? && cur_logo.getData() != "">
                             <div class="col-sm-3 col-md-2">
                                 <div class="logo-wrapper">
-                                    <img alt="${cur_logo.getAttribute("alt")}" class="logo" src="${cur_logo.getData()}" />
+                                    <#if cur_logo.getData() != "">
+                                        <img alt="${cur_logo.getAttribute("alt")}" class="logo" src="${cur_logo.getData()}" />
+                                    </#if>
                                 </div>
                                 <#-- <p class="description"></p> -->
                             </div>
@@ -61,7 +63,7 @@
                 <#else>
                     <div class="logos-bar">
                         <#list logo.getSiblings() as cur_logo>
-                            <#if cur_logo.getData()?? && cur_logo.getData() != "">
+                            <#if cur_logo.getData() != "">
                                 <img alt="${cur_logo.getAttribute("alt")}" class="logo" src="${cur_logo.getData()}" />
                             </#if>
                         </#list>
