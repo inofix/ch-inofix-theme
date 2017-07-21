@@ -20,39 +20,51 @@
         <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
     </dynamic-element>
     <dynamic-element name="logo" type="image" index-type="keyword" instance-id="brhg">
+        <dynamic-element name="copyright" instance-id="xsqj" type="text" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[&copy; Flussbad Berlin e.V.]]></dynamic-content>
+        </dynamic-element>
         <dynamic-element name="url" instance-id="emde" type="text" index-type="keyword">
             <dynamic-content language-id="de_DE"><![CDATA[http://www.flussbad-berlin.de]]></dynamic-content>
         </dynamic-element>
         <dynamic-element name="link" instance-id="nqev" type="link_to_layout" index-type="keyword">
             <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
         </dynamic-element>
-        <dynamic-content language-id="de_DE" alt="Flussbad Berlin e.V." name="logo_flussbad.png" title="logo_flussbad.png" type="document"><![CDATA[[$FILE=flussbad_responsive.png$]]]></dynamic-content>
+        <dynamic-content language-id="de_DE" alt="Flussbad Berlin e.V." name="logo_flussbad.png" title="logo_flussbad.png" type="document"><![CDATA[/documents/30701/0/flussbad_responsive.png/fd247453-78a5-9fb0-e6b4-6bca63b84cde?version=26.0&t=1500651988105]]></dynamic-content>
     </dynamic-element>
     <dynamic-element name="logo" type="image" index-type="keyword" instance-id="tocn">
+        <dynamic-element name="copyright" instance-id="wmgt" type="text" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+        </dynamic-element>
         <dynamic-element name="url" instance-id="hrts" type="text" index-type="keyword">
             <dynamic-content language-id="de_DE"><![CDATA[https://www.dainst.org]]></dynamic-content>
         </dynamic-element>
         <dynamic-element name="link" instance-id="uwbl" type="link_to_layout" index-type="keyword">
             <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
         </dynamic-element>
-        <dynamic-content language-id="de_DE" alt="Deutsches Archäologisches Institut" name="logo_dai.png" title="logo_dai.png" type="document"><![CDATA[[$FILE=flussbad_responsive.png$]]]></dynamic-content>
+        <dynamic-content language-id="de_DE" alt="Deutsches Archäologisches Institut" name="logo_dai.png" title="logo_dai.png" type="document"><![CDATA[/documents/30701/0/flussbad_responsive.png/fd247453-78a5-9fb0-e6b4-6bca63b84cde?version=26.0&t=1500651988105]]></dynamic-content>
     </dynamic-element>
     <dynamic-element name="logo" type="image" index-type="keyword" instance-id="sedw">
+        <dynamic-element name="copyright" instance-id="khdw" type="text" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+        </dynamic-element>
         <dynamic-element name="url" instance-id="eenq" type="text" index-type="keyword">
             <dynamic-content language-id="de_DE"><![CDATA[http://www.berliner-antike-kolleg.org]]></dynamic-content>
         </dynamic-element>
         <dynamic-element name="link" instance-id="gmxj" type="link_to_layout" index-type="keyword">
             <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
         </dynamic-element>
-        <dynamic-content language-id="de_DE" alt="Berliner Antike-Kolleg" name="logo_bak.png" title="logo_bak.png" type="document"><![CDATA[[$FILE=flussbad_responsive.png$]]]></dynamic-content>
+        <dynamic-content language-id="de_DE" alt="Berliner Antike-Kolleg" name="logo_bak.png" title="logo_bak.png" type="document"><![CDATA[/documents/30701/0/flussbad_responsive.png/fd247453-78a5-9fb0-e6b4-6bca63b84cde?version=26.0&t=1500651988105]]></dynamic-content>
     </dynamic-element>
     <dynamic-element name="logo" type="image" index-type="keyword" instance-id="dxgy">
+        <dynamic-element name="copyright" instance-id="qqpn" type="text" index-type="keyword">
+            <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+        </dynamic-element>
         <dynamic-element name="url" instance-id="bpdm" type="text" index-type="keyword">
             <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
         </dynamic-element>
         <dynamic-element name="link" instance-id="hvpz" type="link_to_layout" index-type="keyword">
             <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
         </dynamic-element>
-        <dynamic-content language-id="de_DE" alt="" name="topoi_logo.png" title="topoi_logo.png" type="document"><![CDATA[[$FILE=flussbad_responsive.png$]]]></dynamic-content>
+        <dynamic-content language-id="de_DE" alt="" name="topoi_logo.png" title="topoi_logo.png" type="document"><![CDATA[/documents/30701/0/flussbad_responsive.png/fd247453-78a5-9fb0-e6b4-6bca63b84cde?version=26.0&t=1500651988105]]></dynamic-content>
     </dynamic-element>
 </root>
