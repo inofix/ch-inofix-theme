@@ -54,19 +54,6 @@
                     }
                 ]
             ],
-            "friendlyURL": "/contacts",
-            "layoutTemplateId": "1_column",
-            "name": "Contacts",
-            "title": "Contacts"
-        },
-        {
-            "columns": [
-                [
-                    {
-                        "portletId": "com_liferay_calendar_web_portlet_CalendarPortlet"
-                    }
-                ]
-            ],
             "friendlyURL": "/tasks",
             "layouts": [
                 {
@@ -83,7 +70,23 @@
             "layoutTemplateId": "1_column",
             "name": "Tasks",
             "title": "Tasks"
-        }
+        },
+        {
+            "columns": [
+                [
+                    {
+                        "portletId": "com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet",
+                        "portletPreferences": {
+                            "displayStyle": "ddmTemplate_LANGUAGE-SELECT-BOX-FTL"
+                        }                        
+                    }
+                ]
+            ],
+            "friendlyURL": "/settings",
+            "layoutTemplateId": "1_column",
+            "name": "Settings",
+            "title": "Settings"
+        },
     ],
     "publicPages": [
         {
