@@ -2,8 +2,8 @@
     _custom.scss: main config of the inofix-theme
 
     Created:    2017-03-05 23:20 by Christian Berndt
-    Modified:   2017-07-25 23:35 by Christian Berndt
-    Version:    0.4.5
+    Modified:   2017-07-26 00:07 by Christian Berndt
+    Version:    0.4.6
 */
 
 /* These inject tags are used for dynamically creating imports for themelet styles, you can place them where ever you like in this file. */
@@ -58,10 +58,17 @@ body {
 }
 
 .container-fluid {
+    
     .billboard {
         margin-top: -2em; 
     }
+    
+    .container-fluid-1280 {
+        padding-right: 0; 
+        padding-left: 0; 
+    } 
 }
+
 
 .control-menu {
     .toggle-controls {

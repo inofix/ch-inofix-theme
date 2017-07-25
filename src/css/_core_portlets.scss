@@ -2,8 +2,8 @@
     _core_portlets.scss: adjust Liferay's core portlets for the inofix-theme
 
     Created:    2017-03-05 23:20 by Christian Berndt
-    Modified:   2017-07-21 13:36 by Christian Berndt
-    Version:    0.2.2
+    Modified:   2017-07-26 00:24 by Christian Berndt
+    Version:    0.2.3
 */
 
 .controls-hidden {
@@ -84,6 +84,55 @@
     
     .user-name {
         font-weight: 600;
+    }
+}
+
+.portlet-forms {
+    
+    margin-bottom: 70px; 
+    
+    .control-label {
+        margin-bottom: 10px;
+    }
+    
+    .ddl-form-description {
+        padding-bottom: 30px; 
+    }
+    
+    .lfr-ddm-form-field-container {
+        padding: 30px 0 0 0;
+    }
+    
+    .lfr-ddm-form-container {
+    
+        .lfr-ddm-form-page {
+        
+            padding: 0; 
+            
+            > .row {
+                margin-left: 0; 
+                margin-right: 0; 
+                
+                .col-md-12 {
+                    padding-left: 0; 
+                    padding-right: 0; 
+                }
+            }
+        }
+        
+        .lfr-ddm-form-pagination-controls {
+        
+            padding-top: 30px;
+            text-align: center; 
+            
+            .pull-right {
+                float: none ! important;
+            }
+        }
+    }
+    
+    .required-warning {
+        margin-bottom: 0;
     }
 }
 

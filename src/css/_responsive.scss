@@ -2,8 +2,8 @@
     _responsive.scss: responsiveness for the inofix-theme 
 
     Created:    2017-06-28 13:30 by Christian Berndt
-    Modified:   2017-07-19 12:22 by Christian Berndt
-    Version:    0.3.8
+    Modified:   2017-07-26 00:24 by Christian Berndt
+    Version:    0.3.9
 */
 
 @mixin keyvisual($billboard-color) {
@@ -91,6 +91,14 @@
             }     
         }
     }
+          
+    .columns-2 {
+        margin-left: auto; 
+        margin-right: auto; 
+        padding-left: 15px; 
+        padding-right: 15px; 
+        width: 750px; /* bs3 .container */
+    } 
     
     #footer {
     
@@ -337,6 +345,10 @@
         }
     }
     
+    .columns-2 { 
+        width: 970px; /* bs3 container */
+    }
+    
     .logos {
     
         h4 {
@@ -426,5 +438,9 @@
                 }
             } 
         }
-    }  
+    } 
+    
+    .columns-2 { 
+        width: 1170px; /* bs3 container */
+    } 
 }
