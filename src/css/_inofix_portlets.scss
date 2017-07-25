@@ -2,9 +2,34 @@
     _inofix_portlets.scss: configure Inofix' portlets for the inofix-theme
 
     Created:    2017-07-21 12:13 by Christian Berndt
-    Modified:   2017-07-21 20:01 by Christian Berndt
-    Version:    1.0.1
+    Modified:   2017-07-25 23:36 by Christian Berndt
+    Version:    1.0.2
 */
+
+.portlet-contact-manager {
+    
+    margin-bottom: 30px;
+     
+    .btn-bottom-right {
+        top: 10px;
+        position: absolute;
+        right: 15px;
+    } 
+    
+    .collapse-basic-search {
+        .basic-search {
+            right: 47px;
+        }
+    } 
+
+    .contact-search {
+        .clear-message {
+            display: inline-block;
+            padding-bottom: 13px;
+            padding-top: 13px;
+        }
+    } 
+}
 
 .portlet-timetracker {
     
@@ -48,6 +73,14 @@
     .taglib-search-toggle-advanced-wrapper {
         .taglib-search-toggle-advanced {
             border: none;
+        }
+    }
+    
+    .task-record-search {
+        .clear-message {
+            display: inline-block;
+            padding-bottom: 13px;
+            padding-top: 13px;
         }
     }
 }
