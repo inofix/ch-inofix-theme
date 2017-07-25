@@ -192,9 +192,22 @@
                     "title": "Client Services"
                 },
                 {
-                    "friendlyURL": "/child-page-2",
-                    "name": "Child Page 2",
-                    "title": "Child Page 2"
+                    "columns": [
+                        [
+                            {
+                                "portletId": "com_liferay_social_activities_web_portlet_SocialActivitiesPortlet"
+                            }
+                        ],
+                        [
+                            {
+                                "portletId": "com_liferay_directory_web_portlet_MySitesDirectoryPortlet"
+                            }
+                        ]
+                    ],
+                    "friendlyURL": "/contact",
+                    "layoutTemplateId": "2_columns_iii",
+                    "name": "Contact",
+                    "title": "Contact"
                 }
             ],
             "name": "Services",
