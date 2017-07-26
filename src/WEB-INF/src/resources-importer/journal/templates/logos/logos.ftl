@@ -2,8 +2,8 @@
     logos.ftl: Format the logos structure
     
     Created:    2017-07-05 23:13 by Christian Berndt
-    Modified:   2017-07-21 18:17 by Christian Berndt
-    Version:    1.0.6
+    Modified:   2017-07-26 01:06 by Christian Berndt
+    Version:    1.0.7
 -->
 
 <#assign color_scheme = "white" />
@@ -50,21 +50,42 @@
                 <#if is_gallery>
                     <#list logo.getSiblings() as cur_logo>
                         <#if cur_logo.getData()?? && cur_logo.getData() != "">
+                        
+                            <#assign title=""/>
+                            
+                            <#if cur_logo.copyright?? && cur_logo.copyright.getData()?has_content>
+                                <#assign title= cur_logo.copyright.getData() />
+                            </#if>
+
+                            <#assign url=""/>
+
                             <div class="col-sm-3 col-md-2">
                                 <div class="logo-wrapper">
-                                    <#if cur_logo.getData() != "">
-                                        <img alt="${cur_logo.getAttribute("alt")}" class="logo" src="${cur_logo.getData()}" />
+                                    <#if url?has_content>
+                                        <a href="${url}" target="_blank"><img alt="${cur_logo.getAttribute("alt")}" class="logo" src="${cur_logo.getData()}" title="${title}" /></a>                       
+                                    <#else>
+                                        <img alt="${cur_logo.getAttribute("alt")}" class="logo" src="${cur_logo.getData()}" title="${title}" />   
                                     </#if>
                                 </div>
-                                <#-- <p class="description"></p> -->
                             </div>
                         </#if>
                     </#list>  
                 <#else>
-                    <div class="logos-bar">
+                    <div class="logos-bar v.3">
                         <#list logo.getSiblings() as cur_logo>
+                        
+                            <#assign title=""/>
+                            
+                            <#if cur_logo.copyright?? && cur_logo.copyright.getData()?has_content>
+                                <#assign title= cur_logo.copyright.getData() />
+                            </#if>
+
                             <#if cur_logo.getData() != "">
-                                <img alt="${cur_logo.getAttribute("alt")}" class="logo" src="${cur_logo.getData()}" />
+                                <#if url?has_content>
+                                    <a href="${url}" target="_blank"><img alt="${cur_logo.getAttribute("alt")}" class="logo" src="${cur_logo.getData()}" title="${title}" /></a>                       
+                                <#else>
+                                    <img alt="${cur_logo.getAttribute("alt")}" class="logo" src="${cur_logo.getData()}" title="${title}" />   
+                                </#if>
                             </#if>
                         </#list>
                     </div>
