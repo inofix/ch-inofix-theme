@@ -2,8 +2,8 @@
     navigation.ftl: header navigation.
     
     Created:    2017-03-05 23:01 by Christian Berndt
-    Modified:   2017-07-21 12:03 by Christian Berndt
-    Version:    0.3.4
+    Modified:   2017-08-06 18:54 by Christian Berndt
+    Version:    1.0.0
 -->
 
 <#assign home_url = htmlUtil.escape(theme_display.getURLHome()) />
@@ -75,7 +75,7 @@
                         </a>
                         <#if has_children>
                             <a aria-labelledby="layout_${nav_item.getLayoutId()}" class="${nav_link_css_class}" ${nav_item_attr_has_popup} ${data_toggle} href="${nav_item.getURL()}" ${nav_item.getTarget()} role="menuitem">
-                                <span class="caret"></span>
+                                <span class="icon-angle-down"></span>
                             </a>
                             <ul class="dropdown-menu" role="menu">
                                 <#list nav_item.getChildren() as nav_child>
@@ -100,6 +100,19 @@
                     </li>
                                   
                 </#list>
+
+                <li>
+                    <#assign VOID = freeMarkerPortletPreferences.setValue("portletSetupPortletDecoratorId", "barebone") />        
+                                        
+                    <@liferay_portlet["runtime"]
+                        defaultPreferences="${freeMarkerPortletPreferences}"
+                        portletProviderAction=portletProviderAction.VIEW
+                        instanceId="NAVIGATION_LANGUAGE"
+                        portletName="com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet" />
+            
+                    <#assign VOID = freeMarkerPortletPreferences.reset() />
+                </li>
+
                 <#if theme_display.isSignedIn() >
                     <#if user.hasPrivateLayouts()>
                         <li>

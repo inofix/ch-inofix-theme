@@ -2,8 +2,8 @@
     _navigation.scss: inofix theme's navigation 
 
     Created:    2017-03-05 23:08 by Christian Berndt
-    Modified:   2017-07-15 14:48 by Christian Berndt
-    Version:    0.4.6
+    Modified:   2017-08-06 22:22 by Christian Berndt
+    Version:    1.0.0
 */
 
 @import "variables";
@@ -54,6 +54,8 @@
             right: auto !important; 
             
             li > a {
+            
+                display: block; 
                 margin-right: 0; 
                 padding: 5px 20px;
                 
@@ -139,6 +141,57 @@
     .navbar-toggle {
         border: 0;
         margin: 15px 6px 18px;
+    }
+    
+    .portlet-language {
+        
+        a {
+        
+            color: #777;
+            
+            &.dropdown-toggle {
+                cursor: pointer;    
+                display: inline-block;                            
+                padding-bottom: 25px;
+                padding-top: 28px; 
+            }
+        }
+        
+        .dropdown-menu {
+        
+            border-top-right-radius: 0;
+            border-top-left-radius: 0;
+            margin-top: 0;
+
+            min-width: 120px;
+            
+            li {
+                text-align: center;
+                
+                span {
+                    display: block; 
+                    padding: 3px 20px; 
+                }   
+            } 
+            
+         
+        }
+        
+        .dropdown-toggle {
+        
+            padding-left: 15px; 
+            padding-right: 15px;
+            
+            &:nth-child(1) {
+                padding-right: 7.5px;           
+            } 
+            
+            &:nth-child(2) {
+                margin-left: -7.5px; 
+                padding-left: 0;           
+            } 
+        }
+
     }
     
     .search-form {
