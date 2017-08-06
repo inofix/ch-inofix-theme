@@ -2,8 +2,8 @@
     _core_portlets.scss: adjust Liferay's core portlets for the inofix-theme
 
     Created:    2017-03-05 23:20 by Christian Berndt
-    Modified:   2017-07-26 00:24 by Christian Berndt
-    Version:    0.2.3
+    Modified:   2017-08-06 19:06 by Christian Berndt
+    Version:    0.2.4
 */
 
 .controls-hidden {
@@ -30,6 +30,11 @@
     .portlet-icon-back {
         margin-top: 2px;
         margin-left: -8px;
+    }
+    
+    &:hover > .portlet-content-editable, 
+    &.focus > .portlet-content-editable {
+        border-color: transparent;
     }
 }
 
