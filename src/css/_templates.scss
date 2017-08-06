@@ -2,8 +2,8 @@
     _templates.scss: css config of inofix templates
 
     Created:    2017-07-05 17:26 by Christian Berndt
-    Modified:   2017-07-19 12:18 by Christian Berndt
-    Version:    1.2.2
+    Modified:   2017-08-06 18:43 by Christian Berndt
+    Version:    1.2.4
 */
 
 @import "variables";
@@ -94,12 +94,16 @@
 
 h1 {
     font-size: 30px; 
-    line-height: 125%;    
+    line-height: 130%;    
 }
     
 h3 {
     line-height: 130%;
     margin-bottom: 20px;
+}
+
+h4 {
+   line-height: 150%; 
 }
 
 .abstracts {
@@ -492,6 +496,7 @@ h3 {
     .caption {
         bottom: 15px; 
         color: $color-lightgray;
+        font-size: 14px;
         position: absolute; 
         right: 20px; 
         text-align: right; 
