@@ -2,8 +2,8 @@
     _navigation.scss: inofix theme's navigation 
 
     Created:    2017-03-05 23:08 by Christian Berndt
-    Modified:   2017-08-06 22:22 by Christian Berndt
-    Version:    1.0.0
+    Modified:   2017-08-07 19:17 by Christian Berndt
+    Version:    1.0.1
 */
 
 @import "variables";
@@ -30,6 +30,18 @@
         
         &:hover {
             background-color: #31b0d5;
+        }
+    }
+    
+    .container {
+    
+        padding-left: 0; 
+        padding-right: 0; 
+        
+        > .navbar-header {
+        
+            margin-left: 0; 
+            margin-right: 0; 
         }
     }
     
@@ -98,7 +110,7 @@
             margin-right: 10px         
         }  
     }
-    
+
     .navbar-nav {
     
         letter-spacing: 0.15em;
@@ -144,54 +156,72 @@
     }
     
     .portlet-language {
-        
-        a {
-        
-            color: #777;
+    
+        .portlet-content-editable {
+            border-width: 0; 
+        }
+    
+        .portlet-body {
+
+            a {
             
-            &.dropdown-toggle {
-                cursor: pointer;    
-                display: inline-block;                            
-                padding-bottom: 25px;
-                padding-top: 28px; 
+                color: #777;
+                
+                &.dropdown-toggle {
+                    cursor: pointer;    
+                    display: inline-block;                            
+                    padding-bottom: 25px;
+                    padding-top: 28px; 
+                }
+            }
+            
+            .dropdown-menu {
+            
+                background-color: #fff; 
+                border-top-right-radius: 0;
+                border-top-left-radius: 0;
+                margin-top: 0;
+    
+                min-width: 120px;
+                
+                li {
+                
+                    text-align: center;
+                    
+                    span {
+                        display: block; 
+                        padding: 3px 20px; 
+                    } 
+                    
+                    > a {
+                        padding: 5px;
+                    }  
+                }             
+            }
+            
+            .dropdown-toggle {
+            
+                padding-left: 15px; 
+                padding-right: 15px;
+                
+                &:nth-child(1) {
+                    padding-right: 7.5px;           
+                } 
+                
+                &:nth-child(2) {
+                    margin-left: -7.5px; 
+                    padding-left: 0;           
+                } 
+            }        
+        
+            > span {
+                display: block; 
+                
+                &.open {
+                    background-color: #eeeeee;
+                }
             }
         }
-        
-        .dropdown-menu {
-        
-            border-top-right-radius: 0;
-            border-top-left-radius: 0;
-            margin-top: 0;
-
-            min-width: 120px;
-            
-            li {
-                text-align: center;
-                
-                span {
-                    display: block; 
-                    padding: 3px 20px; 
-                }   
-            } 
-            
-         
-        }
-        
-        .dropdown-toggle {
-        
-            padding-left: 15px; 
-            padding-right: 15px;
-            
-            &:nth-child(1) {
-                padding-right: 7.5px;           
-            } 
-            
-            &:nth-child(2) {
-                margin-left: -7.5px; 
-                padding-left: 0;           
-            } 
-        }
-
     }
     
     .search-form {
