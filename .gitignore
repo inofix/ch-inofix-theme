@@ -7,3 +7,4 @@ liferay-theme.json
 /.settings/
 /.project
 /bin/
+/.classpath
