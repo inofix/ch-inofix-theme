@@ -10,8 +10,8 @@
     <dynamic-element name="headline" type="text" index-type="keyword" instance-id="qxsc">
         <dynamic-content language-id="de_DE"><![CDATA[Flussbad Berlin e.V.]]></dynamic-content>
     </dynamic-element>
-    <dynamic-element name="backgroundImage" type="image" index-type="keyword" instance-id="enho">
-        <dynamic-content language-id="de_DE" alt="www.flussbad-berlin.de" name="hans_wilhelm.jpg" title="hans_wilhelm.jpg" type="document"><![CDATA[[$FILE=hans_wilhelm.jpg$]]]></dynamic-content>
+    <dynamic-element name="backgroundImage" type="image" index-type="keyword" instance-id="mazz">
+        <dynamic-content language-id="de_DE" alt="Foto: Axel Schmidt, commonlens, im Auftrag von Flussbad Berlin e.V. " name="Hans Wilhelm vor dem Bodemuseum.jpg" title="Hans Wilhelm vor dem Bodemuseum.jpg" type="document"><![CDATA[[$FILE=hans_wilhelm.jpg$]]]></dynamic-content>
     </dynamic-element>
     <dynamic-element name="subHeadline" type="text" index-type="keyword" instance-id="srex">
         <dynamic-content language-id="de_DE"><![CDATA[Wissens- und Informationsmanagement]]></dynamic-content>
@@ -26,6 +26,6 @@
         <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
     </dynamic-element>
     <dynamic-element name="link" type="link_to_layout" index-type="keyword" instance-id="pqbl">
-        <dynamic-content language-id="de_DE"><![CDATA[2]]></dynamic-content>
+        <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
     </dynamic-element>
 </root>
