@@ -93,7 +93,7 @@
             "layoutTemplateId": "1_column",
             "name": "Settings",
             "title": "Settings"
-        },
+        }
     ],
     "publicPages": [
         {
@@ -140,7 +140,7 @@
                         "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
                         "portletPreferences": {
                             "articleId": "billboard_services.xml",
-                            "groupId": "${groupId}",
+                            "groupId": "${groupId}"
                         }
                     },
                     {
