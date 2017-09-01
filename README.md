@@ -5,6 +5,7 @@ A bootstrap 3 based theme for Liferay 7.x
 1. `cd $WORKSPACE/wars`
 1. `git clone https://github.com/inofix/ch-inofix-theme.git`
 1. `cd ch-inofix-theme`
+1. `TODO: configure ch-inofix-theme for standalone build`
 
 ## How To Contribute
 1. Fork this repository to your individual github account.
