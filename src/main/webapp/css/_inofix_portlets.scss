@@ -2,8 +2,8 @@
     _inofix_portlets.scss: configure Inofix' portlets for the inofix-theme
 
     Created:    2017-07-21 12:13 by Christian Berndt
-    Modified:   2017-09-01 21:21 by Christian Berndt
-    Version:    1.0.3
+    Modified:   2017-09-07 22:28 by Christian Berndt
+    Version:    1.0.4
 */
 
 .portlet-contact-manager {
@@ -32,7 +32,9 @@
 .portlet-timetracker {
          
     .btn-bottom-right {
+        bottom: auto;
         top: 10px;
+        padding: 6px;
         position: absolute;
         right: 15px;
     }
