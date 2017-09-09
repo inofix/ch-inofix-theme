@@ -2,8 +2,8 @@
     _inofix_portlets.scss: configure Inofix' portlets for the inofix-theme
 
     Created:    2017-07-21 12:13 by Christian Berndt
-    Modified:   2017-09-07 22:28 by Christian Berndt
-    Version:    1.0.4
+    Modified:   2017-09-09 19:04 by Christian Berndt
+    Version:    1.0.5
 */
 
 .portlet-contact-manager {
@@ -52,6 +52,14 @@
         .basic-search {
             right: 47px;
         }
+    }
+    
+    .lfr-from-date-column {
+        white-space: nowrap;
+    }
+    
+    .lfr-until-date-column {
+        white-space: nowrap;
     }
     
     .main-content-body {
