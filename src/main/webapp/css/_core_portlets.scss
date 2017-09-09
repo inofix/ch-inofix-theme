@@ -281,12 +281,17 @@
     }
 }
 
-.portlet-wiki {
+.portlet-wiki { 
+    
+    #_com_liferay_wiki_web_portlet_WikiPortlet_wikiCommentsPanel {
+        margin-top: 3em;
+    }  
+    
     h3 {
         &.header-title {
             font-size: 36px;
         }
-    }
+    }  
 }
 
 #portlet_status {
