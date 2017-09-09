@@ -2,8 +2,8 @@
     _inofix_portlets.scss: configure Inofix' portlets for the inofix-theme
 
     Created:    2017-07-21 12:13 by Christian Berndt
-    Modified:   2017-09-09 19:12 by Christian Berndt
-    Version:    1.0.6
+    Modified:   2017-09-09 23:42 by Christian Berndt
+    Version:    1.0.7
 */
 
 .portlet-contact-manager {
@@ -86,6 +86,7 @@
     
         .clear-message {
             display: inline-block;
+            line-height: 20px;
             padding-bottom: 14px;
             padding-top: 15px;
         }
