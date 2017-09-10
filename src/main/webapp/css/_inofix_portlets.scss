@@ -2,17 +2,19 @@
     _inofix_portlets.scss: configure Inofix' portlets for the inofix-theme
 
     Created:    2017-07-21 12:13 by Christian Berndt
-    Modified:   2017-09-09 23:42 by Christian Berndt
-    Version:    1.0.7
+    Modified:   2017-09-10 17:23 by Christian Berndt
+    Version:    1.0.8
 */
 
 .portlet-contact-manager {
          
     .btn-bottom-right {
+        bottom: auto;
         top: 10px;
+        padding: 7px;
         position: absolute;
         right: 15px;
-    } 
+    }
     
     .collapse-basic-search {
         .basic-search {
@@ -34,7 +36,7 @@
     .btn-bottom-right {
         bottom: auto;
         top: 10px;
-        padding: 6px;
+        padding: 7px;
         position: absolute;
         right: 15px;
     }
