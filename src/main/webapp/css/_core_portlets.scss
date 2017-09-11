@@ -2,8 +2,8 @@
     _core_portlets.scss: adjust Liferay's core portlets for the inofix-theme
 
     Created:    2017-03-05 23:20 by Christian Berndt
-    Modified:   2017-09-01 17:14 by Christian Berndt
-    Version:    0.2.5
+    Modified:   2017-09-11 21:52 by Christian Berndt
+    Version:    0.2.6
 */
 
 .controls-hidden {
@@ -92,6 +92,16 @@
     }
 }
 
+.portlet-document-library {
+        
+    .search-container-dd-toggle {
+        &.checkbox {
+            margin-bottom: 20px;
+            margin-left: 15px;
+        }
+    }
+}
+
 .portlet-forms {
     
     margin-bottom: 70px; 
@@ -154,39 +164,6 @@
 
 .portlet-login {
     
-    .portlet {
-    
-        &:hover {
-        
-            .portlet-content {
-                border-color: #ddd;
-            }
-        }
-    }
-}
-
-.portlet-my-sites {
-        
-    form {
-        &.container-fluid-1280 {
-            padding-left: 0; 
-            padding-right: 0; 
-        }
-    }
-}
-
-.portlet-document-library {
-        
-    .search-container-dd-toggle {
-        &.checkbox {
-            margin-bottom: 20px;
-            margin-left: 15px;
-        }
-    }
-}
-
-.portlet-login {
-    
     margin-top: 30px;
     
     .btn {
@@ -224,7 +201,15 @@
     }
     
     .portlet {
+    
         text-align: center;
+    
+        &:hover {
+        
+            .portlet-content {
+                border-color: #ddd;
+            }
+        }
     }
     
     .portlet-content {
@@ -247,6 +232,16 @@
     
     .portlet-icon-back .icon-angle-left {
         display: none; 
+    }
+}
+
+.portlet-my-sites {
+        
+    form {
+        &.container-fluid-1280 {
+            padding-left: 0; 
+            padding-right: 0; 
+        }
     }
 }
 
@@ -302,4 +297,3 @@
         font-size: 36px; /** bs3 h1 */
     }
 }
-
