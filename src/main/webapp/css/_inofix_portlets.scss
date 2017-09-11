@@ -6,6 +6,10 @@
     Version:    1.0.8
 */
 
+.portlet-bibliography-manager {
+    margin-bottom: 70px;
+}
+
 .portlet-contact-manager {
          
     .btn-bottom-right {
@@ -29,6 +33,21 @@
             padding-top: 13px;
         }
     } 
+}
+
+.portlet-newsletter {
+    
+    .btn-bottom-right {
+        bottom: auto;
+        top: 10px;
+        padding: 7px;
+        position: absolute;
+        right: 15px;
+    }
+    
+    .collapse-basic-search {
+        right: 47px;
+    }
 }
 
 .portlet-timetracker {
