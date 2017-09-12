@@ -2,8 +2,8 @@
     _inofix_portlets.scss: configure Inofix' portlets for the inofix-theme
 
     Created:    2017-07-21 12:13 by Christian Berndt
-    Modified:   2017-09-11 22:47 by Christian Berndt
-    Version:    1.0.9
+    Modified:   2017-09-12 11:46 by Christian Berndt
+    Version:    1.1.0
 */
 
 .portlet-bibliography-manager {
@@ -29,10 +29,16 @@
     .contact-search {
         .clear-message {
             display: inline-block;
-            padding-bottom: 13px;
-            padding-top: 13px;
+            padding-bottom: 13px !important;
+            padding-top: 15px !important;
         }
     } 
+    
+    .taglib-empty-result-message {
+        .taglib-empty-search-result-message-header {
+            display: none; 
+        }
+    }
 }
 
 .portlet-newsletter {
@@ -111,9 +117,8 @@
     
         .clear-message {
             display: inline-block;
-            line-height: 20px;
-            padding-bottom: 14px;
-            padding-top: 15px;
+            padding-bottom: 13px !important;
+            padding-top: 15px !important;
         }
     }
 }
