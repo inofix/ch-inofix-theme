@@ -2,9 +2,17 @@
     _inofix_portlets.scss: configure Inofix' portlets for the inofix-theme
 
     Created:    2017-07-21 12:13 by Christian Berndt
-    Modified:   2017-09-14 11:48 by Christian Berndt
-    Version:    1.1.1
+    Modified:   2017-09-14 18:21 by Christian Berndt
+    Version:    1.1.2
 */
+
+.management-bar-header-right {
+    .lfr-icon-item {
+        display: block;
+        padding-bottom: 15px; 
+        padding-top: 15px;
+    }
+}
 
 .portlet-bibliography-manager {
     margin-bottom: 70px;
