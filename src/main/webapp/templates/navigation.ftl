@@ -2,8 +2,8 @@
     navigation.ftl: header navigation.
     
     Created:    2017-03-05 23:01 by Christian Berndt
-    Modified:   2017-08-06 18:54 by Christian Berndt
-    Version:    1.0.0
+    Modified:   2017-09-17 23:23 by Christian Berndt
+    Version:    1.0.1
 -->
 
 <#assign home_url = htmlUtil.escape(theme_display.getURLHome()) />
@@ -103,6 +103,7 @@
 
                 <li>
                     <#assign VOID = freeMarkerPortletPreferences.setValue("portletSetupPortletDecoratorId", "barebone") />        
+                    <#assign VOID = freeMarkerPortletPreferences.setValue("displayStyle", "ddmTemplate_POPOVER-7.0.3") />        
                                         
                     <@liferay_portlet["runtime"]
                         defaultPreferences="${freeMarkerPortletPreferences}"
