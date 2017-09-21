@@ -19,7 +19,20 @@
             "layoutTemplateId": "2_columns_i",
             "name": "Welcome",
             "title": "Welcome"
-        },      
+        },
+        {
+            "columns": [
+                [
+                    {
+                        "portletId": "ch_inofix_contact_web_internal_portlet_ContactManagerPortlet"
+                    }
+                ]
+            ],
+            "friendlyURL": "/contacts",
+            "layoutTemplateId": "1_column",
+            "name": "Contacts",
+            "title": "Contacts"
+        },              
         {
             "columns": [
                 [
