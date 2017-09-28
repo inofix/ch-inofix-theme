@@ -2,8 +2,8 @@
     _custom.scss: main config of the inofix-theme
 
     Created:    2017-03-05 23:20 by Christian Berndt
-    Modified:   2017-09-14 18:37 by Christian Berndt
-    Version:    0.4.9
+    Modified:   2017-09-28 16:35 by Christian Berndt
+    Version:    0.5.0
 */
 
 /* These inject tags are used for dynamically creating imports for themelet styles, you can place them where ever you like in this file. */
@@ -28,6 +28,7 @@ a {
 }
 
 .alert {
+
     padding: 10px 15px;  
     
     &.taglib-portal-message {
@@ -388,6 +389,13 @@ strong {
     
     margin-top: 0 !important;
     
+}
+
+.yui3-calendar {
+    
+    .yui3-g [class*="yui3-u"] {
+        font-family: 'Open Sans', sans-serif;
+    }
 }
 
 /**
