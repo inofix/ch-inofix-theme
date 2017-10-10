@@ -37,6 +37,19 @@
             "columns": [
                 [
                     {
+                        "portletId": "ch_inofix_newsletter_web_internal_portlet_NewsletterManagerPortlet"
+                    }
+                ]
+            ],
+            "friendlyURL": "/newsletter",
+            "layoutTemplateId": "1_column",
+            "name": "Newsletter",
+            "title": "Newsletter"
+        },
+        {
+            "columns": [
+                [
+                    {
                         "portletId": "ch_inofix_contact_web_internal_portlet_ContactManagerPortlet"
                     }
                 ]
