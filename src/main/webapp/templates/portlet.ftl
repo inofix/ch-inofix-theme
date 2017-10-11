@@ -2,8 +2,8 @@
     portlet.ftl: portlet template of the inofix-theme.
     
     Created:    2017-07-02 15:18 by Christian Berndt
-    Modified:   2017-07-02 21:21 by Christian Berndt
-    Version:    1.0.1
+    Modified:   2017-10-11 22:16 by Christian Berndt
+    Version:    1.0.2
 -->
 
 <#assign
@@ -22,6 +22,8 @@
 
 <#if request.getAttribute("_ch_inofix_contact_web_internal_portlet_ContactManagerPortlet_showTitle")??>
     <#assign show_title = request.getAttribute("_ch_inofix_contact_web_internal_portlet_ContactManagerPortlet_showTitle") />
+<#elseif request.getAttribute("_ch_inofix_newsletter_web_internal_portlet_NewsletterManagerPortlet_showTitle")??>
+    <#assign show_title = request.getAttribute("_ch_inofix_newsletter_web_internal_portlet_NewsletterManagerPortlet_showTitle") />
 <#elseif request.getAttribute("_ch_inofix_timetracker_web_internal_portlet_TimetrackerPortlet_showTitle")??>
     <#assign show_title = request.getAttribute("_ch_inofix_timetracker_web_internal_portlet_TimetrackerPortlet_showTitle") />
 </#if>
