@@ -2,8 +2,8 @@
     _inofix_portlets.scss: configure Inofix' portlets for the inofix-theme
 
     Created:    2017-07-21 12:13 by Christian Berndt
-    Modified:   2017-09-21 19:08 by Christian Berndt
-    Version:    1.1.5
+    Modified:   2017-10-11 22:24 by Christian Berndt
+    Version:    1.1.6
 */
 
 .management-bar-header-right {
@@ -73,6 +73,15 @@
         padding: 7px;
         position: absolute;
         right: 15px;
+    }
+    
+    .card-horizontal {
+    
+        border: none; 
+        
+        .panel-body {
+            padding: 0; 
+        }
     }
     
     .collapse-basic-search {
