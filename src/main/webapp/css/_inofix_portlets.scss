@@ -2,8 +2,8 @@
     _inofix_portlets.scss: configure Inofix' portlets for the inofix-theme
 
     Created:    2017-07-21 12:13 by Christian Berndt
-    Modified:   2017-10-12 16:27 by Christian Berndt
-    Version:    1.1.7
+    Modified:   2017-10-12 21:49 by Christian Berndt
+    Version:    1.1.8
 */
 
 .management-bar-header-right {
@@ -28,6 +28,16 @@
         right: 15px;
     }
     
+    .btn-download {
+        margin-top: 25px;
+    }
+    
+    .card-horizontal {
+    
+        border: none; 
+        
+    }
+    
     .collapse-basic-search {
         .basic-search {
             right: 47px;
@@ -50,6 +60,32 @@
                 border-right-color: transparent;
                 border-top-color: transparent;
             }
+        }
+    }
+    
+    fieldset {
+        
+        fieldset {
+            .panel-title {
+                padding: 5px 0 ! important;
+            }
+        }
+    }
+    
+    #generalContent {
+    
+        > .panel-body {
+            margin-bottom: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+            box-shadow: 0 1px 1px rgba(0,0,0,.05);
+        }
+    }
+        
+    .panel-body {
+        .panel-body {
+            padding: 0; 
         }
     }
 }
