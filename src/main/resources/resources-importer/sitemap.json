@@ -108,9 +108,16 @@
                     "title": "Personal Tasks"
                 },
                 {
+                    "columns": [
+                        [
+                            {
+                                "portletId": "ch_inofix_data_web_internal_portlet_DataManagerPortlet"
+                            }
+                        ]
+                    ],
                     "friendlyURL": "/tasks/group",
-                    "name": "Group Tasks",
-                    "title": "Group Tasks"
+                    "name": "Data Manager",
+                    "title": "Data Manager"
                 }
             ],
             "layoutTemplateId": "1_column",
