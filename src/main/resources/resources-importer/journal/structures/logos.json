@@ -245,8 +245,8 @@
                 },
                 {
                     "label": {
-                        "en_US": "URL",
-                        "de_DE": "URL"
+                        "en_US": "HREF",
+                        "de_DE": "HREF"
                     },
                     "predefinedValue": {
                         "en_US": "",
@@ -257,13 +257,13 @@
                         "de_DE": ""
                     },
                     "tip": {
-                        "en_US": "Enter the URL, which shall be linked with this logo.",
-                        "de_DE": "Geben Sie den URL an, der mit diesem Logo verknüpft ist."
+                        "en_US": "Enter the HREF, which shall be linked with this logo.",
+                        "de_DE": "Geben Sie den HREF an, der mit diesem Logo verknüpft ist."
                     },
                     "dataType": "string",
                     "indexType": "keyword",
                     "localizable": true,
-                    "name": "url",
+                    "name": "href",
                     "readOnly": false,
                     "repeatable": false,
                     "required": false,
