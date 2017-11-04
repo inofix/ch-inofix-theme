@@ -2,8 +2,8 @@
     _templates.scss: css config of inofix templates
 
     Created:    2017-07-05 17:26 by Christian Berndt
-    Modified:   2017-08-06 18:43 by Christian Berndt
-    Version:    1.2.4
+    Modified:   2017-11-04 22:16 by Christian Berndt
+    Version:    1.2.5
 */
 
 @import "variables";
@@ -652,8 +652,17 @@ h4 {
     
     blockquote {
         border-left-width: 10px;
-        border-left-color: $color-blue;
-        text-align: left;        
+        border-left-color: $color-gray;
+        margin-bottom: 50px;
+        margin-top: 30px;
+        padding-bottom: 30px;
+        padding-right: 0;
+        padding-top: 30px;
+        text-align: left;   
+        
+        footer {
+            font-size: 100%;
+        }     
     }
     
     h1 {
@@ -666,15 +675,21 @@ h4 {
         border-radius: 50%;
         display: inline-block;
         margin-bottom: 15px;
-        margin-top: 10px;
+        margin-top: 30px;
 
         .icon {
             display: table-cell;
-            font-size: 50px;
-            height: 100px;
+            font-size: 25vw;
+            height: 40vw;
             vertical-align: middle; 
-            width: 100px;
+            width: 40vw;
         }
+
+    }
+              
+    img {
+        margin-top: 30px;
+        width: 40%;
     }
     
     &.lightgray {
