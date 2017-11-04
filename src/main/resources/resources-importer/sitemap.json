@@ -293,6 +293,13 @@
                     {
                         "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
                         "portletPreferences": {
+                            "articleId": "logos_without_anything.xml",
+                            "groupId": "${groupId}"
+                        }
+                    },                    
+                    {
+                        "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+                        "portletPreferences": {
                             "articleId": "testimonials_clients.xml",
                             "groupId": "${groupId}"
                         }
