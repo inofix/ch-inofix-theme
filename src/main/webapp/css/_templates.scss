@@ -2,8 +2,8 @@
     _templates.scss: css config of inofix templates
 
     Created:    2017-07-05 17:26 by Christian Berndt
-    Modified:   2017-11-04 22:16 by Christian Berndt
-    Version:    1.2.5
+    Modified:   2017-11-05 20:13 by Christian Berndt
+    Version:    1.2.6
 */
 
 @import "variables";
@@ -367,7 +367,7 @@ h4 {
         
         &.red {
         
-            @include keyvisual(red);            
+            @include keyvisual($color-red);            
 
         }
     }
