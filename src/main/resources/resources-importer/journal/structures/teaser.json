@@ -149,19 +149,46 @@
                 "de_DE": ""
             },
             "tip": {
-                "en_US": "Select a background image to be displayed for this teaser.",
-                "de_DE": "Wählen Sie ein Hintergrundbild aus, das für diesen Anreisser verwendet werden soll."
+                "en_US": "Select an image to be displayed with this teaser.",
+                "de_DE": "Wählen Sie ein Bild aus, das für diesen Anreisser verwendet werden soll."
             },
             "dataType": "image",
             "fieldNamespace": "ddm",
             "indexType": "keyword",
             "localizable": true,
-            "name": "backgroundImage",
+            "name": "image",
             "readOnly": false,
             "repeatable": false,
             "required": false,
             "showLabel": true,
             "type": "ddm-image"
+        },
+        {
+            "label": {
+                "en_US": "Use as background image?",
+                "de_DE": "Als Hintergrundbild verwenden?"
+            },
+            "predefinedValue": {
+                "en_US": false,
+                "de_DE": false
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "dataType": "boolean",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "useAsBackgroundImage",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "checkbox"
         },
         {
             "label": {

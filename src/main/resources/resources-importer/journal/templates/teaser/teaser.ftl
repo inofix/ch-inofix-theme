@@ -2,18 +2,28 @@
     teaser.ftl: Format the teaser structure
     
     Created:    2017-07-02 23:29 by Christian Berndt
-    Modified:   2017-07-14 16:30 by Christian Berndt
-    Version:    1.0.4
+    Modified:   2017-11-06 12:15 by Christian Berndt
+    Version:    1.0.45
 -->
 
 <#assign background_style = ""/>
 <#assign color_scheme = "lightgray" />
 <#assign css_class = "" />
+<#assign has_image = false />
 <#assign icon_class = "" />
 <#assign teaser_left = false />
+<#assign use_as_background_image = false />
 
-<#if backgroundImage?? && backgroundImage.getData()?has_content>
-    <#assign background_style = "background-image: url(" + backgroundImage.getData() + ");"/>
+<#if image?? && image.getData()?has_content>
+    <#assign has_image = true />    
+</#if>
+
+<#if useAsBackgroundImage?? && useAsBackgroundImage.getData()?has_content >
+    <#assign use_as_background_image = getterUtil.getBoolean(useAsBackgroundImage.getData()) />   
+</#if>
+
+<#if has_image && use_as_background_image >
+    <#assign background_style = "background-image: url(" + image.getData() + ");"/>
     <#assign css_class = "background-image"/>
 </#if>
 
@@ -36,19 +46,32 @@
     <div class="container-fluid">
         <div class="row">
              <div class="col-md-6" style="${background_style}">
-                <div class="image-wrapper">
-                    <#if icon_class?has_content>
-                        <div class="icon-wrapper">
-                            <span class="icon ${icon_class}"></span>
-                        </div>
-                    </#if>
-                    <#if headline?? && headline.getData()?has_content>
-                        <h1>${headline.getData()}</h1>
-                    </#if>
-                </div>
+                
+                <#if has_image && !use_as_background_image >
+                    <div class="image-wrapper">
+                        <img src="${image.getData()}" />
+                        <#if headline?? && headline.getData()?has_content>
+                            <h1>${headline.getData()}</h1>
+                        </#if>                     
+                    </div>
+                </#if>
+                
+                <#if icon_class?has_content>
+                    <div class="icon-wrapper">
+                        <span class="icon ${icon_class}"></span>
+                        <#if headline?? && headline.getData()?has_content>
+                            <h1>${headline.getData()}</h1>
+                        </#if>                        
+                    </div>
+                </#if>
                 <#if background_style?has_content>
-                    <#if backgroundImage.getAttribute("alt")?has_content>
-                        <div class="caption">${backgroundImage.getAttribute("alt")}</div>
+                    <div class="icon-wrapper">
+                        <#if headline?? && headline.getData()?has_content>
+                            <h1>${headline.getData()}</h1>
+                        </#if>                        
+                    </div>                
+                    <#if image.getAttribute("alt")?has_content>
+                        <div class="caption">${image.getAttribute("alt")}</div>
                     </#if>
                 </#if>
             </div> 
