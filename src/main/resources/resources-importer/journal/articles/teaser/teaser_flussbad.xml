@@ -10,8 +10,9 @@
     <dynamic-element name="headline" type="text" index-type="keyword" instance-id="qxsc">
         <dynamic-content language-id="de_DE"><![CDATA[Flussbad Berlin e.V.]]></dynamic-content>
     </dynamic-element>
-    <dynamic-element name="backgroundImage" type="image" index-type="keyword" instance-id="mazz">
-        <dynamic-content language-id="de_DE" alt="Foto: Axel Schmidt, commonlens, im Auftrag von Flussbad Berlin e.V. " name="Hans Wilhelm vor dem Bodemuseum.jpg" title="Hans Wilhelm vor dem Bodemuseum.jpg" type="document"><![CDATA[[$FILE=hans_wilhelm.jpg$]]]></dynamic-content>
+    <dynamic-element name="image" type="image" index-type="keyword" instance-id="mazz">
+        <dynamic-content language-id="de_DE" alt="" name="Hans Wilhelm vor dem Bodemuseum.jpg" title="Hans Wilhelm vor dem Bodemuseum.jpg" type="document"><![CDATA[[$FILE=flussbad_responsive.png$]]]></dynamic-content>
+<!--         <dynamic-content language-id="de_DE" alt="Foto: Axel Schmidt, commonlens, im Auftrag von Flussbad Berlin e.V. " name="Hans Wilhelm vor dem Bodemuseum.jpg" title="Hans Wilhelm vor dem Bodemuseum.jpg" type="document"><![CDATA[[$FILE=flussbad_responsive.png$]]]></dynamic-content> -->
     </dynamic-element>
     <dynamic-element name="subHeadline" type="text" index-type="keyword" instance-id="srex">
         <dynamic-content language-id="de_DE"><![CDATA[Wissens- und Informationsmanagement]]></dynamic-content>
@@ -23,6 +24,9 @@
         <dynamic-content language-id="de_DE"><![CDATA[<p>Flussbad Berlin e.V. nutzt sein Liferay-Portal nicht nur&nbsp;als Intranet f&uuml;r die Gesch&auml;ftsstelle des Vereins und die Au&szlig;endarstellung des Projekts, sondern auch f&uuml;r die Verwaltung und Aufbereitung projektrelevanter Mess- und Sensordaten.</p>]]></dynamic-content>
     </dynamic-element>
     <dynamic-element name="teaserLeft" type="boolean" index-type="keyword" instance-id="sqht">
+        <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="useAsBackgroundImage" type="boolean" index-type="keyword" instance-id="sqht">
         <dynamic-content language-id="de_DE"><![CDATA[]]></dynamic-content>
     </dynamic-element>
     <dynamic-element name="link" type="link_to_layout" index-type="keyword" instance-id="pqbl">
