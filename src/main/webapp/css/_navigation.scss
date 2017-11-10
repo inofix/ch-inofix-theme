@@ -2,8 +2,8 @@
     _navigation.scss: inofix theme's navigation 
 
     Created:    2017-03-05 23:08 by Christian Berndt
-    Modified:   2017-08-07 19:17 by Christian Berndt
-    Version:    1.0.1
+    Modified:   2017-11-10 11:49 by Christian Berndt
+    Version:    1.0.2
 */
 
 @import "variables";
@@ -170,8 +170,8 @@
                 &.dropdown-toggle {
                     cursor: pointer;    
                     display: inline-block;                            
-                    padding-bottom: 25px;
-                    padding-top: 28px; 
+                    padding-bottom: 26.5px;
+                    padding-top: 26.5px; 
                 }
             }
             
