@@ -2,8 +2,8 @@
     _responsive.scss: responsiveness for the inofix-theme 
 
     Created:    2017-06-28 13:30 by Christian Berndt
-    Modified:   2017-11-06 18:34 by Christian Berndt
-    Version:    0.4.2
+    Modified:   2017-11-10 11:43 by Christian Berndt
+    Version:    0.4.3
 */
 
 @mixin keyvisual($billboard-color) {
@@ -23,21 +23,6 @@
             background-image: none; 
 
         }            
-    }
-}
-
-/* Small devices (tablets, 768px and up) */
-@media (max-width: 420px) {
-    
-    .teaser {
-        .image-wrapper {
-        
-            padding: 15px;
-        
-            img {
-                max-width: 100%;
-            }
-        }
     }
 }
 
@@ -224,7 +209,7 @@
         .image-wrapper {
         
             img {
-                max-width: 500px;
+                max-width: 500px!important;
             }
         }
         
@@ -442,7 +427,7 @@
         .image-wrapper {
         
             img {
-                max-width: 400px;
+                max-width: 400px!important;
             }
         }
     
@@ -520,7 +505,7 @@
         .image-wrapper {
         
             img {
-                max-width: 500px;
+                max-width: 500px!important;
             }
         }
     }
