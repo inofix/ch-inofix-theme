@@ -2,8 +2,8 @@
     teaser.ftl: Format the teaser structure
     
     Created:    2017-07-02 23:29 by Christian Berndt
-    Modified:   2017-11-06 12:15 by Christian Berndt
-    Version:    1.0.45
+    Modified:   2017-11-17 17:47 by Christian Berndt
+    Version:    1.1.0
 -->
 
 <#assign background_style = ""/>
@@ -88,9 +88,33 @@
                             ${content.getData()}
                         </div>
                     </#if>
+                    
+                    <#assign css_class = "btn btn-default"/>
+                    <#assign link_label = ""/>
+                    <#assign target = "_self">
+                    <#assign url = "" />
+                    
                     <#if link?? && link.getFriendlyUrl()?has_content>
-                        <a class="btn btn-default" href="${link.getFriendlyUrl()}">
-                            <@liferay.language key="learn-more" />
+                        <#assign url = link.getFriendlyUrl() />
+                    </#if>
+                    
+                    <#if label?? && label.getData()?has_content>
+                        <#assign link_label = label.getData() />
+                    </#if>
+                    
+                    <#if href?? && href.getData()?has_content>
+                        <#assign css_class = "">
+                        <#assign target = "_blank">
+                        <#assign url = href.getData() />
+                    </#if> 
+                    
+                    <#if url?has_content >
+                        <a class="${css_class}" href="${url}" target="${target}"> 
+                            <#if link_label?has_content> 
+                                ${link_label}
+                            <#else>                          
+                                <@liferay.language key="learn-more" />
+                            </#if>                          
                         </a>
                     </#if>
                 </div>              
