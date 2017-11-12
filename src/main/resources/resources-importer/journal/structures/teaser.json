@@ -326,6 +326,60 @@
             "required": false,
             "showLabel": true,
             "type": "ddm-link-to-page"
-        }
+        },
+        {
+            "label": {
+                "en_US": "HREF",
+                "de_DE": "HREF"
+            },
+            "predefinedValue": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": "Enter the HREF linked with this teaser.",
+                "de_DE": "Geben Sie den HREF an, der mit diesem Anreisser verknüpft ist."
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "href",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "text"
+        },
+        {
+            "label": {
+                "en_US": "Label",
+                "de_DE": "Beschriftung"
+            },
+            "predefinedValue": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "style": {
+                "en_US": "",
+                "de_DE": ""
+            },
+            "tip": {
+                "en_US": "Enter a label for the button",
+                "de_DE": "Geben Sie dem Schaltelement eine Beschriftung."
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "label",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "text"
+        }               
     ]
 }

@@ -257,7 +257,7 @@
                         "de_DE": ""
                     },
                     "tip": {
-                        "en_US": "Enter the HREF, which shall be linked with this logo.",
+                        "en_US": "Enter the HREF linked with this logo.",
                         "de_DE": "Geben Sie den HREF an, der mit diesem Logo verknüpft ist."
                     },
                     "dataType": "string",
