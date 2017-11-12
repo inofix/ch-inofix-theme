@@ -2,8 +2,8 @@
     _responsive.scss: responsiveness for the inofix-theme 
 
     Created:    2017-06-28 13:30 by Christian Berndt
-    Modified:   2017-11-10 11:43 by Christian Berndt
-    Version:    0.4.3
+    Modified:   2017-11-12 16:43 by Christian Berndt
+    Version:    0.4.4
 */
 
 @mixin keyvisual($billboard-color) {
@@ -23,6 +23,20 @@
             background-image: none; 
 
         }            
+    }
+}
+
+/* Custom breakpoint for images in teasers */
+@media (min-width: 430px) {
+ 
+    .teaser {
+    
+        .image-wrapper {
+        
+            img {
+                max-width: 400px;
+            }
+        }
     }
 }
 
